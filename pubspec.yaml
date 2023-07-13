@@ -62,27 +62,28 @@ flutter:
   assets:
     - assets/backArrow.png
     - assets/bunni.png
-    - assets/chineseFlag.jpeg
+    - assets/chinese.png
     - assets/cold.png
-    - assets/conversational/jpg
+    - assets/conversational.jpg
     - assets/conversationBunni.png
     - assets/emergencyCall.png
     - assets/findingJob.jpeg
-    - assets/frenchFlag.png
-    - assets/germanyFlag.png
+    - assets/french.png
+    - assets/german.png
     - assets/groceries.jpeg
     - assets/homeBunni.png
-    - assets/italyFlag.png
-    - assets/japanFlag.png
+    - assets/italian.png
+    - assets/japanese.png
     - assets/jobInterview.jpeg
-    - assets/koreanFlag.jpeg
+    - assets/korean.png
     - assets/medical.jpeg
     - assets/medicine.png
     - assets/partTimeJob.jpeg
     - assets/pointer.png
-    - assets/portugalFlag.jpeg
-    - assets/spanishFlag.png
+    - assets/portuguese.png
+    - assets/spanish.png
     - assets/talkingAboutWork.jpeg
+    - assets/vietnamese.png
     - assets/work.jpeg
 
 
@@ -102,6 +103,8 @@ flutter:
    - family: IrishGrover
      fonts:
        - asset: fonts/IrishGrover-Regular.ttf
+       - asset: fonts/Inter-VariableFont_slnt,wght.ttf
+       - asset: fonts
 
   #
   # For details regarding fonts from package dependencies,
