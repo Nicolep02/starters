@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'resources.dart';
 import 'help.dart';
-import 'languageSelection.dart';
+import '../languageSelection.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
