@@ -104,6 +104,7 @@ flutter:
      fonts:
        - asset: fonts/IrishGrover-Regular.ttf
        - asset: fonts/Inter-VariableFont_slnt,wght.ttf
+       - asset: fonts
 
   #
   # For details regarding fonts from package dependencies,
