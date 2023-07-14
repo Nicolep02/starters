@@ -3,8 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 // import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'home.dart';
-import 'help.dart';
+import 'home/home.dart';
+import 'home/help.dart';
 
 class Language extends StatefulWidget {
   Language({Key? key}) : super(key: key);
