@@ -28,7 +28,6 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  curved_navigation_bar: ^1.0.3
   google_nav_bar: ^5.0.6
   flutter:
     sdk: flutter
@@ -106,6 +105,7 @@ flutter:
      fonts:
        - asset: fonts/IrishGrover-Regular.ttf
        - asset: fonts/Inter-VariableFont_slnt,wght.ttf
+       - asset: fonts
 
   #
   # For details regarding fonts from package dependencies,
