@@ -86,6 +86,10 @@ flutter:
     - assets/talkingAboutWork.jpeg
     - assets/vietnamese.png
     - assets/work.jpeg
+    - assets/conver.png
+    - assets/groceries_new.png
+    - assets/med_new.png
+    - assets/work_new.png
 
 
 
@@ -105,7 +109,7 @@ flutter:
      fonts:
        - asset: fonts/IrishGrover-Regular.ttf
        - asset: fonts/Inter-VariableFont_slnt,wght.ttf
-       - asset: fonts
+
 
   #
   # For details regarding fonts from package dependencies,
