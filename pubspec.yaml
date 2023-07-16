@@ -90,6 +90,10 @@ flutter:
     - assets/groceries_new.png
     - assets/med_new.png
     - assets/work_new.png
+    - assets/1fruit.png
+    - assets/2veggie.png
+    - assets/3bakery.png
+    - assets/4egg.png
 
 
 
