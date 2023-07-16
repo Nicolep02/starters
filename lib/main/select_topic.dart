@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:starters/grocery_pages/grocery_main.dart';
 
 void main() => runApp(const MaterialApp(
     home: Resources() //jump to class Home
@@ -99,7 +100,7 @@ class Resources extends StatelessWidget {
               icon: Image.asset('assets/groceries_new.png'),
               //onPressed: ()=>Navigator.of(context).pop(),
               onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Grocery()));
               },
             ),
           ),
