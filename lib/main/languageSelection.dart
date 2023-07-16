@@ -171,7 +171,7 @@ class _LanguageState extends State<Language> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Resources()));
+                          builder: (context) => Topics()));
                   //route to be changed
                 },
               ),
