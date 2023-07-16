@@ -3,6 +3,7 @@ import 'package:starters/grocery_pages/grocery_main.dart';
 import '../home/home.dart';
 import '../home/help.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import '../conversational_pages/converMain.dart';
 
 class Topics extends StatelessWidget {
   const Topics({Key? key}) : super(key: key);
@@ -60,10 +61,9 @@ class Topics extends StatelessWidget {
         width: 150, height: 200,
         child: IconButton(
           icon: Image.asset('assets/conver.png'),
-          onPressed: ()=>Navigator.of(context).pop(),
-          //onPressed: (){
-            //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-          //},
+          onPressed: (){
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Conver()));
+          },
         ),
       ),
           //SizedBox(width: 20,),
