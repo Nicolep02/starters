@@ -3,8 +3,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 // import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'home/home.dart';
-import 'home/help.dart';
+import '../home/home.dart';
+import '../home/help.dart';
+import 'select_topic.dart';
 
 class Language extends StatefulWidget {
   Language({Key? key}) : super(key: key);
@@ -170,7 +171,7 @@ class _LanguageState extends State<Language> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Home()));
+                          builder: (context) => Topics()));
                   //route to be changed
                 },
               ),

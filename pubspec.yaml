@@ -86,9 +86,6 @@ flutter:
     - assets/talkingAboutWork.jpeg
     - assets/vietnamese.png
     - assets/work.jpeg
-<<<<<<< Updated upstream
-
-=======
     - assets/conver.png
     - assets/groceries_new.png
     - assets/med_new.png
@@ -102,7 +99,6 @@ flutter:
     - assets/introduction.png
     - assets/likesDislikes.png
     - assets/topics.png
->>>>>>> Stashed changes
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -121,7 +117,7 @@ flutter:
      fonts:
        - asset: fonts/IrishGrover-Regular.ttf
        - asset: fonts/Inter-VariableFont_slnt,wght.ttf
-       - asset: fonts
+
 
   #
   # For details regarding fonts from package dependencies,
