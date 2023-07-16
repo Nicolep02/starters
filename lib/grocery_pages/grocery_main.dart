@@ -38,7 +38,7 @@ class _GroceryState extends State<Grocery> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 120),
             Container(
                   // decoration: BoxDecoration(
                   //   color: Colors.black,
