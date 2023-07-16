@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'colors.dart';
+import '../colors.dart';
 
 class PartTime extends StatelessWidget {
   const PartTime({Key? key}) : super(key: key);
