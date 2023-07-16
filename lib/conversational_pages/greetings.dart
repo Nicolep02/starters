@@ -33,7 +33,7 @@ class PartTime extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                          'I have a PartTime Job',
+                          'Hello! Nice to meet you!',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class PartTime extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                          'I work in a cafe',
+                          'Hi how are you?',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -87,7 +87,7 @@ class PartTime extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                          'How is the pay?',
+                          'Good morning',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -114,7 +114,7 @@ class PartTime extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                          'The pay is alright. I get 17 per hour.',
+                          'Good afternoon',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -141,7 +141,7 @@ class PartTime extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                          'I get my paycheck weekly',
+                          'Good Evening',
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
