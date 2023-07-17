@@ -94,7 +94,11 @@ flutter:
     - assets/2veggie.png
     - assets/3bakery.png
     - assets/4egg.png
-
+    - assets/bgConver.png
+    - assets/greetingButton.png
+    - assets/introduction.png
+    - assets/likesDislikes.png
+    - assets/topics.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
