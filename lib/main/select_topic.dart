@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:starters/grocery_pages/grocery_main.dart';
+import 'package:starters/medical_pages/med_main.dart';
 import '../home/home.dart';
 import '../home/help.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -14,19 +15,19 @@ class Topics extends StatelessWidget {
         centerTitle: true,
         // title: Text('Let's Start Learning ESL!),
         backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-    leading: IconButton(
-    onPressed: ()=>Navigator.of(context).pop(),
-    icon: Image.asset('assets/backArrow.png'),
-    ),
-    title: const Text(
-    'Let\'s Learn English!',
-    style: TextStyle(
-    fontFamily: 'Inter',
-    fontSize: 23,
-    fontWeight: FontWeight.bold,
-    ),
-    ),
-    ),
+        leading: IconButton(
+          onPressed: ()=>Navigator.of(context).pop(),
+          icon: Image.asset('assets/backArrow.png'),
+        ),
+        title: const Text(
+            'Let\'s Learn English!',
+            style: TextStyle(
+            fontFamily: 'Inter',
+            fontSize: 23,
+            fontWeight: FontWeight.bold,
+        ),
+        ),
+        ),
     //const SizedBox(height: 50,),
 //     Row(
 //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -87,10 +88,9 @@ class Topics extends StatelessWidget {
             width: 150, height: 200,
             child: IconButton(
               icon: Image.asset('assets/med_new.png'),
-              onPressed: ()=>Navigator.of(context).pop(),
-              //onPressed: (){
-              //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-              //},
+              onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Medical()));
+              },
             ),
           ),
           SizedBox(

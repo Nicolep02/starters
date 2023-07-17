@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../main/select_topic.dart';
+import 'fruitsPage.dart';
 
 class Grocery extends StatefulWidget{
   const Grocery({Key? key}) : super(key: key);
@@ -48,10 +49,10 @@ class _GroceryState extends State<Grocery> {
                     icon: Image.asset('assets/1fruit.png',
                     //fit: BoxFit.cover
                       ),
-                    onPressed: ()=>Navigator.of(context).pop(),
-                    //onPressed: (){
-                    //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                    //},
+                    //onPressed: ()=>Navigator.of(context).pop(),
+                    onPressed: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => Fruits()));
+                    },
                     // onHover: ,
 //                     // style: ButtonStyle(
 //                     //
