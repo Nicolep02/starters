@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../colors.dart';
+//import '../colors.dart';
 //import '../grocery_pages/grocery_main.dart';
 
 class Fruits extends StatefulWidget {
