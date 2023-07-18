@@ -1,6 +1,8 @@
-// import 'greetings.dart';
+import 'greeting.dart';
+import 'introduction.dart';
+import 'likesdislikes.dart';
+import 'varioustopics.dart';
 import 'package:flutter/material.dart';
-// import '../main/select_topic.dart';
 import '../home/home.dart';
 import '../home/help.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -54,10 +56,9 @@ class _ConverState extends State<Conver> {
               child: IconButton(
                 icon: Image.asset('assets/greetingButton.png',
                 ),
-                onPressed: ()=>Navigator.of(context).pop(),
-                //onPressed: (){
-                //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                //},
+                onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                },
               ),
             ),
             // ], ),
@@ -66,10 +67,9 @@ class _ConverState extends State<Conver> {
               width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/introduction.png'),
-                onPressed: ()=>Navigator.of(context).pop(),
-                //onPressed: (){
-                //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                //},
+                onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => PartTime()));
+                },
               ),
             ),
             // ],),

@@ -3,20 +3,15 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 // import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import '../main.dart';
 import '../home/home.dart';
 import '../home/help.dart';
 import 'select_topic.dart';
 
-class Language extends StatefulWidget {
+class Language extends StatelessWidget {
   Language({Key? key}) : super(key: key);
 
-  @override
-  State<Language> createState() => _LanguageState();
-}
-
-class _LanguageState extends State<Language> {
   // int _page = 0;
-  // GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,21 +45,28 @@ class _LanguageState extends State<Language> {
                 width: 84.69, height: 110,
                 child: IconButton(
                   icon: Image.asset('assets/japanese.png'),
-                  onPressed: ()=>Navigator.of(context).pop(),
+                  // onPressed: ()=>Navigator.of(context).pop(),
+                  onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'ja'));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                  },
                 ),
               ),
               SizedBox(
                 width: 84.69, height: 110,
                 child: IconButton(
                   icon: Image.asset('assets/korean.png'),
-                  onPressed: ()=>Navigator.of(context).pop(),
+                  onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'ko'));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                  },
                 ),
               ),
               SizedBox(
                 width: 84.69, height: 110,
                 child: IconButton(
                   icon: Image.asset('assets/chinese.png'),
-                  onPressed: ()=>Navigator.of(context).pop(),
+                  onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'en'));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                  },
                 ),
               ),
             ],
