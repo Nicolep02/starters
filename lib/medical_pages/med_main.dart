@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:starters/medical_pages/makeAppt.dart';
 import '../main/select_topic.dart';
+import '../medical_pages/makeAppt.dart';
+import '../medical_pages/illness.dart';
+import '../medical_pages/emergency.dart';
+import '../medical_pages/disease.dart';
 
 class Medical extends StatefulWidget{
   const Medical({Key? key}) : super(key: key);
@@ -44,15 +48,15 @@ class _MedicalState extends State<Medical> {
               // decoration: BoxDecoration(
               //   color: Colors.black,
               //   border: Border.all(width: 0),),
-              width: 300, height: 80,
+              width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/dial_911.png',
                   //fit: BoxFit.cover
                 ),
-                onPressed: ()=>Navigator.of(context).pop(),
-                //onPressed: (){
-                //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                //},
+                //onPressed: ()=>Navigator.of(context).pop(),
+                onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Emergency()));
+                },
                 // onHover: ,
 //                     // style: ButtonStyle(
 //                     //
@@ -62,19 +66,19 @@ class _MedicalState extends State<Medical> {
             // ], ),
             const SizedBox(height: 10),
             Container(
-              width: 300, height: 80,
+              width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/illness.png'),
-                onPressed: ()=>Navigator.of(context).pop(),
-                //onPressed: (){
-                //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                //},
+                //onPressed: ()=>Navigator.of(context).pop(),
+                onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Illness()));
+                },
               ),
             ),
             // ],),
             const SizedBox(height: 10),
             Container(
-              width: 300, height: 80,
+              width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/appt.png'),
                 //onPressed: ()=>Navigator.of(context).pop(),
@@ -86,12 +90,12 @@ class _MedicalState extends State<Medical> {
             // ],),
             SizedBox(height: 10),
             Container(
-              width: 300, height: 80,
+              width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/disease.png'),
                 //onPressed: ()=>Navigator.of(context).pop(),
                 onPressed: (){
-                  //Navigator.of(context).push(MaterialPageRoute(builder: (context) => Grocery()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Disease()));
                 },
               ),
             ),
