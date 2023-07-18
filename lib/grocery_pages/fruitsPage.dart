@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-//import '../colors.dart';
-//import '../grocery_pages/grocery_main.dart';
+import '../main/colors.dart';
+import '../grocery_pages/grocery_main.dart';
+
 
 class Fruits extends StatefulWidget {
   const Fruits({Key? key}) : super(key: key);
@@ -26,17 +27,16 @@ class _FruitsState extends State<Fruits> {
       ),
 
     body: Center(
-    child: Column(
-    mainAxisAlignment: MainAxisAlignment.start,
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: <Widget>[
+      child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
 
-      Row(
-         mainAxisAlignment: MainAxisAlignment.center,
+      Row(//apple
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            //SizedBox(width: 30),
-
+            children: [
+            SizedBox(width: 18),
             Container(
               //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               //children: [
@@ -44,12 +44,13 @@ class _FruitsState extends State<Fruits> {
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.black),
               ),
-              child: Image.asset('assets/work.jpeg',
+              child: Image.asset('assets/apple_icon.png',
                 width: 300, height: 400,),
             //],
             ),
             SizedBox(width: 15,),
-
+            // Expanded(
+            // child:
             Column(
               children: [
                 SizedBox(height: 30),
@@ -58,13 +59,13 @@ class _FruitsState extends State<Fruits> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF4F939C),
                   ),
-                  child: Row(
+                  child: Row( //Translated phrase/box
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text('Apple',
                         style: TextStyle(fontSize: 20),), // <-- Text
                       SizedBox(
-                          width: 70, height: 50
+                          width: 100, height: 50
                       ),
                       Icon( // <-- Icon
                         Icons.volume_up,
@@ -85,7 +86,7 @@ class _FruitsState extends State<Fruits> {
                       Text('Apple',
                         style: TextStyle(fontSize: 20),), // <-- Text
                       SizedBox(
-                          width: 70, height: 50
+                          width: 80, height: 50
                       ),
                       Icon( // <-- Icon
                         Icons.volume_up,
@@ -96,9 +97,10 @@ class _FruitsState extends State<Fruits> {
                 ),
               ],
             ),
+            //),
       ],),
 
-      Row(
+      Row(//banana
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
@@ -111,7 +113,7 @@ class _FruitsState extends State<Fruits> {
             decoration: BoxDecoration(
               border: Border.all(color: Colors.black),
             ),
-            child: Image.asset('assets/work.jpeg',
+            child: Image.asset('assets/banana.jpg',
               width: 300, height: 400,),
             //],
           ),
@@ -128,10 +130,10 @@ class _FruitsState extends State<Fruits> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('Apple',
+                    Text('Banana',
                       style: TextStyle(fontSize: 20),), // <-- Text
                     SizedBox(
-                        width: 70, height: 50
+                        width: 83, height: 50
                     ),
                     Icon( // <-- Icon
                       Icons.volume_up,
@@ -149,10 +151,10 @@ class _FruitsState extends State<Fruits> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('Apple',
+                    Text('Banana',
                       style: TextStyle(fontSize: 20),), // <-- Text
                     SizedBox(
-                        width: 70, height: 50
+                        width: 60, height: 50
                     ),
                     Icon( // <-- Icon
                       Icons.volume_up,
@@ -164,6 +166,210 @@ class _FruitsState extends State<Fruits> {
             ],
           ),
         ],),
+
+        Row(//orange
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            SizedBox(width: 18),
+            Container(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //children: [
+              width: 150, height: 100, //adjust W/H to image W/H
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black),
+              ),
+              child: Image.asset('assets/orange.png',
+                width: 300, height: 400,),
+              //],
+            ),
+            SizedBox(width: 15,),
+            // Expanded(
+            // child:
+            Column(
+              children: [
+                SizedBox(height: 30),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF4F939C),
+                  ),
+                  child: Row( //Translated phrase/box
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Orange',
+                        style: TextStyle(fontSize: 20),), // <-- Text
+                      SizedBox(
+                          width: 83, height: 50
+                      ),
+                      Icon( // <-- Icon
+                        Icons.volume_up,
+                        size: 25.0,
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 5,),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.grey,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Orange',
+                        style: TextStyle(fontSize: 20),), // <-- Text
+                      SizedBox(
+                          width: 60, height: 50
+                      ),
+                      Icon( // <-- Icon
+                        Icons.volume_up,
+                        size: 25.0,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            //),
+          ],),
+
+        Row(//lemon
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            SizedBox(width: 18),
+            Container(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //children: [
+              width: 150, height: 100, //adjust W/H to image W/H
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black),
+              ),
+              child: Image.asset('assets/lemon.png',
+                width: 300, height: 400,),
+              //],
+            ),
+            SizedBox(width: 15,),
+            // Expanded(
+            // child:
+            Column(
+              children: [
+                SizedBox(height: 30),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF4F939C),
+                  ),
+                  child: Row( //Translated phrase/box
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Lemon',
+                        style: TextStyle(fontSize: 20),), // <-- Text
+                      SizedBox(
+                          width: 87, height: 50
+                      ),
+                      Icon( // <-- Icon
+                        Icons.volume_up,
+                        size: 25.0,
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 5,),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.grey,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Lemon',
+                        style: TextStyle(fontSize: 20),), // <-- Text
+                      SizedBox(
+                          width: 60, height: 50
+                      ),
+                      Icon( // <-- Icon
+                        Icons.volume_up,
+                        size: 25.0,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            //),
+          ],),
+
+        Row(//strawberry
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            SizedBox(width: 18),
+            Container(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //children: [
+              width: 150, height: 100, //adjust W/H to image W/H
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black),
+              ),
+              child: Image.asset('assets/strawberry.png',
+                width: 300, height: 400,),
+              //],
+            ),
+            SizedBox(width: 15,),
+            // Expanded(
+            // child:
+            Column(
+              children: [
+                SizedBox(height: 30),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF4F939C),
+                  ),
+                  child: Row( //Translated phrase/box
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Strawberry',
+                        style: TextStyle(fontSize: 20),), // <-- Text
+                      SizedBox(
+                          width: 50, height: 50
+                      ),
+                      Icon( // <-- Icon
+                        Icons.volume_up,
+                        size: 25.0,
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 5,),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.grey,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('Strawberry',
+                        style: TextStyle(fontSize: 20),), // <-- Text
+                      SizedBox(
+                          width: 30, height: 50
+                      ),
+                      Icon( // <-- Icon
+                        Icons.volume_up,
+                        size: 25.0,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            //),
+          ],),
 
 
 
