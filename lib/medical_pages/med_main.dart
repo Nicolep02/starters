@@ -30,7 +30,14 @@ class _MedicalState extends State<Medical> {
         centerTitle: true,
         backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
       ),
-      body: Center(
+      body: Container(
+        alignment: AlignmentDirectional.center,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/bgMed.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.start,
