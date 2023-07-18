@@ -118,6 +118,18 @@ flutter:
     - assets/beef.png
     - assets/fish.png
     - assets/shrimp.png
+    - assets/cough.png
+    - assets/fever.png
+    - assets/headache.png
+    - assets/sore-throat.png
+    - assets/stomach.png
+    - assets/allergy.png
+    - assets/cough.png
+    - assets/diabetes.png
+    - assets/dizzy.png
+    - assets/fever.png
+    - assets/heart.png
+    - assets/stroke.png
 
 
 
