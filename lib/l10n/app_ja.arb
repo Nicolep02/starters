@@ -1,0 +1,32 @@
+{
+    "@@locale": "ja",
+    "partTimeJobOne": "今夜はアルバイトです",
+
+    "greetingTitle": "挨拶",
+
+    "greetingOne": "こんにちは！",
+    "greetingTwo": "はじめまして.",
+    "greetingThree": "おはようございます/ こんばんは.",
+    "greetingFour": "元気ですか?",
+    "greetingFive": "じゃあまたね.",
+
+    "introductionOne": "私の名前は[名前].",
+    "introductionTwo": "彼女/ 彼の/彼らの なまえは[名前].",
+    "introductionThree": "お名前は何ですか.",
+    "introductionFour": "彼女/ 彼の/彼らの を知りません.",
+    "introductionFive": "この人たちは 家族/友人/クラスメート/同僚 です.",
+
+    "likesAndDislikesOne": "リンゴが好き",
+    "likesAndDislikesTwo": "走るのが嫌い.",
+    "likesAndDislikesThree": "サーフィンは楽しいです.",
+    "likesAndDislikesFour": "私はあの店の料理の方が好きだ。",
+    "likesAndDislikesFive": "何が一番好きですか？",
+
+    "topicsOne": "好きな音楽は何ですか？",
+    "topicsTwo": "バスと車のどちらが好きですか？",
+    "topicsThree": "どこで働いているのですか？",
+    "topicsFour": "いつからここに住んでいるのですか？",
+    "topicsFive": "自由時間には何をしていますか？"
+}
+
+
