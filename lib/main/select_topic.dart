@@ -16,10 +16,10 @@ class Topics extends StatelessWidget {
         centerTitle: true,
         // title: Text('Let's Start Learning ESL!),
         backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-        leading: IconButton(
-          onPressed: ()=>Navigator.of(context).pop(),
-          icon: Image.asset('assets/backArrow.png'),
-        ),
+        // leading: IconButton(
+        //   onPressed: ()=>Navigator.of(context).pop(),
+        //   icon: Image.asset('assets/backArrow.png'),
+        // ),
         title: const Text(
             'Let\'s Learn English!',
             style: TextStyle(

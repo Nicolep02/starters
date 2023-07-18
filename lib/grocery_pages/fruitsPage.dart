@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import '../main/colors.dart';
 import '../grocery_pages/grocery_main.dart';
+import '../home/home.dart';
+import '../home/help.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
+
 
 class Fruits extends StatefulWidget {
   const Fruits({Key? key}) : super(key: key);
@@ -52,7 +56,7 @@ class _FruitsState extends State<Fruits> {
             // child:
             Column(
               children: [
-                SizedBox(height: 30),
+                SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
@@ -369,30 +373,44 @@ class _FruitsState extends State<Fruits> {
             ),
             //),
           ],),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     ],),),
+
+      bottomNavigationBar: Container(
+        color: Color.fromRGBO(22, 34, 61, 1.0),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
+          child: GNav(
+            backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
+            color: Colors.white,
+            activeColor: Colors.white,
+            tabBackgroundColor: Colors.grey.shade800,
+            padding: EdgeInsets.all(25),
+            gap: 8,
+            tabs:[
+              GButton(
+                icon: Icons.home,
+                text: 'Home',
+                onPressed:() {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Home()));
+                },
+              ),
+              GButton(
+                icon: Icons.question_mark,
+                text: 'Help',
+                onPressed:() {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Help()));
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
