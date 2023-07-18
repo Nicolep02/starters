@@ -51,7 +51,7 @@ class _ApptState extends State<Appt> {
                           Text('I would like to make an appointment.',
                             style: TextStyle(fontSize: 20),), // <-- Text
                           SizedBox(
-                              width: 200, height: 70
+                              width: 5, height: 70
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -105,7 +105,7 @@ class _ApptState extends State<Appt> {
                           Text('I am a new patient.',
                             style: TextStyle(fontSize: 20),), // <-- Text
                           SizedBox(
-                              width: 200, height: 70
+                              width: 150, height: 70
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -159,7 +159,7 @@ class _ApptState extends State<Appt> {
                           Text('My name and Birth Date is:',
                             style: TextStyle(fontSize: 20),), // <-- Text
                           SizedBox(
-                              width: 200, height: 70
+                              width: 90, height: 70
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -211,9 +211,10 @@ class _ApptState extends State<Appt> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text('I would like to reschedule my appointment',
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                            style: TextStyle(fontSize: 18),), // <-- Text
                           SizedBox(
-                              width: 200, height: 70
+                              //width: 0,
+                              height: 70
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
