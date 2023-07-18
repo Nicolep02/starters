@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../colors.dart';
+import '../main/colors.dart';
 import '../medical_pages/med_main.dart';
 
 class Appt extends StatefulWidget {
