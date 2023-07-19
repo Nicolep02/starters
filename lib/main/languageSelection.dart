@@ -2,10 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import '../main.dart';
-import '../home/home.dart';
-import '../home/help.dart';
 import 'select_topic.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
+import '../widgets/bottom_nav_1.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Language extends StatelessWidget {
@@ -207,92 +205,7 @@ class Language extends StatelessWidget {
         ),
       ),
 //__________________________________finished body_____________________________________________
-      bottomNavigationBar: Container(
-        color: Color.fromRGBO(22, 34, 61, 1.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
-          child: GNav(
-            backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
-            color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
-            padding: EdgeInsets.all(25),
-            gap: 8,
-            tabs:[
-              GButton(
-                icon: Icons.home,
-                text: 'Home',
-                onPressed:() {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Home()));
-                },
-              ),
-              GButton(
-                icon: Icons.question_mark,
-                text: 'Help',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Help()));
-                },
-              ),
-              GButton(
-                icon: Icons.keyboard_double_arrow_right,
-                text: 'Next',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Topics()));
-                  //route to be changed
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-
-//_________________below style not quite working_________________________
-      // bottomNavigationBar: CurvedNavigationBar(
-      //   color: Color.fromRGBO(22, 34, 61, 1.0),
-      //   backgroundColor: Colors.white,
-      //   key: _bottomNavigationKey,
-      //   items: <Widget>[
-      //     ElevatedButton(
-      //         style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent,),
-      //         onPressed: () {
-      //           Navigator.push(
-      //             context,
-      //             MaterialPageRoute(
-      //               builder: (context) => Home()));
-      //     }, child: Icon(Icons.home, size: 30,)),
-      //     ElevatedButton(
-      //         style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent,),
-      //         onPressed: () {
-      //           Navigator.push(
-      //               context,
-      //               MaterialPageRoute(
-      //                   builder: (context) => Help()));
-      //         }, child: Icon(Icons.question_mark, size: 30,)),
-      //     ElevatedButton(
-      //         style: ElevatedButton.styleFrom(backgroundColor: Colors.transparent,),
-      //         onPressed: () {
-      //           Navigator.push(
-      //               context,
-      //               MaterialPageRoute(
-      //                   builder: (context) => Home()));
-      //         }, child: Icon(Icons.keyboard_double_arrow_right, size: 30,)),
-      //   ],
-        // onTap: (index) {
-        //   setState(() {
-        //     _page = index;
-        // });
-        // },
-      // ),
-
+      bottomNavigationBar: NavBar1()
     );
   }
 }
