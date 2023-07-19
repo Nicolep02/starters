@@ -5,7 +5,7 @@ import '../main.dart';
 import 'select_topic.dart';
 import '../styles/spacing.dart';
 import '../widgets/bottom_nav_1.dart';
-import '../main/colors.dart';
+import '../styles/colors.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Language extends StatelessWidget {
