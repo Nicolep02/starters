@@ -68,7 +68,7 @@ class _ConverState extends State<Conver> {
               child: IconButton(
                 icon: Image.asset('assets/introduction.png'),
                 onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => PartTime()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
                 },
               ),
             ),
@@ -78,10 +78,9 @@ class _ConverState extends State<Conver> {
               width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/likesDislikes.png'),
-                onPressed: ()=>Navigator.of(context).pop(),
-                //onPressed: (){
-                //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                //},
+                onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
+                },
               ),
             ),
             // ],),
@@ -90,10 +89,9 @@ class _ConverState extends State<Conver> {
               width: 360, height: 101.33,
               child: IconButton(
                 icon: Image.asset('assets/topics.png'),
-                onPressed: ()=>Navigator.of(context).pop(),
-                // onPressed: (){
-                //   Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                // },
+                onPressed: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                },
               ),
             ),
             // ],),

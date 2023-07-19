@@ -316,7 +316,7 @@
   "@greetingTwo": {
     "description": "The second phrase under Greeting"
   },
-  "greetingThree": "Good Morning",
+  "greetingThree": "Good Morning/ Good Evening",
   "@greetingThree": {
     "description": "The third phrase under Greeting"
   },
