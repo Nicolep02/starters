@@ -3,20 +3,21 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../main.dart';
 import 'select_topic.dart';
+import '../styles/spacing.dart';
 import '../widgets/bottom_nav_1.dart';
+import '../main/colors.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Language extends StatelessWidget {
   Language({Key? key}) : super(key: key);
 
-  // int _page = 0;
   @override
   Widget build(BuildContext context) {
-    double c_width = MediaQuery.of(context).size.width*1.0;
+    double screen_limit = MediaQuery.of(context).size.width*1.0;
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 103,
-        backgroundColor: const Color.fromRGBO(21, 33, 61, 1.0),
+        backgroundColor: nightSky,
         title: Text(AppLocalizations.of(context)!.chooseLangTitle,
           style: TextStyle(
             fontFamily: 'Inter',
@@ -27,10 +28,10 @@ class Language extends StatelessWidget {
       ),
       body:SingleChildScrollView(
         child: Container(
-          width: c_width,
+          width: screen_limit,
           child: Column(
             children: [
-              const SizedBox(height: 50),
+              SizedBox(height: title_subtitle_spacing),
               Text(AppLocalizations.of(context)!.selectYourLang,
                 style: TextStyle(
                   fontFamily: 'Inter',
@@ -38,7 +39,7 @@ class Language extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 30),
+              SizedBox(height: subTitle_flag_spacing),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -46,7 +47,7 @@ class Language extends StatelessWidget {
                       child: Column(
                         children: [
                           SizedBox(
-                            width: 90, height: 80,
+                            width: flag_width, height: flag_height,
                             child: IconButton(
                               icon: Image.asset('assets/ja.png'),
                               onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'ja'));
@@ -62,7 +63,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/ko.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'ko'));
@@ -78,7 +79,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/zh.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'zh'));
@@ -92,7 +93,7 @@ class Language extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: flag_bottom_spacing),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -100,7 +101,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/es.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'es'));
@@ -116,7 +117,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/vi.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'vi'));
@@ -132,7 +133,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/fr.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'fr'));
@@ -146,7 +147,7 @@ class Language extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: flag_bottom_spacing),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -154,7 +155,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/it.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'it'));
@@ -170,7 +171,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/de.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'de'));
@@ -186,7 +187,7 @@ class Language extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 90, height: 80,
+                          width: flag_width, height: flag_height,
                           child: IconButton(
                             icon: Image.asset('assets/pt.png'),
                             onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'pt'));
