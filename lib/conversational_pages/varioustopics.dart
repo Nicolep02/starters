@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import '../main/colors.dart';
-import '../home/home.dart';
-import '../home/help.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import '../main/colors.dart';
+import '../styles/styling.dart';
+import '../widgets/bottom_nav_2.dart';
 
 class Topics extends StatefulWidget {
   const Topics({Key? key}) : super(key: key);
@@ -66,7 +65,7 @@ class _TopicsState extends State<Topics> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -130,7 +129,7 @@ class _TopicsState extends State<Topics> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -192,7 +191,7 @@ class _TopicsState extends State<Topics> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -255,7 +254,7 @@ class _TopicsState extends State<Topics> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -318,7 +317,7 @@ class _TopicsState extends State<Topics> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -350,42 +349,7 @@ class _TopicsState extends State<Topics> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(
-        color: Color.fromRGBO(22, 34, 61, 1.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
-          child: GNav(
-            backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
-            color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
-            padding: EdgeInsets.all(25),
-            gap: 8,
-            tabs:[
-              GButton(
-                icon: Icons.home,
-                text: 'Home',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Home()));
-                },
-              ),
-              GButton(
-                icon: Icons.question_mark,
-                text: 'Help',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Help()));
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
+        bottomNavigationBar: NavBar2()
     );
   }
 }

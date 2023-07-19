@@ -142,7 +142,15 @@ flutter:
     - assets/heart.png
     - assets/stroke.png
     - assets/bgMed.png
-
+    - assets/de.png
+    - assets/es.png
+    - assets/fr.png
+    - assets/it.png
+    - assets/ja.png
+    - assets/ko.png
+    - assets/pt.png
+    - assets/vi.png
+    - assets/zh.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

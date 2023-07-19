@@ -7,19 +7,19 @@
     "homeButton": "Home",
 
 
-    "chooseLangTitle": "Choose Language",
-    "selectYourLang": "Select Your Language:",
-    "japanese": "Japanese",
-    "korean": "Korean",
-    "chinese": "Chinese",
-    "spanish": "Spanish",
-    "vietnamese": "Vietnamese",
-    "french": "French",
-    "italian": "Italian",
-    "german": "German",
-    "portuguese": "Portuguese",
-    "english": "English",
-    "burmese": "Burmese",
+    "chooseLangTitle": "言語を選択",
+    "selectYourLang": "母国語を選択してください",
+    "japanese": "日本語",
+    "korean": "韓国語",
+    "chinese": "中国語",
+    "spanish": "スペイン語",
+    "vietnamese": "ベトナム語",
+    "french": "フランス語",
+    "italian": "イタリア語",
+    "german": "ドイツ語",
+    "portuguese": "ポルトガル語",
+    "english": "英語",
+    "burmese": "ビルマ語",
 
 
 
