@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../main/colors.dart';
-import '../styles/styling.dart';
+import '../styles/spacing.dart';
 import '../widgets/bottom_nav_2.dart';
 
 class Introduction extends StatefulWidget {
