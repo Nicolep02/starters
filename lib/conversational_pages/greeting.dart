@@ -15,6 +15,7 @@ class Greeting extends StatefulWidget {
 class _GreetingState extends State<Greeting> {
   @override
   Widget build(BuildContext context) {
+    double c_width = MediaQuery.of(context).size.width*0.74;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -36,9 +37,9 @@ class _GreetingState extends State<Greeting> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 //SizedBox(width: 30),
-                SizedBox(width: 15,),
-
+                SizedBox(width: 20),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -49,10 +50,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text("Hello!",
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text("Hello!",
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -68,12 +73,17 @@ class _GreetingState extends State<Greeting> {
                         backgroundColor: Colors.grey,
                       ),
                       child: Row(
-                        mainAxisSize: MainAxisSize.min,
+                        // mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(AppLocalizations.of(context)!.greetingOne,
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.greetingOne,
+                            style: TextStyle(fontSize: 20),
+                            ),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -91,9 +101,9 @@ class _GreetingState extends State<Greeting> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 //SizedBox(width: 30),
-                SizedBox(width: 15,),
-
+                SizedBox(width: 20),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -104,10 +114,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text("Nice to meet you.",
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text("Nice to meet you.",
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -125,10 +139,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(AppLocalizations.of(context)!.greetingTwo,
-                      style: TextStyle(fontSize: 20),),// <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.greetingTwo,
+                      style: TextStyle(fontSize: 20),),
+                          ),// <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -145,9 +163,9 @@ class _GreetingState extends State<Greeting> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 //SizedBox(width: 30),
-                SizedBox(width: 15,),
-
+                SizedBox(width: 20),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -158,10 +176,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text("Good Morning",
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text("Good Morning",
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -179,10 +201,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(AppLocalizations.of(context)!.greetingThree,
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.greetingThree,
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -199,9 +225,10 @@ class _GreetingState extends State<Greeting> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 //SizedBox(width: 30),
-                SizedBox(width: 15,),
+                SizedBox(width: 20),
 
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -212,10 +239,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text("How are you?",
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text("How are you?",
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -233,10 +264,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(AppLocalizations.of(context)!.greetingFour,
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.greetingFour,
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -253,9 +288,10 @@ class _GreetingState extends State<Greeting> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 //SizedBox(width: 30),
-                SizedBox(width: 15,),
+                SizedBox(width: 20),
 
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -266,10 +302,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text("See you later.",
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text("See you later.",
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -287,10 +327,14 @@ class _GreetingState extends State<Greeting> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(AppLocalizations.of(context)!.greetingFive,
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: c_width,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.greetingFive,
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
                           SizedBox(
-                              width: 70, height: 50
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
