@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../main/colors.dart';
+import '../styles/colors.dart';
 import '../medical_pages/med_main.dart';
 import '../home/home.dart';
 import '../home/help.dart';
