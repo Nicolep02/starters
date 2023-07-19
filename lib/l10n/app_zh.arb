@@ -1,3 +1,167 @@
 {
-  "@@locale": "zh"
+  "@@locale": "zh",
+
+  "appName": "App Name",
+  "startButton": "Let's Learn ESL",
+  "helpButton": "Help",
+  "homeButton": "Home",
+
+
+  "chooseLangTitle": "Choose Language",
+  "selectYourLang": "Select Your Language:",
+  "japanese": "Japanese",
+  "korean": "Korean",
+  "chinese": "Chinese",
+  "spanish": "Spanish",
+  "vietnamese": "Vietnamese",
+  "french": "French",
+  "italian": "Italian",
+  "german": "German",
+  "portuguese": "Portuguese",
+  "english": "English",
+  "burmese": "Burmese",
+
+
+
+  "selectTopicTitle": "What topic interests you?",
+
+
+  "workTitle": "Work",
+  "partTimeJobTitle": "Part-time Job",
+
+  "partTimeJobOne": "I have a part-time job this evening.",
+  "partTimeJobTwo": "I work in a cafe.",
+  "partTimeJobThree": "How is the pay?",
+  "partTimeJobFour": "The pay is alright. I get $17 per hour",
+  "partTimeJobFive": "I get my paycheck weekly.",
+
+  "talkingAboutYourJobTitle": "Talking about your job",
+
+  "talkingAboutYourJobOne": "What's your role in the company?",
+  "talkingAboutYourJobTwo": "I'm the head of design",
+  "talkingAboutYourJobThree": "What do you do",
+  "talkingAboutYourJobFour": "I manage artists and graphic designers",
+  "talkingAboutYourJobFive": "Do you like your job?",
+
+  "findingAJobTitle": "Finding a job",
+
+  "findingAJobOne": "I am looking for a new job.",
+  "findingAJobTwo": "I want to get a job in the technological field",
+  "findingAJobThree": "Have you prepared a resume?",
+  "findingAJobFour": "Where are you looking for a job?",
+  "findingAJobFive": "I sent applications to a dozen companies",
+
+  "jobInterviewTitle": "Job Interview",
+
+  "jobInterviewOne": "Tell me a little about the position.",
+  "jobInterviewTwo": "This job is an entry level job.",
+  "jobInterviewThree": "What type of qualifications are required?",
+  "jobInterviewFour": "At least four year college degree is required.",
+  "jobInterviewFive": "What are you looking for in a job?",
+
+
+
+  "medicalTitle": "Medical",
+  "nineOneOneEmergencyTitle": "911 Emergency",
+
+  "nineOneOneEmergencyOne": "Hello, what is your emergency?",
+  "nineOneOneEmergencyTwo": "Example: I am having a heart attack",
+  "nineOneOneEmergencyThree": "What is your name?",
+  "nineOneOneEmergencyFour": "My name is:",
+  "nineOneOneEmergencyFive": "What is your address?",
+  "nineOneOneEmergencySix": "My address is:",
+  "nineOneOneEmergencySeven": "Okay, help is on the way!",
+
+  "symptomsOfIllnessTitle": "Symptoms of Illness",
+
+  "symptomsOfIllnessOne": "Headache",
+  "symptomsOfIllnessTwo": "Fever",
+  "symptomsOfIllnessThree": "Sore Throat",
+  "symptomsOfIllnessFour": "Coughing",
+  "symptomsOfIllnessFive": "Stomach Ache",
+
+  "makeAnAppointmentTitle": "Make an appointment",
+
+  "makeAnAppointmentOne": "I would like to make an appointment",
+  "makeAnAppointmentTwo": "I am a new patient",
+  "makeAnAppointmentThree": "My name and brith date is:",
+  "makeAnAppointmentFour": "I am available/unavailable on:",
+  "makeAnAppointmentFive": "I would like to reschedule my appointment",
+
+  "commonDiseaseNamesTitle": "Common Disease Names",
+
+  "commonDiseaseNamesOne": "Heart Attack",
+  "commonDiseaseNamesTwo": "Stroke",
+  "commonDiseaseNamesThree": "Diabetes",
+  "commonDiseaseNamesFour": "Allergy",
+  "commonDiseaseNamesFive": "Dizzy",
+
+
+
+  "conversationalTitle": "Conversational",
+  "greetingTitle": "Greeting",
+
+  "greetingOne": "Hello!",
+  "greetingTwo": "Nice to meet you.",
+  "greetingThree": "Good Morning/ Good Evening",
+  "greetingFour": "How are you?",
+  "greetingFive": "See you later.",
+
+  "introductionTitle": "Introduction",
+
+  "introductionOne": "My name is [name].",
+  "introductionTwo": "Her/His/Their name is [name].",
+  "introductionThree": "What is your name?",
+  "introductionFour": "I don't know her/him/them.",
+  "introductionFive": "These people are my family/ friends/ classmates/ coworkers.",
+
+  "likesAndDislikesTitle": "Likes and Dislikes",
+
+  "likesAndDislikesOne": "I like apples.",
+  "likesAndDislikesTwo": "I don't like running.",
+  "likesAndDislikesThree": "Surfing is fun.",
+  "likesAndDislikesFour": "I prefer the food from that restaurant.",
+  "likesAndDislikesFive": "What do you like best?",
+
+  "topicsTitle": "Topics",
+
+  "topicsOne": "What is your favorite music?",
+  "topicsTwo": "Do you prefer riding a bus or driving a car?",
+  "topicsThree": "Where do you work?",
+  "topicsFour": "How long have you live here?",
+  "topicsFive": "What do you do during your free time?",
+
+
+
+  "groceriesTitle": "Groceries",
+  "talkingToACashierTitle": "Talking to a Cashier",
+
+  "talkingToACashierOne": "   to     be     added     ",
+  "talkingToACashierTwo": "",
+  "talkingToACashierThree": "",
+  "talkingToACashierFour": "",
+  "talkingToACashierFive": "",
+
+  "vegetablesTitle": "Vegetables",
+
+  "vegetablesOne": "NA",
+  "vegetablesTwo": "NA",
+  "vegetablesThree": "NA",
+  "vegetablesFour": "NA",
+  "vegetablesFive": "NA",
+
+  "fruitsTitle": "Fruits",
+  "fruitsOne": "NA",
+  "fruitsTwo": "NA",
+  "fruitsThree": "NA",
+  "fruitsFour": "NA",
+  "fruitsFive": "NA",
+
+  "askingForExpiredItemsTitle": "Asking for Expired Items",
+
+  "askingForExpiredItemsOne": "NA",
+  "askingForExpiredItemsTwo": "NA",
+  "askingForExpiredItemsThree": "NA",
+  "askingForExpiredItemsFour": "NA",
+  "askingForExpiredItemsFive": "NA"
 }
