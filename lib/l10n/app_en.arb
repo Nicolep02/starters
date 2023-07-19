@@ -1,65 +1,313 @@
 {
+  "appName": "Hello, Starters!",
+  "@appName": {
+    "description": "App Name"
+  },
+  "startButton": "Let's Learn ESL",
+  "@startButton": {
+    "description": "Let's Learn ESL button"
+  },
+  "helpButton": "Help",
+  "@helpButton": {
+    "description": "Help button"
+  },
+  "homeButton": "Home",
+  "@homeButton": {
+    "description": "Home button"
+  },
+
+
+
+  "chooseLangTitle": "Choose Language",
+  "@chooseLangTitle": {
+    "description": "Choose Language title"
+  },
+  "selectYourLang": "Select Your Language:",
+  "@selectYourLang": {
+    "description": "Subtitle for choose language page"
+  },
+  "japanese": "Japanese",
+  "@japanese": {
+    "description": "Japanese lang button"
+  },
+  "korean": "Korean",
+  "@korean": {
+    "description": "Korean lang button"
+  },
+  "chinese": "Chinese",
+  "@chinese": {
+    "description": "Chinese lang button"
+  },
+  "spanish": "Spanish",
+  "@spanish": {
+    "description": "Spanish lang button"
+  },
+  "vietnamese": "Vietnamese",
+  "@vietnamese": {
+    "description": "Vietnamese lang button"
+  },
+  "french": "French",
+  "@french": {
+    "description": "French lang button"
+  },
+  "italian": "Italian",
+  "@italian": {
+    "description": "Italian lang button"
+  },
+  "german": "German",
+  "@german": {
+    "description": "German lang button"
+  },
+  "portuguese": "Portuguese",
+  "@portuguese": {
+    "description": "Portuguese lang button"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English lang button"
+  },
+  "burmese": "Burmese",
+  "@burmese": {
+    "description": "Burmese lang button"
+  },
+
+
+
+  "selectTopicTitle": "What topic interests you?",
+  "@selectTopicTitle": {
+    "description": "Select Topic page title"
+  },
+
+
+
+  "workTitle": "Work",
+  "@workTitle": {
+    "description": "Work category title"
+  },
+  "partTimeJobTitle": "Part-time Job",
+  "@partTimeJobTitle": {
+    "description": "Part Time Job page title"
+  },
   "partTimeJobOne": "I have a part-time job this evening.",
   "@partTimeJobOne": {
     "description": "The first phrase under Part Time Job"
   },
-
   "partTimeJobTwo": "I work in a cafe.",
+  "@partTimeJobTwo": {
+    "description": "The second phrase under Part Time Job"
+  },
   "partTimeJobThree": "How is the pay?",
+  "@partTimeJobThree": {
+    "description": "The third phrase under Part Time Job"
+  },
   "partTimeJobFour": "The pay is alright. I get $17 per hour",
+  "@partTimeJobFour": {
+    "description": "The fourth phrase under Part Time Job"
+  },
   "partTimeJobFive": "I get my paycheck weekly.",
+  "@partTimeJobFive": {
+    "description": "The fifth phrase under Part Time Job"
+  },
 
+  "talkingAboutYourJobTitle": "Talking about your job",
+  "@talkingAboutYourJobTitle": {
+    "description": "Talking about your job page title"
+  },
   "talkingAboutYourJobOne": "What's your role in the company?",
+  "@talkingAboutYourJobOne": {
+    "description": "The first phrase under Talking about your job"
+  },
   "talkingAboutYourJobTwo": "I'm the head of design",
+  "@talkingAboutYourJobTwo": {
+    "description": "The second phrase under Talking about your job"
+  },
   "talkingAboutYourJobThree": "What do you do",
+  "@talkingAboutYourJobThree": {
+    "description": "The third phrase under Talking about your job"
+  },
   "talkingAboutYourJobFour": "I manage artists and graphic designers",
+  "@talkingAboutYourJobFour": {
+    "description": "The fourth phrase under Talking about your job"
+  },
   "talkingAboutYourJobFive": "Do you like your job?",
+  "@talkingAboutYourJobFive": {
+  "description": "The fifth phrase under Talking about your job"
+},
 
+  "findingAJobTitle": "Finding a job",
+  "@findingAJobTitle": {
+    "description": "Finding a job page title"
+  },
   "findingAJobOne": "I am looking for a new job.",
+  "@findingAJobOne": {
+    "description": "The first phrase under Finding a job page"
+  },
   "findingAJobTwo": "I want to get a job in the technological field",
+  "@findingAJobTwo": {
+    "description": "The second phrase under Finding a job page"
+  },
   "findingAJobThree": "Have you prepared a resume?",
+  "@findingAJobThree": {
+    "description": "The third phrase under Finding a job page"
+  },
   "findingAJobFour": "Where are you looking for a job?",
+  "@findingAJobFour": {
+    "description": "The fourth phrase under Finding a job page"
+  },
   "findingAJobFive": "I sent applications to a dozen companies",
+  "@findingAJobFive": {
+    "description": "The fifth phrase under Finding a job page"
+  },
 
+  "jobInterviewTitle": "Job Interview",
+  "@jobInterviewTitle": {
+    "description": "Job interview page title"
+  },
   "jobInterviewOne": "Tell me a little about the position.",
+  "@jobInterviewOne": {
+    "description": "The first phrase under Job interview page"
+  },
   "jobInterviewTwo": "This job is an entry level job.",
+  "@jobInterviewTwo": {
+    "description": "The second phrase under Job interview page"
+  },
   "jobInterviewThree": "What type of qualifications are required?",
+  "@jobInterviewThree": {
+    "description": "The third phrase under Job interview page"
+  },
   "jobInterviewFour": "At least four year college degree is required.",
+  "@jobInterviewFour": {
+    "description": "The fourth phrase under Job interview page"
+  },
   "jobInterviewFive": "What are you looking for in a job?",
+  "@jobInterviewFive": {
+    "description": "The fifth phrase under Job interview page"
+  },
 
 
+
+  "medicalTitle": "Medical",
+  "@medicalTitle": {
+    "description": "Medical category title"
+  },
+  "nineOneOneEmergencyTitle": "911 Emergency",
+  "@nineOneOneEmergencyTitle": {
+    "description": "911 Emergency page title"
+  },
   "nineOneOneEmergencyOne": "Hello, what is your emergency?",
+  "@nineOneOneEmergencyOne": {
+    "description": "The first phrase under 911 Emergency page "
+  },
   "nineOneOneEmergencyTwo": "Example: I am having a heart attack",
+  "@nineOneOneEmergencyTwo": {
+    "description": "The second phrase under 911 Emergency page "
+  },
   "nineOneOneEmergencyThree": "What is your name?",
+  "@nineOneOneEmergencyThree": {
+    "description": "The third phrase under 911 Emergency page "
+  },
   "nineOneOneEmergencyFour": "My name is:",
+  "@nineOneOneEmergencyFour": {
+    "description": "The fourth phrase under 911 Emergency page "
+  },
   "nineOneOneEmergencyFive": "What is your address?",
+  "@nineOneOneEmergencyFive": {
+    "description": "The fifth phrase under 911 Emergency page "
+  },
   "nineOneOneEmergencySix": "My address is:",
+  "@nineOneOneEmergencySix": {
+    "description": "The sixth phrase under 911 Emergency page "
+  },
   "nineOneOneEmergencySeven": "Okay, help is on the way!",
+  "@nineOneOneEmergencySeven": {
+    "description": "The seventh phrase under 911 Emergency page "
+  },
 
+  "symptomsOfIllnessTitle": "Symptoms of Illness",
+  "@symptomsOfIllnessTitle": {
+    "description": "Symptoms of illness page title"
+  },
   "symptomsOfIllnessOne": "Headache",
+  "@symptomsOfIllnessOne": {
+    "description": "The first phrase under Symptoms of illness page"
+  },
   "symptomsOfIllnessTwo": "Fever",
+  "@symptomsOfIllnesymptomsOfIllnessTwossOne": {
+    "description": "The second phrase under Symptoms of illness page"
+  },
   "symptomsOfIllnessThree": "Sore Throat",
+  "@symptomsOfIllnessThree": {
+    "description": "The third phrase under Symptoms of illness page"
+  },
   "symptomsOfIllnessFour": "Coughing",
+  "@symptomsOfIllnessFour": {
+    "description": "The fourth phrase under Symptoms of illness page"
+  },
   "symptomsOfIllnessFive": "Stomach Ache",
+  "@symptomsOfIllnessFive": {
+    "description": "The fifth phrase under Symptoms of illness page"
+  },
 
+  "makeAnAppointmentTitle": "Make an appointment",
+  "@makeAnAppointmentTitle": {
+    "description": "Make an appointment page title"
+  },
   "makeAnAppointmentOne": "I would like to make an appointment",
+  "@makeAnAppointmentOne": {
+    "description": "The first phrase under Make an appointment page"
+  },
   "makeAnAppointmentTwo": "I am a new patient",
+  "@makeAnAppointmentTwo": {
+    "description": "The second phrase under Make an appointment page"
+  },
   "makeAnAppointmentThree": "My name and brith date is:",
+  "@makeAnAppointmentThree": {
+    "description": "The third phrase under Make an appointment page"
+  },
   "makeAnAppointmentFour": "I am available/unavailable on:",
+  "@makeAnAppointmentFour": {
+    "description": "The fourth phrase under Make an appointment page"
+  },
   "makeAnAppointmentFive": "I would like to reschedule my appointment",
+  "@makeAnAppointmentFive": {
+    "description": "The fifth phrase under Make an appointment page"
+  },
 
+  "commonDiseaseNamesTitle": "Common Disease Names",
+  "@commonDiseaseNamesTitle": {
+    "description": "Common disease names page title"
+  },
   "commonDiseaseNamesOne": "Heart Attack",
+  "@commonDiseaseNamesOne": {
+    "description": "The first phrase under Common disease names page"
+  },
   "commonDiseaseNamesTwo": "Stroke",
+  "@commonDiseaseNamesTwo": {
+    "description": "The second phrase under Common disease names page"
+  },
   "commonDiseaseNamesThree": "Diabetes",
+  "@commonDiseaseNamesThree": {
+    "description": "The third phrase under Common disease names page"
+  },
   "commonDiseaseNamesFour": "Allergy",
+  "@commonDiseaseNamesFour": {
+    "description": "The fourth phrase under Common disease names page"
+  },
   "commonDiseaseNamesFive": "Dizzy",
+  "@commonDiseaseNamesFive": {
+    "description": "The fifth phrase under Common disease names page"
+  },
 
 
+
+  "conversationalTitle": "Conversational",
+  "@conversationalTitle": {
+    "description": "Conversational category title"
+  },
   "greetingTitle": "Greeting",
   "@greetingTitle": {
     "description": "Greeting page title."
   },
-
   "greetingOne": "Hello!",
   "@greetingOne": {
     "description": "The first phrase under Greeting"
@@ -81,48 +329,185 @@
     "description": "The fifth phrase under Greeting"
   },
 
+  "introductionTitle": "Introduction",
+  "@introductionTitle": {
+    "description": "Introduction page title."
+  },
   "introductionOne": "My name is [name].",
+  "@introductionOne": {
+    "description": "The first phrase under Introduction page"
+  },
   "introductionTwo": "Her/His/Their name is [name].",
+  "@introductionTwo": {
+    "description": "The second phrase under Introduction page"
+  },
   "introductionThree": "What is your name?",
+  "@introductionThree": {
+    "description": "The third phrase under Introduction page"
+  },
   "introductionFour": "I don't know her/him/them.",
+  "@introductionFour": {
+    "description": "The fourth phrase under Introduction page"
+  },
   "introductionFive": "These people are my family/ friends/ classmates/ coworkers.",
+  "@introductionFive": {
+    "description": "The fifth phrase under Introduction page"
+  },
 
+  "likesAndDislikesTitle": "Likes and Dislikes",
+  "@likesAndDislikesTitle": {
+    "description": "Likes and Dislikes page title."
+  },
   "likesAndDislikesOne": "I like apples.",
+  "@likesAndDislikesOne": {
+    "description": "The first phrase under Likes and Dislikes page"
+  },
   "likesAndDislikesTwo": "I don't like running.",
+  "@likesAndDislikesTwo": {
+    "description": "The second phrase under Likes and Dislikes page"
+  },
   "likesAndDislikesThree": "Surfing is fun.",
+  "@likesAndDislikesThree": {
+    "description": "The third phrase under Likes and Dislikes page"
+  },
   "likesAndDislikesFour": "I prefer the food from that restaurant.",
+  "@likesAndDislikesFour": {
+    "description": "The fourth phrase under Likes and Dislikes page"
+  },
   "likesAndDislikesFive": "What do you like best?",
+  "@likesAndDislikesFive": {
+    "description": "The fifth phrase under Likes and Dislikes page"
+  },
 
+  "topicsTitle": "Topics",
+  "@topicsTitle": {
+    "description": "Topics page title."
+  },
   "topicsOne": "What is your favorite music?",
+  "@topicsOne": {
+    "description": "The first phrase under Topics page"
+  },
   "topicsTwo": "Do you prefer riding a bus or driving a car?",
+  "@topicsTwo": {
+    "description": "The second phrase under Topics page"
+  },
   "topicsThree": "Where do you work?",
+  "@topicsThree": {
+    "description": "The third phrase under Topics page"
+  },
   "topicsFour": "How long have you live here?",
+  "@topicsFour": {
+    "description": "The fourth phrase under Topics page"
+  },
   "topicsFive": "What do you do during your free time?",
+  "@topicsFive": {
+    "description": "The fifth phrase under Topics page"
+  },
 
 
+
+  "groceriesTitle": "Groceries",
+  "@groceriesTitle": {
+    "description": "Groceries category title"
+  },
+  "talkingToACashierTitle": "Talking to a Cashier",
+  "@talkingToACashierTitle": {
+    "description": "Talking to a cashier page title."
+  },
   "talkingToACashierOne": "   to     be     added     ",
+  "@talkingToACashierOne": {
+    "description": "The first phrase under Talking to a cashier page"
+  },
   "talkingToACashierTwo": "",
+  "@talkingToACashierTwo": {
+    "description": "The second phrase under Talking to a cashier page"
+  },
   "talkingToACashierThree": "",
+  "@talkingToACashierThree": {
+    "description": "The third phrase under Talking to a cashier page"
+  },
   "talkingToACashierFour": "",
+  "@talkingToACashierFour": {
+    "description": "The fourth phrase under Talking to a cashier page"
+  },
   "talkingToACashierFive": "",
+  "@talkingToACashierFive": {
+    "description": "The fifth phrase under Talking to a cashier page"
+  },
 
+  "vegetablesTitle": "Vegetables",
+  "@vegetablesTitle": {
+    "description": "Vegetables page title."
+  },
   "vegetablesOne": "NA",
+  "@vegetablesOne": {
+    "description": "The first phrase under Vegetables page"
+  },
   "vegetablesTwo": "NA",
+  "@vegetablesTwo": {
+    "description": "The second phrase under Vegetables page"
+  },
   "vegetablesThree": "NA",
+  "@vegetablesThree": {
+    "description": "The third phrase under Vegetables page"
+  },
   "vegetablesFour": "NA",
+  "@vegetablesFour": {
+    "description": "The fourth phrase under Vegetables page"
+  },
   "vegetablesFive": "NA",
+  "@vegetablesFive": {
+    "description": "The fifth phrase under Vegetables page"
+  },
 
+  "fruitsTitle": "Fruits",
+  "@fruitsTitle": {
+    "description": "Fruits page title."
+  },
   "fruitsOne": "NA",
+  "@fruitsOne": {
+    "description": "The first phrase under Fruits page"
+  },
   "fruitsTwo": "NA",
+  "@fruitsTwo": {
+    "description": "The second phrase under Fruits page"
+  },
   "fruitsThree": "NA",
+  "@fruitsThree": {
+    "description": "The third phrase under Fruits page"
+  },
   "fruitsFour": "NA",
+  "@fruitsFour": {
+    "description": "The fourth phrase under Fruits page"
+  },
   "fruitsFive": "NA",
+  "@fruitsFive": {
+    "description": "The fifth phrase under Fruits page"
+  },
 
+  "askingForExpiredItemsTitle": "Asking for Expired Items",
+  "@askingForExpiredItemsTitle": {
+    "description": "Asking for expired items page title."
+  },
   "askingForExpiredItemsOne": "NA",
+  "@askingForExpiredItemsOne": {
+    "description": "The first phrase under Asking for expired items page"
+  },
   "askingForExpiredItemsTwo": "NA",
+  "@askingForExpiredItemsTwo": {
+    "description": "The second phrase under Asking for expired items page"
+  },
   "askingForExpiredItemsThree": "NA",
+  "@askingForExpiredItemsThree": {
+    "description": "The third phrase under Asking for expired items page"
+  },
   "askingForExpiredItemsFour": "NA",
-  "askingForExpiredItemsFive": "NA"
-
+  "@askingForExpiredItemsFour": {
+    "description": "The fourth phrase under Asking for expired items page"
+  },
+  "askingForExpiredItemsFive": "NA",
+  "@askingForExpiredItemsFive": {
+    "description": "The fifth phrase under Asking for expired items page"
+  }
 }
 
