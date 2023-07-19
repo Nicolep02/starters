@@ -22,7 +22,7 @@
   "@chooseLangTitle": {
     "description": "Choose Language title"
   },
-  "selectYourLang": "Select Your Language:",
+  "selectYourLang": "Please select your native Language:",
   "@selectYourLang": {
     "description": "Subtitle for choose language page"
   },
