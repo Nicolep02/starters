@@ -9,6 +9,11 @@ double flag_width = 90;
 double flag_height = 80;
 double flag_bottom_spacing = 40;
 
+//main topic buttons
+double topic_width = 225;
+double topic_height = 225;
+
+
 //subtopic pages
 double lang_spacing = 8;
 

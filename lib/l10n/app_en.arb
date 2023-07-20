@@ -77,9 +77,13 @@
 
 
 
-  "selectTopicTitle": "What topic interests you?",
+  "selectTopicTitle": "Let's Learn English",
   "@selectTopicTitle": {
     "description": "Select Topic page title"
+  },
+  "selectTopicText": "Select the category you would like to learn:",
+  "@selectTopicText": {
+    "description": "Select Topic page text"
   },
 
 
@@ -264,7 +268,7 @@
   "@makeAnAppointmentTwo": {
     "description": "The second phrase under Make an appointment page"
   },
-  "makeAnAppointmentThree": "My name and brith date is:",
+  "makeAnAppointmentThree": "My name and birth date is:",
   "@makeAnAppointmentThree": {
     "description": "The third phrase under Make an appointment page"
   },

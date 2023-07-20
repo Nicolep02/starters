@@ -24,7 +24,8 @@
 
 
 
-    "selectTopicTitle": "どんな話題に興味がありますか？",
+    "selectTopicTitle": "英語を学ぼう",
+    "selectTopicText": "学びたいカテゴリを選択してください:",
 
 
     "workTitle": "仕事",
@@ -132,7 +133,7 @@
     "topicsFour": "いつからここに住んでいるのですか？",
     "topicsFive": "自由時間には何をしていますか？",
 
-    "groceryTitle" :"食料品",
+    "groceriesTitle" :"食料品",
 
     "fruitsTitle": "果物",
     "fruitsOne": "りんご",
