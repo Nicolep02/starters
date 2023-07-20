@@ -233,6 +233,7 @@ class Language extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(height: flag_bottom_spacing),
             ],
           ),
         ),
