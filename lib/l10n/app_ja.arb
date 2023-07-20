@@ -1,10 +1,11 @@
 {
     "@@locale": "ja",
 
-    "appName": "App Name",
-    "startButton": "Let's Learn ESL",
-    "helpButton": "Help",
-    "homeButton": "Home",
+    "appName": "こんにちわ,",
+    "startButton": "英語を勉強しよう",
+    "guideButton": "ガイド",
+    "resourcesButton": "リソース",
+    "homeButton": "ホームページ",
 
 
     "chooseLangTitle": "言語を選択",
@@ -23,78 +24,78 @@
 
 
 
-    "selectTopicTitle": "What topic interests you?",
+    "selectTopicTitle": "どんな話題に興味がありますか？",
 
 
-    "workTitle": "Work",
-    "partTimeJobTitle": "Part-time Job",
+    "workTitle": "仕事",
+    "partTimeJobTitle": "アルバイト",
 
     "partTimeJobOne": "今夜はアルバイトです",
-    "partTimeJobTwo": "I work in a cafe.",
-    "partTimeJobThree": "How is the pay?",
-    "partTimeJobFour": "The pay is alright. I get $17 per hour",
-    "partTimeJobFive": "I get my paycheck weekly.",
+    "partTimeJobTwo": "私はカフェで働いています。",
+    "partTimeJobThree": "給料はどうですか？",
+    "partTimeJobFour": "給料はまあまあだよ。時給17ドルだ。",
+    "partTimeJobFive": "給料は毎週もらっている。",
 
-    "talkingAboutYourJobTitle": "Talking about your job",
+    "talkingAboutYourJobTitle": "仕事について話す",
 
-    "talkingAboutYourJobOne": "What's your role in the company?",
-    "talkingAboutYourJobTwo": "I'm the head of design",
-    "talkingAboutYourJobThree": "What do you do",
-    "talkingAboutYourJobFour": "I manage artists and graphic designers",
-    "talkingAboutYourJobFive": "Do you like your job?",
+    "talkingAboutYourJobOne": "会社でのあなたの役割は何ですか？",
+    "talkingAboutYourJobTwo": "私はデザインの責任者だ。",
+    "talkingAboutYourJobThree": "どうすればいいんだ？",
+    "talkingAboutYourJobFour": "私はアーティストやグラフィックデザイナーをマネジメントしています。",
+    "talkingAboutYourJobFive": "仕事は好きですか？",
 
-    "findingAJobTitle": "Finding a job",
+    "findingAJobTitle": "仕事探し",
 
-    "findingAJobOne": "I am looking for a new job.",
-    "findingAJobTwo": "I want to get a job in the technological field",
-    "findingAJobThree": "Have you prepared a resume?",
-    "findingAJobFour": "Where are you looking for a job?",
-    "findingAJobFive": "I sent applications to a dozen companies",
+    "findingAJobOne": "新しい仕事を探している。",
+    "findingAJobTwo": "技術系の仕事に就きたい。",
+    "findingAJobThree": "履歴書は用意しましたか？",
+    "findingAJobFour": "どこで仕事をお探しですか？",
+    "findingAJobFive": "十数社に応募書類を送った。",
 
-    "jobInterviewTitle": "Job Interview",
+    "jobInterviewTitle": "就職面接",
 
-    "jobInterviewOne": "Tell me a little about the position.",
-    "jobInterviewTwo": "This job is an entry level job.",
-    "jobInterviewThree": "What type of qualifications are required?",
-    "jobInterviewFour": "At least four year college degree is required.",
-    "jobInterviewFive": "What are you looking for in a job?",
+    "jobInterviewOne": "職務について少し教えてください。",
+    "jobInterviewTwo": "この仕事はエントリーレベルの仕事です。",
+    "jobInterviewThree": "どのような資格が必要ですか？",
+    "jobInterviewFour": "少なくとも4年制大学の学位が必要。",
+    "jobInterviewFive": "仕事に何を求めていますか？",
 
 
 
-    "medicalTitle": "Medical",
-    "nineOneOneEmergencyTitle": "911 Emergency",
+    "medicalTitle": "メディカル",
+    "nineOneOneEmergencyTitle": "9 1 1 緊急事態",
 
-    "nineOneOneEmergencyOne": "Hello, what is your emergency?",
-    "nineOneOneEmergencyTwo": "Example: I am having a heart attack",
-    "nineOneOneEmergencyThree": "What is your name?",
-    "nineOneOneEmergencyFour": "My name is:",
-    "nineOneOneEmergencyFive": "What is your address?",
-    "nineOneOneEmergencySix": "My address is:",
-    "nineOneOneEmergencySeven": "Okay, help is on the way!",
+    "nineOneOneEmergencyOne": "緊急ですか？",
+    "nineOneOneEmergencyTwo": "例: \"私は心臓発作を起こしている.\"",
+    "nineOneOneEmergencyThree": "お名前は？",
+    "nineOneOneEmergencyFour": "私の名前は [名称]",
+    "nineOneOneEmergencyFive": "住所を教えてください。",
+    "nineOneOneEmergencySix": "私の住所は [住所]",
+    "nineOneOneEmergencySeven": "よし、助けが来た！",
 
-    "symptomsOfIllnessTitle": "Symptoms of Illness",
+    "symptomsOfIllnessTitle": "病気の症状",
 
-    "symptomsOfIllnessOne": "Headache",
-    "symptomsOfIllnessTwo": "Fever",
-    "symptomsOfIllnessThree": "Sore Throat",
-    "symptomsOfIllnessFour": "Coughing",
-    "symptomsOfIllnessFive": "Stomach Ache",
+    "symptomsOfIllnessOne": "頭痛",
+    "symptomsOfIllnessTwo": "フィーバー",
+    "symptomsOfIllnessThree": "喉の痛み",
+    "symptomsOfIllnessFour": "咳",
+    "symptomsOfIllnessFive": "胃痛",
 
-    "makeAnAppointmentTitle": "Make an appointment",
+    "makeAnAppointmentTitle": "予約する",
 
-    "makeAnAppointmentOne": "I would like to make an appointment",
-    "makeAnAppointmentTwo": "I am a new patient",
-    "makeAnAppointmentThree": "My name and brith date is:",
-    "makeAnAppointmentFour": "I am available/unavailable on:",
-    "makeAnAppointmentFive": "I would like to reschedule my appointment",
+    "makeAnAppointmentOne": "予約をしたい",
+    "makeAnAppointmentTwo": "私は新患です",
+    "makeAnAppointmentThree": "私の名前は[名称]、住所は[住所]",
+    "makeAnAppointmentFour": "空いている日／空いていない日[日付]",
+    "makeAnAppointmentFive": "予約を変更したい",
 
-    "commonDiseaseNamesTitle": "Common Disease Names",
+    "commonDiseaseNamesTitle": "一般的な病名",
 
-    "commonDiseaseNamesOne": "Heart Attack",
-    "commonDiseaseNamesTwo": "Stroke",
-    "commonDiseaseNamesThree": "Diabetes",
-    "commonDiseaseNamesFour": "Allergy",
-    "commonDiseaseNamesFive": "Dizzy",
+    "commonDiseaseNamesOne": "心臓発作",
+    "commonDiseaseNamesTwo": "脳卒中",
+    "commonDiseaseNamesThree": "糖尿病",
+    "commonDiseaseNamesFour": "アレルギー",
+    "commonDiseaseNamesFive": "ディジー",
 
 
 
@@ -131,36 +132,36 @@
     "topicsFour": "いつからここに住んでいるのですか？",
     "topicsFive": "自由時間には何をしていますか？",
 
-    "groceryTitle" :"Groceries",
+    "groceryTitle" :"食料品",
 
-    "fruitsTitle": "Fruits",
-        "fruitsOne": "Apple",
-        "fruitsTwo": "Banana",
-        "fruitsThree": "Orange",
-        "fruitsFour": "Lemon",
-        "fruitsFive": "Strawberry",
+    "fruitsTitle": "果物",
+    "fruitsOne": "りんご",
+    "fruitsTwo": "バナナ",
+    "fruitsThree": "オレンジ",
+    "fruitsFour": "レモン",
+    "fruitsFive": "いちご",
 
-    "vegetablesTitle": "Vegetables",
+    "vegetablesTitle": "野菜",
 
-    "vegetablesOne": "Tomato",
-    "vegetablesTwo": "Onion",
-    "vegetablesThree": "Carrot",
-    "vegetablesFour": "Broccoli",
-    "vegetablesFive": "Potato",
+    "vegetablesOne": "トマト",
+    "vegetablesTwo": "タマネギ",
+    "vegetablesThree": "にんじん",
+    "vegetablesFour": "ブロッコリー",
+    "vegetablesFive": "じゃがいも",
 
-    "bakeryTitle": "Bakery & Dairy",
+    "bakeryTitle": "パン屋と乳製品",
 
-    "bakeryOne": "Milk",
-    "bakeryTwo": "Butter",
-    "bakeryThree": "Bread",
-    "bakeryFour": "Ice Cream",
+    "bakeryOne": "牛乳",
+    "bakeryTwo": "バター",
+    "bakeryThree": "パン",
+    "bakeryFour": "アイスクリーム",
 
-    "eggsTitle": "Eggs & Meat",
+    "eggsTitle": "卵と肉",
 
-        "eggsOne": "Egg",
-        "eggsTwo": "Beef",
-        "eggsThree": "Fish",
-        "eggsFour": "Shrimp"
+        "eggsOne": "卵",
+        "eggsTwo": "牛肉",
+        "eggsThree": "魚",
+        "eggsFour": "エビ"
 
 }
 

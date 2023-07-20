@@ -66,7 +66,7 @@ class Home extends StatelessWidget {
                             // style: ButtonStyle(
                             //
                             // ),
-                            child: Text('Let\'s Learn ESL',
+                            child: Text('Let\'s study English',
                               style: TextStyle(
                                 fontFamily: 'IrishGrover',
                                 color: Colors.white,
@@ -98,7 +98,7 @@ class Home extends StatelessWidget {
                             // style: ButtonStyle(
                             //
                             // ),
-                            child: Text('Help',
+                            child: Text('Guide',
                               style: TextStyle(
                                 fontFamily: 'IrishGrover',
                                 color: Colors.white,
