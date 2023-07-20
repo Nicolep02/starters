@@ -13,11 +13,12 @@ class Medical extends StatefulWidget{
   State<Medical> createState() => _MedicalState();
 }
 
-
 //need to create stless class to allow for hot reload
 class _MedicalState extends State<Medical> {
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Medical Lessons',
@@ -30,6 +31,8 @@ class _MedicalState extends State<Medical> {
         centerTitle: true,
         backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
       ),
+
+
       body: Container(
         alignment: AlignmentDirectional.center,
         decoration: BoxDecoration(

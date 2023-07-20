@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import '../styles/colors.dart';
 import '../medical_pages/med_main.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import '../styles/colors.dart';
+import '../styles/spacing.dart';
+import '../widgets/bottom_nav_2.dart';
 
 class Appt extends StatefulWidget {
   const Appt({Key? key}) : super(key: key);
@@ -9,37 +13,36 @@ class Appt extends StatefulWidget {
   State<Appt> createState() => _ApptState();
 }
 
-
-//need to create stless class to allow for hot reload
 class _ApptState extends State<Appt> {
   @override
   Widget build(BuildContext context) {
+    double screen_limit = MediaQuery.of(context).size.width*0.74;
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: nightSky,
-        title: const Text(
-          "Making a Doctor's Appointment",
-          textAlign: TextAlign.start,
+        title: Text(AppLocalizations.of(context)!.makeAnAppointmentTitle,
+          style: TextStyle(
+              fontFamily: 'Inter'
+          ),
         ),
         centerTitle: true,
       ),
 
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          //crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                //SizedBox(width: 30),
-
+                SizedBox(width: 20),
                 Column(
                   children: [
-                    SizedBox(height: 50),
+                    SizedBox(height: 30),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -48,10 +51,14 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('I would like to make an appointment.',
+                          Container(
+                            width: screen_limit,
+                          padding:EdgeInsets.fromLTRB(0, 8, 0, 8),
+                          child: Text('I would like to make an appointment.',
                             style: TextStyle(fontSize: 20),), // <-- Text
+                    ),
                           SizedBox(
-                              width: 5, height: 70
+                              width: 10, height: 70
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -60,19 +67,23 @@ class _ApptState extends State<Appt> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: lang_spacing,),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         primary: Colors.grey,
                       ),
                       child: Row(
-                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('Native',
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child:
+                              Text(AppLocalizations.of(context)!.makeAnAppointmentOne,
+                                style: TextStyle(fontSize: 20),), // <-- Text
+                          ),
                           SizedBox(
-                              width: 200, height: 70
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -86,12 +97,13 @@ class _ApptState extends State<Appt> {
               ],),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                //SizedBox(width: 30),
+                SizedBox(width: 20),
 
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -102,10 +114,14 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('I am a new patient.',
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child:Text('I am a new patient.',
                             style: TextStyle(fontSize: 20),), // <-- Text
+                          ),
                           SizedBox(
-                              width: 150, height: 70
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -114,7 +130,7 @@ class _ApptState extends State<Appt> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -123,10 +139,14 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('Native',
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                          width: screen_limit,
+                          padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                          child: Text(AppLocalizations.of(context)!.makeAnAppointmentTwo,
+                            style: TextStyle(fontSize: 20),),
+                        ),// <-- Text
                           SizedBox(
-                              width: 200, height: 70
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -140,12 +160,12 @@ class _ApptState extends State<Appt> {
               ],),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                //SizedBox(width: 30),
-
+                SizedBox(width: 20),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -156,10 +176,15 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child:
                           Text('My name and Birth Date is:',
                             style: TextStyle(fontSize: 20),), // <-- Text
+                    ),
                           SizedBox(
-                              width: 90, height: 70
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -168,7 +193,7 @@ class _ApptState extends State<Appt> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -177,10 +202,14 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('Native',
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.makeAnAppointmentThree,
+                              style: TextStyle(fontSize: 20),),
+                          ),
                           SizedBox(
-                              width: 200, height: 70
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -194,12 +223,13 @@ class _ApptState extends State<Appt> {
               ],),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                //SizedBox(width: 30),
+                SizedBox(width: 20),
 
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 30),
                     ElevatedButton(
@@ -210,7 +240,7 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('I would like to reschedule my appointment',
+                          Text('I am available/unavailable on:',
                             style: TextStyle(fontSize: 18),), // <-- Text
                           SizedBox(
                               //width: 0,
@@ -223,7 +253,7 @@ class _ApptState extends State<Appt> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: lang_spacing),
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
@@ -232,10 +262,14 @@ class _ApptState extends State<Appt> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text('Native',
-                            style: TextStyle(fontSize: 20),), // <-- Text
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.makeAnAppointmentFour,
+                              style: TextStyle(fontSize: 20),),
+                          ),
                           SizedBox(
-                              width: 200, height: 70
+                              width: 10, height: 50
                           ),
                           Icon( // <-- Icon
                             Icons.volume_up,
@@ -248,9 +282,70 @@ class _ApptState extends State<Appt> {
                 ),
               ],),
 
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                //SizedBox(width: 30),
+                SizedBox(width: 20),
 
-
-
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 30),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFF4F939C),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text("I would like to reschedule my appointment",
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
+                          SizedBox(
+                              width: 10, height: 50
+                          ),
+                          Icon( // <-- Icon
+                            Icons.volume_up,
+                            size: 25.0,
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: lang_spacing),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.grey,
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: screen_limit,
+                            padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                            child: Text(AppLocalizations.of(context)!.makeAnAppointmentFive,
+                              style: TextStyle(fontSize: 20),),
+                          ), // <-- Text
+                          SizedBox(
+                              width: 10, height: 50
+                          ),
+                          Icon( // <-- Icon
+                            Icons.volume_up,
+                            size: 25.0,
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 50),
+                  ],
+                ),
+              ],),
               ],),
       ),
     );
