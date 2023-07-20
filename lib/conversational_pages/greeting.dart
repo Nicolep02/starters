@@ -15,33 +15,15 @@ class _GreetingState extends State<Greeting> {
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*0.74;
-    double appbar_limit = MediaQuery.of(context).size.width*0.7;
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: navy,
-        toolbarHeight: appbar_height,
-        title: Container(
-          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
-          width: appbar_limit,
-          child: Column(
-            children: [
-              Text(AppLocalizations.of(context)!.greetingTitle,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height:5),
-              Text('Greeting',
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),),
-            ],
-          ),
+        backgroundColor: nightSky,
+        title: Text(AppLocalizations.of(context)!.greetingTitle,
+          style: TextStyle(
+              fontFamily: 'Inter'
+            ),
         ),
         centerTitle: true,
       ),
