@@ -131,7 +131,7 @@
     "topicsFour": "いつからここに住んでいるのですか？",
     "topicsFive": "自由時間には何をしていますか？",
 
-    "groceryTitle" :"Groceries"
+    "groceryTitle" :"Groceries",
 
     "fruitsTitle": "Fruits",
         "fruitsOne": "Apple",
@@ -160,8 +160,7 @@
         "eggsOne": "Egg",
         "eggsTwo": "Beef",
         "eggsThree": "Fish",
-        "eggsFour": "Shrimp",
-
+        "eggsFour": "Shrimp"
 
 }
 
