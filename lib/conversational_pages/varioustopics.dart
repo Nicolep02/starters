@@ -15,17 +15,35 @@ class _TopicsState extends State<Topics> {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.74;
+    double appbar_limit = MediaQuery.of(context).size.width*0.7;
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: nightSky,
-        title: Text(AppLocalizations.of(context)!.greetingTitle,
-          style: TextStyle(
-              fontFamily: 'Inter'
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          toolbarHeight: appbar_height,
+          title: Container(
+            padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
+            width: appbar_limit,
+            child: Column(
+              children: [
+                Text(AppLocalizations.of(context)!.topicsTitle,
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height:5),
+                Text('Topics',
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),),
+              ],
+            ),
           ),
+          backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
         ),
-        centerTitle: true,
-      ),
 
       body: SingleChildScrollView(
         child: Column(
