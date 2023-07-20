@@ -308,6 +308,11 @@
   "@conversationalTitle": {
     "description": "Conversational category title"
   },
+
+  "selectConverTopic": "Select a Conversation Topic:",
+  "@selectConverTopic": {
+    "description": "Conversational category"
+  },
   "greetingTitle": "Greeting",
   "@greetingTitle": {
     "description": "Greeting page title."
