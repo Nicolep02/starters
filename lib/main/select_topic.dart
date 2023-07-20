@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:starters/grocery_pages/grocery_main.dart';
 import 'package:starters/medical_pages/med_main.dart';
-import '../home/home.dart';
-import '../home/help.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
+import '../widgets/bottom_nav_2.dart';
+import '../styles/spacing.dart';
+import '../styles/colors.dart';
 import '../conversational_pages/converMain.dart';
 
 class Topics extends StatelessWidget {
@@ -13,9 +13,10 @@ class Topics extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          toolbarHeight: appbar_height,
         centerTitle: true,
         // title: Text('Let's Start Learning ESL!),
-        backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
+        backgroundColor: navy,
         // leading: IconButton(
         //   onPressed: ()=>Navigator.of(context).pop(),
         //   icon: Image.asset('assets/backArrow.png'),
@@ -107,42 +108,7 @@ class Topics extends StatelessWidget {
     ),
 ],
     ),
-      bottomNavigationBar: Container(
-        color: Color.fromRGBO(22, 34, 61, 1.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
-          child: GNav(
-            backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
-            color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
-            padding: EdgeInsets.all(25),
-            gap: 8,
-            tabs:[
-              GButton(
-                icon: Icons.home,
-                text: 'Home',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Home()));
-                },
-              ),
-              GButton(
-                icon: Icons.question_mark,
-                text: 'Help',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Help()));
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: NavBar2(),
     );
 
   }

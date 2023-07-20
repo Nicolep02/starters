@@ -1,5 +1,3 @@
-import 'package:starters/styles/colors.dart';
-
 import 'greeting.dart';
 import 'introduction.dart';
 import 'likesdislikes.dart';
@@ -7,6 +5,7 @@ import 'varioustopics.dart';
 import 'package:flutter/material.dart';
 import '../widgets/bottom_nav_2.dart';
 import '../styles/spacing.dart';
+import '../styles/colors.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Conver extends StatefulWidget{
@@ -48,7 +47,7 @@ class _ConverState extends State<Conver> {
             ],
           ),
         ),
-        backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
+        backgroundColor: navy,
       ),
       body: Container(
         width: screen_limit,
