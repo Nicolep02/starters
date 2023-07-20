@@ -15,13 +15,32 @@ class _IntroductionState extends State<Introduction> {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.74;
+    double appbar_limit = MediaQuery.of(context).size.width*0.7;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: nightSky,
-        title: Text(AppLocalizations.of(context)!.introductionTitle,
-          style: TextStyle(
-              fontFamily: 'Inter'
+        backgroundColor: navy,
+        toolbarHeight: appbar_height,
+        title: Container(
+          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
+          width: appbar_limit,
+          child: Column(
+            children: [
+              Text(AppLocalizations.of(context)!.introductionTitle,
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height:5),
+              Text('Introduction',
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),),
+            ],
           ),
         ),
         centerTitle: true,

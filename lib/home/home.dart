@@ -43,6 +43,7 @@ class Home extends StatelessWidget {
                     height: 157.6,
                   ),
                 ),
+                SizedBox(height: 20),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -68,7 +69,7 @@ class Home extends StatelessWidget {
                             // ),
                             child: Text('Let\'s study English',
                               style: TextStyle(
-                                fontFamily: 'IrishGrover',
+                                fontFamily: 'Inter',
                                 color: Colors.white,
                                 fontSize: 24,
                               ),
@@ -78,6 +79,7 @@ class Home extends StatelessWidget {
 
                       ],
                     ),
+                    SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -100,7 +102,7 @@ class Home extends StatelessWidget {
                             // ),
                             child: Text('Guide',
                               style: TextStyle(
-                                fontFamily: 'IrishGrover',
+                                fontFamily: 'Inter',
                                 color: Colors.white,
                                 fontSize: 24,
                               ),
@@ -109,6 +111,7 @@ class Home extends StatelessWidget {
                         ),
                       ],
                     ),
+                    SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -130,7 +133,7 @@ class Home extends StatelessWidget {
                             // ),
                             child: Text('Resources',
                               style: TextStyle(
-                                fontFamily: 'IrishGrover',
+                                fontFamily: 'Inter',
                                 color: Colors.white,
                                 fontSize: 24,
                               ),
