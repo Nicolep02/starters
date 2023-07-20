@@ -1,10 +1,11 @@
 {
-  "@@locale": "ko",
+  "@@locale": "zh", 
 
-  "appName": "App Name",
-  "startButton": "Let's Learn ESL",
-  "helpButton": "Help",
-  "resourcesButton": "",
+
+  "appName": "Hello, Starters!",
+  "startButton": "Let's Study English",
+  "GuideButton": "Guide",
+  "resourcesButton": "Resources",
   "homeButton": "Home",
 
 
@@ -30,7 +31,7 @@
   "workTitle": "Work",
   "partTimeJobTitle": "Part-time Job",
 
-  "partTimeJobOne": "今夜はアルバイトです",
+  "partTimeJobOne": "I have a part-time job this evening.",
   "partTimeJobTwo": "I work in a cafe.",
   "partTimeJobThree": "How is the pay?",
   "partTimeJobFour": "The pay is alright. I get $17 per hour",
@@ -39,9 +40,9 @@
   "talkingAboutYourJobTitle": "Talking about your job",
 
   "talkingAboutYourJobOne": "What's your role in the company?",
-  "talkingAboutYourJobTwo": "I'm the head of design.",
-  "talkingAboutYourJobThree": "What do you have to do?",
-  "talkingAboutYourJobFour": "I manage artists and graphic designers.",
+  "talkingAboutYourJobTwo": "I'm the head of design",
+  "talkingAboutYourJobThree": "What do you do",
+  "talkingAboutYourJobFour": "I manage artists and graphic designers",
   "talkingAboutYourJobFive": "Do you like your job?",
 
   "findingAJobTitle": "Finding a job",
@@ -50,7 +51,7 @@
   "findingAJobTwo": "I want to get a job in the technological field",
   "findingAJobThree": "Have you prepared a resume?",
   "findingAJobFour": "Where are you looking for a job?",
-  "findingAJobFive": "I sent applications to a dozen companies.",
+  "findingAJobFive": "I sent applications to a dozen companies",
 
   "jobInterviewTitle": "Job Interview",
 
@@ -100,9 +101,9 @@
 
 
   "conversationalTitle": "Conversational",
-  "greetingTitle": "인사말",
+  "greetingTitle": "Greeting",
 
-  "greetingOne": "안녕하세요!",
+  "greetingOne": "Hello!",
   "greetingTwo": "Nice to meet you.",
   "greetingThree": "Good Morning/ Good Evening",
   "greetingFour": "How are you?",
@@ -137,32 +138,31 @@
   "groceriesTitle": "Groceries",
   "talkingToACashierTitle": "Talking to a Cashier",
 
-  "talkingToACashierOne": "   to     be     added     ",
-  "talkingToACashierTwo": "",
-  "talkingToACashierThree": "",
-  "talkingToACashierFour": "",
-  "talkingToACashierFive": "",
-
   "vegetablesTitle": "Vegetables",
 
-  "vegetablesOne": "NA",
-  "vegetablesTwo": "NA",
-  "vegetablesThree": "NA",
-  "vegetablesFour": "NA",
-  "vegetablesFive": "NA",
+  "vegetablesOne": "tomato",
+  "vegetablesTwo": "onion",
+  "vegetablesThree": "carrot",
+  "vegetablesFour": "broccoli",
+  "vegetablesFive": "potato",
 
   "fruitsTitle": "Fruits",
-  "fruitsOne": "NA",
-  "fruitsTwo": "NA",
-  "fruitsThree": "NA",
-  "fruitsFour": "NA",
-  "fruitsFive": "NA",
+  "fruitsOne": "apple",
+  "fruitsTwo": "banana",
+  "fruitsThree": "orange",
+  "fruitsFour": "lemon",
+  "fruitsFive": "strawberry",
 
-  "askingForExpiredItemsTitle": "Asking for Expired Items",
+  "bakeryAndDairyTitle": "Bakery and Dairy",
+  "bakeryAndDairyOne": "Milk",
+  "bakeryAndDairyTwo": "Butter",
+  "bakeryAndDairyThree": "Bread",
+  "bakeryAndDairyFour": "Ice Cream",
 
-  "askingForExpiredItemsOne": "NA",
-  "askingForExpiredItemsTwo": "NA",
-  "askingForExpiredItemsThree": "NA",
-  "askingForExpiredItemsFour": "NA",
-  "askingForExpiredItemsFive": "NA"
+  "eggsAndMeatTitle": "Eggs and Meat",
+  "eggsAndMeatOne": "Eggs",
+  "eggsAndMeatTwo": "Beef",
+  "eggsAndMeatThree": "Fish",
+  "eggsAndMeatFour": "Shrimp"
+
 }
