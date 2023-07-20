@@ -1,4 +1,5 @@
 //general
+double appbar_height = 103;
 double title_subtitle_spacing = 50;
 
 

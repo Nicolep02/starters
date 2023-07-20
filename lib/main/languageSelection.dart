@@ -1,11 +1,11 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import '../main.dart';
 import 'select_topic.dart';
 import '../styles/spacing.dart';
 import '../widgets/bottom_nav_1.dart';
 import '../styles/colors.dart';
+// import '../widgets/appbar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Language extends StatelessWidget {
@@ -16,14 +16,15 @@ class Language extends StatelessWidget {
     double screen_limit = MediaQuery.of(context).size.width*1.0;
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 103,
-        backgroundColor: nightSky,
+        toolbarHeight: appbar_height,
+        backgroundColor: navy,
         title: Text(AppLocalizations.of(context)!.chooseLangTitle,
           style: TextStyle(
             fontFamily: 'Inter',
             fontSize: 25,
             fontWeight: FontWeight.bold,
-          ),),
+          ),
+        ),
         centerTitle: true,
       ),
       body:SingleChildScrollView(
