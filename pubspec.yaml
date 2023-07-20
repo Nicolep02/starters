@@ -74,28 +74,19 @@ flutter:
   assets:
     - assets/backArrow.png
     - assets/bunni.png
-    - assets/chinese.png
     - assets/cold.png
     - assets/conversational.jpg
     - assets/conversationBunni.png
     - assets/emergencyCall.png
     - assets/findingJob.jpeg
-    - assets/french.png
-    - assets/german.png
     - assets/groceries.jpeg
     - assets/homeBunni.png
-    - assets/italian.png
-    - assets/japanese.png
     - assets/jobInterview.jpeg
-    - assets/korean.png
     - assets/medical.jpeg
     - assets/medicine.png
     - assets/partTimeJob.jpeg
     - assets/pointer.png
-    - assets/portuguese.png
-    - assets/spanish.png
     - assets/talkingAboutWork.jpeg
-    - assets/vietnamese.png
     - assets/work.jpeg
     - assets/conver.png
     - assets/groceries_new.png
@@ -151,6 +142,10 @@ flutter:
     - assets/pt.png
     - assets/vi.png
     - assets/zh.png
+    - assets/greet.png
+    - assets/intro.png
+    - assets/likedislike.png
+    - assets/topic.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

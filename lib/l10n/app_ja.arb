@@ -101,6 +101,7 @@
 
 
     "conversationalTitle": "会話型",
+    "selectConverTopic": "会話のトピックを選ぶ：",
     "greetingTitle": "挨拶",
 
     "greetingOne": "こんにちは!",

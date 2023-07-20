@@ -1,3 +1,166 @@
 {
-  "@@locale": "es"
+    "@@locale": "es",
+
+    "appName": "Hola, Starters,",
+    "startButton": "Empecemos",
+    "guideButton": "guía",
+    "resourcesButton": "recursos",
+    "homeButton": "página de inicio",
+
+
+    "chooseLangTitle": "elige el título del idioma",
+    "selectYourLang": "elige tu idioma",
+    "japanese": "japonés",
+    "korean": "coreano",
+    "chinese": "chino",
+    "spanish": "español",
+    "vietnamese": "vietnamita",
+    "french": "francés",
+    "italian": "italiano",
+    "german": "alemán",
+    "portuguese": "portugués",
+    "english": "inglés",
+    "burmese": "birmano",
+
+
+
+    "selectTopicTitle": "por favor seleccione el tema",
+
+
+    "workTitle": "trabajar",
+    "partTimeJobTitle": "el trabajo de medio tiempo",
+
+    "partTimeJobOne": "Tengo un trabajo de medio tiempo esta noche.",
+    "partTimeJobTwo": "trabajo en un cafe。",
+    "partTimeJobThree": "como es el pago？",
+    "partTimeJobFour": "la paga esta bien. gano $17 por hora。",
+    "partTimeJobFive": "Recibo mi cheque de pago semanalmente.",
+
+    "talkingAboutYourJobTitle": "hablando de tu trabajo",
+
+    "talkingAboutYourJobOne": "cual es el rol en la empresa？",
+    "talkingAboutYourJobTwo": "Soy la/el jefa de diseño。",
+    "talkingAboutYourJobThree": "de qué trabajas",
+    "talkingAboutYourJobFour": "Manejo artistas y diseñadoras gráficas.。",
+    "talkingAboutYourJobFive": "Te gusta tu trabajo？",
+
+    "findingAJobTitle": "buscando trabajo",
+
+    "findingAJobOne": "Estoy buscando un nuevo trabajo.",
+    "findingAJobTwo": "Quiero conseguir un trabajo en el campo tecnológico.",
+    "findingAJobThree": "¿Has preparado un currículum？",
+    "findingAJobFour": "¿Dónde estás buscando trabajo？",
+    "findingAJobFive": "Envié solicitudes a una docena de empresas.",
+
+    "jobInterviewTitle": "Entrevista de trabajo",
+
+    "jobInterviewOne": "Cuéntame un poco sobre el puesto.",
+    "jobInterviewTwo": "Este trabajo es un trabajo de nivel de entrada.",
+    "jobInterviewThree": "¿Qué tipo de calificaciones se requieren？",
+    "jobInterviewFour": "Se requiere al menos un título universitario de cuatro años.",
+    "jobInterviewFive": "Qué buscas en un trabajo?",
+
+
+
+    "medicalTitle": "médico",
+    "nineOneOneEmergencyTitle": "Emergencia 911",
+
+    "nineOneOneEmergencyOne": "Hola, cual es tu emergencia?",
+    "nineOneOneEmergencyTwo": "Ejemplo: estoy teniendo un ataque al corazón",
+    "nineOneOneEmergencyThree": "¿Cómo te llamas?",
+    "nineOneOneEmergencyFour": "Mi nombre es: __________",
+    "nineOneOneEmergencyFive": "¿Cuál es su dirección?",
+    "nineOneOneEmergencySix": "Mi dirección es: __________",
+    "nineOneOneEmergencySeven": "Bien, ¡la ayuda está en camino！",
+
+    "symptomsOfIllnessTitle": "Síntomas de enfermedad",
+
+    "symptomsOfIllnessOne": "Headache",
+    "symptomsOfIllnessTwo": "Fiebre",
+    "symptomsOfIllnessThree": "dolor de garganta",
+    "symptomsOfIllnessFour": "tos",
+    "symptomsOfIllnessFive": "Dolor de estómago",
+
+    "makeAnAppointmentTitle": "Haga una cita",
+
+    "makeAnAppointmentOne": "me gustaria hacer una cita",
+    "makeAnAppointmentTwo": "Soy una/un nueva paciente",
+    "makeAnAppointmentThree": "Mi nombre y fecha de nacimiento es:_______",
+    "makeAnAppointmentFour": "Estoy disponible/no disponible en:______",
+    "makeAnAppointmentFive": "quisiera reprogramar mi cita",
+
+    "commonDiseaseNamesTitle": "Nombres comunes de enfermedades",
+
+    "commonDiseaseNamesOne": "infarto de miocardio",
+    "commonDiseaseNamesTwo": "ataque",
+    "commonDiseaseNamesThree": "diabetes",
+    "commonDiseaseNamesFour": "alergia",
+    "commonDiseaseNamesFive": "mareado",
+
+
+
+    "conversationalTitle": "conversacional",
+    "greetingTitle": "saludos",
+
+    "greetingOne": "Hola!",
+    "greetingTwo": "mucho gusto",
+    "greetingThree": "Buenos días/ buenas tardes",
+    "greetingFour": "¿Cómo estás?",
+    "greetingFive": "Hasta luego.",
+
+    "introductionTitle": "introducción",
+
+    "introductionOne": "Mi nombre es _________",
+    "introductionTwo": "El/Ella/Tu nombre es _______",
+    "introductionThree": "¿Cómo te llamas?",
+    "introductionFour": "no la/lo/las conozco",
+    "introductionFive": "Estas personas son mis amigos / compañeros / compañeros de trabajo.",
+
+    "likesAndDislikesTitle": "gustos y disgustos",
+
+    "likesAndDislikesOne": "Me gustan las manzanas.",
+    "likesAndDislikesTwo": "no me gusta correr.",
+    "likesAndDislikesThree": "El surf es divertido.",
+    "likesAndDislikesFour": "Prefiero la comida de ese restaurante.",
+    "likesAndDislikesFive": "¿Qué te gusta más?",
+
+    "topicsTitle": "temas",
+
+    "topicsOne": "¿Cuál es tu música favorita?",
+    "topicsTwo": "¿Prefieres viajar en autobús o conducir un automóvil?",
+    "topicsThree": "¿Dónde trabajas?",
+    "topicsFour": "¿Cuánto tiempo hace que vives aquí?",
+    "topicsFive": "¿Qué haces durante tu tiempo libre?",
+
+    "groceryTitle" :"comestibles",
+
+    "fruitsTitle": "frutas",
+    "fruitsOne": "manzana",
+    "fruitsTwo": "banana",
+    "fruitsThree": "naranja",
+    "fruitsFour": "limón",
+    "fruitsFive": "fresa",
+
+    "vegetablesTitle": "verduras",
+
+    "vegetablesOne": "tomate",
+    "vegetablesTwo": "cebolla",
+    "vegetablesThree": "zanahoria",
+    "vegetablesFour": "brócoli",
+    "vegetablesFive": "papa",
+
+    "bakeryTitle": "Panadería y Lácteos",
+
+    "bakeryOne": "Leche",
+    "bakeryTwo": "manteca",
+    "bakeryThree": "pan",
+    "bakeryFour": "helado",
+
+    "eggsTitle": "Huevos y Carne",
+
+        "eggsOne": "huevo",
+        "eggsTwo": "carne de res",
+        "eggsThree": "pez",
+        "eggsFour": "camarón"
+
 }

@@ -92,8 +92,7 @@ class _GreetingState extends State<Greeting> {
                         ],
                       ),
                     ),
-                  ],
-                ),
+                  ],),
               ],),
 
             Row(
