@@ -4,3 +4,4 @@ import 'package:flutter/material.dart';
 const nightSky = Color(0xFF060A12);
 const turquoise = Color(0xFF4F939C);
 const gray = Color(0xFFC2C2C2);
+const navy = Color(0xFF14213D);
