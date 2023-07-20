@@ -20,7 +20,7 @@ class _FindJobState extends State<FindJob> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: nightSky,
-          title: Text(AppLocalizations.of(context)!.greetingTitle,
+          title: Text(AppLocalizations.of(context)!.findingAJobTitle,
             style: const TextStyle(
                 fontFamily: 'Inter'
             ),
