@@ -63,39 +63,6 @@ class Topics extends StatelessWidget {
                 ),
                 ),
 
-
-
-        //   Row(
-        //   mainAxisAlignment: MainAxisAlignment.start,
-        //     crossAxisAlignment: CrossAxisAlignment.end,
-        //     children: [
-        //   const Text('Select the category you would like to learn:',
-        //     textAlign: TextAlign.center,
-        //     style: TextStyle(
-        //       fontFamily: 'Inter',
-        //       fontSize: 23,
-        //       fontWeight: FontWeight.bold,
-        //     ),
-        //   ),
-        // ),
-        // SizedBox(height: lang_spacing),
-        // Row(
-        //   mainAxisSize: MainAxisSize.min,
-        //   children: [
-        //     Container(
-        //       //width: screen_limit,
-        //       padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
-        //       child: Text(AppLocalizations.of(context)!.selectTopicText,
-        //         style: TextStyle(fontFamily: 'Inter',
-        //           fontSize: 23,
-        //           fontWeight: FontWeight.bold,),),
-        //     ), // <-- Text
-        //   ],
-        // ),
-
-
-
-        //SizedBox(height: 15),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
