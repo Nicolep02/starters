@@ -139,32 +139,31 @@
       "groceriesTitle": "Groceries",
       "talkingToACashierTitle": "Talking to a Cashier",
 
-      "talkingToACashierOne": "   to     be     added     ",
-      "talkingToACashierTwo": "",
-      "talkingToACashierThree": "",
-      "talkingToACashierFour": "",
-      "talkingToACashierFive": "",
-
       "vegetablesTitle": "Vegetables",
 
-      "vegetablesOne": "NA",
-      "vegetablesTwo": "NA",
-      "vegetablesThree": "NA",
-      "vegetablesFour": "NA",
-      "vegetablesFive": "NA",
+      "vegetablesOne": "tomato",
+      "vegetablesTwo": "onion",
+      "vegetablesThree": "carrot",
+      "vegetablesFour": "broccoli",
+      "vegetablesFive": "potato",
 
       "fruitsTitle": "Fruits",
-      "fruitsOne": "NA",
-      "fruitsTwo": "NA",
-      "fruitsThree": "NA",
-      "fruitsFour": "NA",
-      "fruitsFive": "NA",
+      "fruitsOne": "apple",
+      "fruitsTwo": "banana",
+      "fruitsThree": "orange",
+      "fruitsFour": "lemon",
+      "fruitsFive": "strawberry",
 
-      "askingForExpiredItemsTitle": "Asking for Expired Items",
-    
-      "askingForExpiredItemsOne": "NA",
-      "askingForExpiredItemsTwo": "NA",
-      "askingForExpiredItemsThree": "NA",
-      "askingForExpiredItemsFour": "NA",
-      "askingForExpiredItemsFive": "NA"
+      "bakeryAndDairyTitle": "Bakery and Dairy",
+      "bakeryAndDairyOne": "Milk",
+      "bakeryAndDairyTwo": "Butter",
+      "bakeryAndDairyThree": "Bread",
+      "bakeryAndDairyFour": "Ice Cream",
+
+      "eggsAndMeatTitle": "Eggs and Meat",
+      "eggsAndMeatOne": "Eggs",
+      "eggsAndMeatTwo": "Beef",
+      "eggsAndMeatThree": "Fish",
+      "eggsAndMeatFour": "Shrimp"
+
 }
