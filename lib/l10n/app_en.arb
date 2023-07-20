@@ -1,15 +1,19 @@
 {
-  "appName": "Hello, Starters!",
+  "appName": "Hello,",
   "@appName": {
     "description": "App Name"
   },
-  "startButton": "Let's Learn ESL",
+  "startButton": "Let's Learn English",
   "@startButton": {
     "description": "Let's Learn ESL button"
   },
-  "helpButton": "Help",
-  "@helpButton": {
-    "description": "Help button"
+  "guideButton": "Guide",
+  "@guideButton": {
+    "description": "Guide button"
+  },
+  "resourcesButton": "Resources",
+  "@resourcesButton": {
+    "description": "Resources button"
   },
   "homeButton": "Home",
   "@homeButton": {
@@ -100,7 +104,7 @@
   "@partTimeJobThree": {
     "description": "The third phrase under Part Time Job"
   },
-  "partTimeJobFour": "The pay is alright. I get $17 per hour",
+  "partTimeJobFour": "The pay is alright. I get $17 per hour.",
   "@partTimeJobFour": {
     "description": "The fourth phrase under Part Time Job"
   },
@@ -117,15 +121,15 @@
   "@talkingAboutYourJobOne": {
     "description": "The first phrase under Talking about your job"
   },
-  "talkingAboutYourJobTwo": "I'm the head of design",
+  "talkingAboutYourJobTwo": "I'm the head of design.",
   "@talkingAboutYourJobTwo": {
     "description": "The second phrase under Talking about your job"
   },
-  "talkingAboutYourJobThree": "What do you do",
+  "talkingAboutYourJobThree": "What do you have to do?",
   "@talkingAboutYourJobThree": {
     "description": "The third phrase under Talking about your job"
   },
-  "talkingAboutYourJobFour": "I manage artists and graphic designers",
+  "talkingAboutYourJobFour": "I manage artists and graphic designers.",
   "@talkingAboutYourJobFour": {
     "description": "The fourth phrase under Talking about your job"
   },
@@ -142,7 +146,7 @@
   "@findingAJobOne": {
     "description": "The first phrase under Finding a job page"
   },
-  "findingAJobTwo": "I want to get a job in the technological field",
+  "findingAJobTwo": "I want to get a job in the technological field.",
   "@findingAJobTwo": {
     "description": "The second phrase under Finding a job page"
   },
@@ -154,7 +158,7 @@
   "@findingAJobFour": {
     "description": "The fourth phrase under Finding a job page"
   },
-  "findingAJobFive": "I sent applications to a dozen companies",
+  "findingAJobFive": "I sent applications to a dozen companies.",
   "@findingAJobFive": {
     "description": "The fifth phrase under Finding a job page"
   },

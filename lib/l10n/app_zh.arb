@@ -1,9 +1,10 @@
 {
   "@@locale": "zh",
 
-  "appName": "App Name",
-  "startButton": "Let's Learn ESL",
-  "helpButton": "Help",
+  "appName": "Hello, Starters!",
+  "startButton": "Let's Study English",
+  "GuideButton": "Guide",
+  "resourcesButton": "Resources",
   "homeButton": "Home",
 
 
@@ -38,9 +39,9 @@
   "talkingAboutYourJobTitle": "Talking about your job",
 
   "talkingAboutYourJobOne": "What's your role in the company?",
-  "talkingAboutYourJobTwo": "I'm the head of design",
-  "talkingAboutYourJobThree": "What do you do",
-  "talkingAboutYourJobFour": "I manage artists and graphic designers",
+  "talkingAboutYourJobTwo": "I'm the head of design.",
+  "talkingAboutYourJobThree": "What do you have to do?",
+  "talkingAboutYourJobFour": "I manage artists and graphic designers.",
   "talkingAboutYourJobFive": "Do you like your job?",
 
   "findingAJobTitle": "Finding a job",

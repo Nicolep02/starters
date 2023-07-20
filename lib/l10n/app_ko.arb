@@ -4,6 +4,7 @@
   "appName": "App Name",
   "startButton": "Let's Learn ESL",
   "helpButton": "Help",
+  "resourcesButton": "",
   "homeButton": "Home",
 
 
@@ -38,9 +39,9 @@
   "talkingAboutYourJobTitle": "Talking about your job",
 
   "talkingAboutYourJobOne": "What's your role in the company?",
-  "talkingAboutYourJobTwo": "I'm the head of design",
-  "talkingAboutYourJobThree": "What do you do",
-  "talkingAboutYourJobFour": "I manage artists and graphic designers",
+  "talkingAboutYourJobTwo": "I'm the head of design.",
+  "talkingAboutYourJobThree": "What do you have to do?",
+  "talkingAboutYourJobFour": "I manage artists and graphic designers.",
   "talkingAboutYourJobFive": "Do you like your job?",
 
   "findingAJobTitle": "Finding a job",
@@ -49,7 +50,7 @@
   "findingAJobTwo": "I want to get a job in the technological field",
   "findingAJobThree": "Have you prepared a resume?",
   "findingAJobFour": "Where are you looking for a job?",
-  "findingAJobFive": "I sent applications to a dozen companies",
+  "findingAJobFive": "I sent applications to a dozen companies.",
 
   "jobInterviewTitle": "Job Interview",
 
