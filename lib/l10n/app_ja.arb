@@ -131,39 +131,37 @@
     "topicsFour": "いつからここに住んでいるのですか？",
     "topicsFive": "自由時間には何をしていますか？",
 
+    "groceryTitle" :"Groceries",
 
-
-    "groceriesTitle": "Groceries",
-    "talkingToACashierTitle": "Talking to a Cashier",
-
-    "talkingToACashierOne": "   to     be     added     ",
-    "talkingToACashierTwo": "",
-    "talkingToACashierThree": "",
-    "talkingToACashierFour": "",
-    "talkingToACashierFive": "",
+    "fruitsTitle": "Fruits",
+        "fruitsOne": "Apple",
+        "fruitsTwo": "Banana",
+        "fruitsThree": "Orange",
+        "fruitsFour": "Lemon",
+        "fruitsFive": "Strawberry",
 
     "vegetablesTitle": "Vegetables",
 
-    "vegetablesOne": "NA",
-    "vegetablesTwo": "NA",
-    "vegetablesThree": "NA",
-    "vegetablesFour": "NA",
-    "vegetablesFive": "NA",
+    "vegetablesOne": "Tomato",
+    "vegetablesTwo": "Onion",
+    "vegetablesThree": "Carrot",
+    "vegetablesFour": "Broccoli",
+    "vegetablesFive": "Potato",
 
-    "fruitsTitle": "Fruits",
-    "fruitsOne": "NA",
-    "fruitsTwo": "NA",
-    "fruitsThree": "NA",
-    "fruitsFour": "NA",
-    "fruitsFive": "NA",
+    "bakeryTitle": "Bakery & Dairy",
 
-    "askingForExpiredItemsTitle": "Asking for Expired Items",
+    "bakeryOne": "Milk",
+    "bakeryTwo": "Butter",
+    "bakeryThree": "Bread",
+    "bakeryFour": "Ice Cream",
 
-    "askingForExpiredItemsOne": "NA",
-    "askingForExpiredItemsTwo": "NA",
-    "askingForExpiredItemsThree": "NA",
-    "askingForExpiredItemsFour": "NA",
-    "askingForExpiredItemsFive": "NA"
+    "eggsTitle": "Eggs & Meat",
+
+        "eggsOne": "Egg",
+        "eggsTwo": "Beef",
+        "eggsThree": "Fish",
+        "eggsFour": "Shrimp"
+
 }
 
 
