@@ -9,6 +9,14 @@ double flag_width = 90;
 double flag_height = 80;
 double flag_bottom_spacing = 40;
 
+//converMain page
+double container_width = 331;
+double container_height = 68;
+double icon_dimen = 68;
+double icon_text = 5;
+double text_arrow = 90;
+double categories = 30;
+
 //subtopic pages
 double lang_spacing = 8;
 
