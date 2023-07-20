@@ -1,11 +1,13 @@
+import 'package:starters/styles/colors.dart';
+
 import 'greeting.dart';
 import 'introduction.dart';
 import 'likesdislikes.dart';
 import 'varioustopics.dart';
 import 'package:flutter/material.dart';
-import '../home/home.dart';
-import '../home/help.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
+import '../widgets/bottom_nav_2.dart';
+import '../styles/spacing.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Conver extends StatefulWidget{
   const Conver({Key? key}) : super(key: key);
@@ -19,19 +21,37 @@ class Conver extends StatefulWidget{
 class _ConverState extends State<Conver> {
   @override
   Widget build(BuildContext context) {
+    double screen_limit = MediaQuery.of(context).size.width*1.0;
+    double appbar_limit = MediaQuery.of(context).size.width*0.7;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Conversational',
-          style: TextStyle(
-            fontFamily: 'Inter',
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
+        toolbarHeight: appbar_height,
+        title: Container(
+          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
+          width: appbar_limit,
+          child: Column(
+            children: [
+              Text(AppLocalizations.of(context)!.conversationalTitle,
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height:5),
+              Text('Conversational',
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),),
+            ],
           ),
         ),
-        centerTitle: true,
         backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
       ),
       body: Container(
+        width: screen_limit,
           alignment: AlignmentDirectional.center,
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -42,7 +62,7 @@ class _ConverState extends State<Conver> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Select a Conversation Topic: ',
+            Text(AppLocalizations.of(context)!.selectConverTopic,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Inter',
@@ -50,48 +70,212 @@ class _ConverState extends State<Conver> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 50),
-            SizedBox(
-              width: 360, height: 101.33,
-              child: IconButton(
-                icon: Image.asset('assets/greetingButton.png',
-                ),
-                onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
-                },
+            SizedBox(height:8),
+            Text('Select a Conversation Topic: ',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 23,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 40),
+            Container(
+              width: container_width, height: container_height,
+              padding: EdgeInsets.zero,
+              color: turquoise,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: icon_dimen, height: icon_dimen,
+                    padding: EdgeInsets.zero,
+                    child: IconButton(
+                      style: IconButton.styleFrom(
+                        backgroundColor: turquoise,
+                      ),
+                      icon: Image.asset('assets/greet.png',
+                      ),
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                      },
+                    ),
+                  ),
+                  SizedBox(width: icon_text),
+                  Text(AppLocalizations.of(context)!.greetingTitle,
+                    style: TextStyle(
+                    fontSize: 23,
+                    fontFamily: "Inter",
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),),
+                  SizedBox(width: icon_text),
+                  Text('[ Greeting ]',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: "Inter",
+                      color: Colors.white,
+                    ),),
+                  Expanded(
+                    child: SizedBox.shrink(),
+                  ),
+                  IconButton(
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                      },
+                      icon:Icon(Icons.keyboard_arrow_right,
+                        color: Colors.white,
+                      ),)
+                ],
               ),
             ),
             // ], ),
-            const SizedBox(height: 10),
+            SizedBox(height: categories),
             Container(
-              width: 360, height: 101.33,
-              child: IconButton(
-                icon: Image.asset('assets/introduction.png'),
-                onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
-                },
+              width: container_width, height: container_height,
+              padding: EdgeInsets.zero,
+              color: turquoise,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: icon_dimen, height: icon_dimen,
+                    padding: EdgeInsets.zero,
+                    child: IconButton(
+                      style: IconButton.styleFrom(
+                        backgroundColor: turquoise,
+                      ),
+                      icon: Image.asset('assets/intro.png',
+                      ),
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                      },
+                    ),
+                  ),
+                  SizedBox(width: icon_text),
+                  Text(AppLocalizations.of(context)!.introductionTitle,
+                    style: TextStyle(
+                      fontSize: 23,
+                      fontFamily: "Inter",
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),),
+                  SizedBox(width: icon_text),
+                  Text('[ Introduction ]',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: "Inter",
+                      color: Colors.white,
+                    ),),
+                  Expanded(
+                    child: SizedBox.shrink(),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
+                    },
+                    icon:Icon(Icons.keyboard_arrow_right,
+                      color: Colors.white,
+                    ),)
+                ],
               ),
             ),
             // ],),
-            const SizedBox(height: 10),
+            SizedBox(height: categories),
             Container(
-              width: 360, height: 101.33,
-              child: IconButton(
-                icon: Image.asset('assets/likesDislikes.png'),
-                onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                },
-              ),
+              width: container_width, height: container_height,
+              padding: EdgeInsets.zero,
+              color: turquoise,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: icon_dimen, height: icon_dimen,
+                    padding: EdgeInsets.zero,
+                    child: IconButton(
+                      style: IconButton.styleFrom(
+                        backgroundColor: turquoise,
+                      ),
+                      icon: Image.asset('assets/likedislike.png',
+                      ),
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                      },
+                    ),
+                  ),
+                  SizedBox(width: icon_text),
+                  Text(AppLocalizations.of(context)!.likesAndDislikesTitle,
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: "Inter",
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),),
+                  SizedBox(width: icon_text),
+                  Text('[ Like? ]',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: "Inter",
+                      color: Colors.white,
+                    ),),
+                  Expanded(
+                    child: SizedBox.shrink(),),
+                  IconButton(
+                    onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
+                    },
+                    icon:Icon(Icons.keyboard_arrow_right,
+                      color: Colors.white,
+                    ),),
+              ]),
             ),
             // ],),
-            SizedBox(height: 10),
+            SizedBox(height: categories),
             Container(
-              width: 360, height: 101.33,
-              child: IconButton(
-                icon: Image.asset('assets/topics.png'),
-                onPressed: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                },
+              width: container_width, height: container_height,
+              padding: EdgeInsets.zero,
+              color: turquoise,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: icon_dimen, height: icon_dimen,
+                    padding: EdgeInsets.zero,
+                    child: IconButton(
+                      style: IconButton.styleFrom(
+                        backgroundColor: turquoise,
+                      ),
+                      icon: Image.asset('assets/topic.png',
+                      ),
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                      },
+                    ),
+                  ),
+                  Text(AppLocalizations.of(context)!.topicsTitle,
+                    style: TextStyle(
+                      fontSize: 23,
+                      fontFamily: "Inter",
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),),
+                  SizedBox(width: icon_text),
+                  Text('[ Topics ]',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: "Inter",
+                      color: Colors.white,
+                    ),),
+                  Expanded(
+                    child: SizedBox.shrink(),),
+                  IconButton(
+                    onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                    },
+                    icon:Icon(Icons.keyboard_arrow_right,
+                      color: Colors.white,
+                    ),)
+                ],
               ),
             ),
             // ],),
@@ -99,42 +283,7 @@ class _ConverState extends State<Conver> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(
-        color: Color.fromRGBO(22, 34, 61, 1.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
-          child: GNav(
-            backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
-            color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
-            padding: EdgeInsets.all(25),
-            gap: 8,
-            tabs:[
-              GButton(
-                icon: Icons.home,
-                text: 'Home',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Home()));
-                },
-              ),
-              GButton(
-                icon: Icons.question_mark,
-                text: 'Help',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Help()));
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: NavBar2(),
     );
 
   }

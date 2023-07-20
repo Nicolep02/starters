@@ -142,6 +142,10 @@ flutter:
     - assets/pt.png
     - assets/vi.png
     - assets/zh.png
+    - assets/greet.png
+    - assets/intro.png
+    - assets/likedislike.png
+    - assets/topic.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

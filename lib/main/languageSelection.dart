@@ -14,18 +14,34 @@ class Language extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*1.0;
+    double appbar_limit = MediaQuery.of(context).size.width*0.7;
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: appbar_height,
         backgroundColor: navy,
-        title: Text(AppLocalizations.of(context)!.chooseLangTitle,
-          style: TextStyle(
-            fontFamily: 'Inter',
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
+        title: Container(
+          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
+          width: appbar_limit,
+          child: Column(
+            children: [
+              // Text('Choose Language',
+              //   style: TextStyle(
+              //     fontFamily: 'Inter',
+              //     fontSize: 22,
+              //     fontWeight: FontWeight.bold,
+              //   ),),
+              SizedBox(height:5),
+              Text(AppLocalizations.of(context)!.chooseLangTitle,
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
-        ),
-        centerTitle: true,
+        )
+
       ),
       body:SingleChildScrollView(
         child: Container(
@@ -33,6 +49,12 @@ class Language extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: title_subtitle_spacing),
+              // Text('Please Select your native Language',
+              //   style: TextStyle(
+              //     fontFamily: 'Inter',
+              //     fontSize: 22,
+              //     fontWeight: FontWeight.bold,
+              //   ),),
               Text(AppLocalizations.of(context)!.selectYourLang,
                 style: TextStyle(
                   fontFamily: 'Inter',
@@ -57,6 +79,7 @@ class Language extends StatelessWidget {
                             ),
                           ),
                           Text(AppLocalizations.of(context)!.japanese),
+                          // Text('Japanese'),
                         ],
                       ),
                   ),
@@ -73,6 +96,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.korean),
+                        // Text('Korean'),
                       ],
                     ),
                   ),
@@ -89,6 +113,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.chinese),
+                        // Text('Chinese'),
                       ],
                     ),
                   ),
@@ -111,6 +136,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.spanish),
+                        // Text('Spanish'),
                       ],
                     ),
                   ),
@@ -127,6 +153,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.vietnamese),
+                        // Text('Vietnamese'),
                       ],
                     ),
                   ),
@@ -143,6 +170,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.french),
+                        // Text('French'),
                       ],
                     ),
                   ),
@@ -165,6 +193,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.italian),
+                        // Text('Italian'),
                       ],
                     ),
                   ),
@@ -181,6 +210,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.german),
+                        // Text('German'),
                       ],
                     ),
                   ),
@@ -197,6 +227,7 @@ class Language extends StatelessWidget {
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.portuguese),
+                        // Text('Portuguese'),
                       ],
                     ),
                   ),
