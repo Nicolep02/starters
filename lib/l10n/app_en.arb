@@ -414,52 +414,28 @@
   "@groceriesTitle": {
     "description": "Groceries category title"
   },
-  "talkingToACashierTitle": "Talking to a Cashier",
-  "@talkingToACashierTitle": {
-    "description": "Talking to a cashier page title."
-  },
-  "talkingToACashierOne": "   to     be     added     ",
-  "@talkingToACashierOne": {
-    "description": "The first phrase under Talking to a cashier page"
-  },
-  "talkingToACashierTwo": "",
-  "@talkingToACashierTwo": {
-    "description": "The second phrase under Talking to a cashier page"
-  },
-  "talkingToACashierThree": "",
-  "@talkingToACashierThree": {
-    "description": "The third phrase under Talking to a cashier page"
-  },
-  "talkingToACashierFour": "",
-  "@talkingToACashierFour": {
-    "description": "The fourth phrase under Talking to a cashier page"
-  },
-  "talkingToACashierFive": "",
-  "@talkingToACashierFive": {
-    "description": "The fifth phrase under Talking to a cashier page"
-  },
 
   "vegetablesTitle": "Vegetables",
   "@vegetablesTitle": {
     "description": "Vegetables page title."
   },
-  "vegetablesOne": "NA",
+  "vegetablesOne": "Tomato",
   "@vegetablesOne": {
     "description": "The first phrase under Vegetables page"
   },
-  "vegetablesTwo": "NA",
+  "vegetablesTwo": "Onion",
   "@vegetablesTwo": {
     "description": "The second phrase under Vegetables page"
   },
-  "vegetablesThree": "NA",
+  "vegetablesThree": "Carrot",
   "@vegetablesThree": {
     "description": "The third phrase under Vegetables page"
   },
-  "vegetablesFour": "NA",
+  "vegetablesFour": "Broccoli",
   "@vegetablesFour": {
     "description": "The fourth phrase under Vegetables page"
   },
-  "vegetablesFive": "NA",
+  "vegetablesFive": "Potato",
   "@vegetablesFive": {
     "description": "The fifth phrase under Vegetables page"
   },
@@ -468,50 +444,67 @@
   "@fruitsTitle": {
     "description": "Fruits page title."
   },
-  "fruitsOne": "NA",
+  "fruitsOne": "Apple",
   "@fruitsOne": {
     "description": "The first phrase under Fruits page"
   },
-  "fruitsTwo": "NA",
+  "fruitsTwo": "Banana",
   "@fruitsTwo": {
     "description": "The second phrase under Fruits page"
   },
-  "fruitsThree": "NA",
+  "fruitsThree": "Orange",
   "@fruitsThree": {
     "description": "The third phrase under Fruits page"
   },
-  "fruitsFour": "NA",
+  "fruitsFour": "Lemon",
   "@fruitsFour": {
     "description": "The fourth phrase under Fruits page"
   },
-  "fruitsFive": "NA",
+  "fruitsFive": "Strawberry",
   "@fruitsFive": {
     "description": "The fifth phrase under Fruits page"
   },
 
-  "askingForExpiredItemsTitle": "Asking for Expired Items",
-  "@askingForExpiredItemsTitle": {
-    "description": "Asking for expired items page title."
+  "bakeryAndDairyTitle": "Bakery and Dairy",
+  "@bakeryAndDairyTitle": {
+    "description": "Bakery and Dairy page title"
   },
-  "askingForExpiredItemsOne": "NA",
-  "@askingForExpiredItemsOne": {
-    "description": "The first phrase under Asking for expired items page"
+  "bakeryAndDairyOne": "Milk",
+  "@bakeryAndDairyOne": {
+    "description": "First phrase in Bakery and Dairy page"
   },
-  "askingForExpiredItemsTwo": "NA",
-  "@askingForExpiredItemsTwo": {
-    "description": "The second phrase under Asking for expired items page"
+  "bakeryAndDairyTwo": "Butter",
+  "@bakeryAndDairyTwo": {
+    "description": "First phrase in Bakery and Dairy page"
   },
-  "askingForExpiredItemsThree": "NA",
-  "@askingForExpiredItemsThree": {
-    "description": "The third phrase under Asking for expired items page"
+  "bakeryAndDairyThree": "Bread",
+  "@bakeryAndDairyThree": {
+    "description": "First phrase in Bakery and Dairy page"
   },
-  "askingForExpiredItemsFour": "NA",
-  "@askingForExpiredItemsFour": {
-    "description": "The fourth phrase under Asking for expired items page"
+  "bakeryAndDairyFour": "Ice Cream",
+  "@bakeryAndDairyFour": {
+    "description": "First phrase in Bakery and Dairy page"
   },
-  "askingForExpiredItemsFive": "NA",
-  "@askingForExpiredItemsFive": {
-    "description": "The fifth phrase under Asking for expired items page"
+
+  "eggsAndMeatTitle": "Eggs and Meat",
+  "@eggsAndMeatTitle": {
+    "description": "Eggs and Meat page title"
+  },
+  "eggsAndMeatOne": "Eggs",
+  "@eggsAndMeatOne": {
+    "description": "First phrase Eggs and Meat page"
+  },
+  "eggsAndMeatTwo": "Beef",
+  "@eggsAndMeatTwo": {
+    "description": "First phrase Eggs and Meat page"
+  },
+  "eggsAndMeatThree": "Fish",
+  "@eggsAndMeatThree": {
+    "description": "First phrase Eggs and Meat page"
+  },
+  "eggsAndMeatFour": "Shrimp",
+  "@eggsAndMeatFour": {
+    "description": "First phrase Eggs and Meat page"
   }
 }
 
