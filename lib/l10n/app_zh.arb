@@ -2,167 +2,167 @@
   "@@locale": "zh",
 
 
-  "appName": "Hello, Starters!",
-  "startButton": "Let's Study English",
-  "GuideButton": "Guide",
-  "resourcesButton": "Resources",
-  "homeButton": "Home",
+  "appName": "您好",
+  "startButton": "让我们学习英语",
+  "GuideButton": "指南",
+  "resourcesButton": "资源",
+  "homeButton": "首页",
 
 
-  "chooseLangTitle": "Choose Language",
-  "selectYourLang": "Select Your Language:",
-  "japanese": "Japanese",
-  "korean": "Korean",
-  "chinese": "Chinese",
-  "spanish": "Spanish",
-  "vietnamese": "Vietnamese",
-  "french": "French",
-  "italian": "Italian",
-  "german": "German",
-  "portuguese": "Portuguese",
-  "english": "English",
-  "burmese": "Burmese",
-
-
-
-  "selectTopicTitle": "What topic interests you?",
-
-
-  "workTitle": "Work",
-  "partTimeJobTitle": "Part-time Job",
-
-  "partTimeJobOne": "I have a part-time job this evening.",
-  "partTimeJobTwo": "I work in a cafe.",
-  "partTimeJobThree": "How is the pay?",
-  "partTimeJobFour": "The pay is alright. I get $17 per hour",
-  "partTimeJobFive": "I get my paycheck weekly.",
-
-  "talkingAboutYourJobTitle": "Talking about your job",
-
-  "talkingAboutYourJobOne": "What's your role in the company?",
-  "talkingAboutYourJobTwo": "I'm the head of design",
-  "talkingAboutYourJobThree": "What do you do",
-  "talkingAboutYourJobFour": "I manage artists and graphic designers",
-  "talkingAboutYourJobFive": "Do you like your job?",
-
-  "findingAJobTitle": "Finding a job",
-
-  "findingAJobOne": "I am looking for a new job.",
-  "findingAJobTwo": "I want to get a job in the technological field",
-  "findingAJobThree": "Have you prepared a resume?",
-  "findingAJobFour": "Where are you looking for a job?",
-  "findingAJobFive": "I sent applications to a dozen companies",
-
-  "jobInterviewTitle": "Job Interview",
-
-  "jobInterviewOne": "Tell me a little about the position.",
-  "jobInterviewTwo": "This job is an entry level job.",
-  "jobInterviewThree": "What type of qualifications are required?",
-  "jobInterviewFour": "At least four year college degree is required.",
-  "jobInterviewFive": "What are you looking for in a job?",
+  "chooseLangTitle": "选择语言",
+  "selectYourLang": "请选择您的母语",
+  "japanese": "日语",
+  "korean": "韩语",
+  "chinese": "中文",
+  "spanish": "西班牙语",
+  "vietnamese": "越南语",
+  "french": "法语",
+  "italian": "意大利语",
+  "german": "德国",
+  "portuguese": "葡萄牙语",
+  "english": "英语",
+  "burmese": "缅甸语",
 
 
 
-  "medicalTitle": "Medical",
-  "nineOneOneEmergencyTitle": "911 Emergency",
-
-  "nineOneOneEmergencyOne": "Hello, what is your emergency?",
-  "nineOneOneEmergencyTwo": "Example: I am having a heart attack",
-  "nineOneOneEmergencyThree": "What is your name?",
-  "nineOneOneEmergencyFour": "My name is:",
-  "nineOneOneEmergencyFive": "What is your address?",
-  "nineOneOneEmergencySix": "My address is:",
-  "nineOneOneEmergencySeven": "Okay, help is on the way!",
-
-  "symptomsOfIllnessTitle": "Symptoms of Illness",
-
-  "symptomsOfIllnessOne": "Headache",
-  "symptomsOfIllnessTwo": "Fever",
-  "symptomsOfIllnessThree": "Sore Throat",
-  "symptomsOfIllnessFour": "Coughing",
-  "symptomsOfIllnessFive": "Stomach Ache",
-
-  "makeAnAppointmentTitle": "Make an appointment",
-
-  "makeAnAppointmentOne": "I would like to make an appointment",
-  "makeAnAppointmentTwo": "I am a new patient",
-  "makeAnAppointmentThree": "My name and brith date is:",
-  "makeAnAppointmentFour": "I am available/unavailable on:",
-  "makeAnAppointmentFive": "I would like to reschedule my appointment",
-
-  "commonDiseaseNamesTitle": "Common Disease Names",
-
-  "commonDiseaseNamesOne": "Heart Attack",
-  "commonDiseaseNamesTwo": "Stroke",
-  "commonDiseaseNamesThree": "Diabetes",
-  "commonDiseaseNamesFour": "Allergy",
-  "commonDiseaseNamesFive": "Dizzy",
+  "selectTopicTitle": "你对什么话题感兴趣？",
 
 
+  "workTitle": "工作",
+  "partTimeJobTitle": "兼职工作",
 
-  "conversationalTitle": "Conversational",
-  "greetingTitle": "Greeting",
+  "partTimeJobOne": "我今晚有份兼职工作。",
+  "partTimeJobTwo": "我在一家咖啡馆工作.",
+  "partTimeJobThree": "薪酬如何？",
+  "partTimeJobFour": "工资还可以。每小时 17 美元.",
+  "partTimeJobFive": "我每周都能领到薪水。",
 
-  "greetingOne": "Hello!",
-  "greetingTwo": "Nice to meet you.",
-  "greetingThree": "Good Morning/ Good Evening",
-  "greetingFour": "How are you?",
-  "greetingFive": "See you later.",
+  "talkingAboutYourJobTitle": "谈论你的工作",
 
-  "introductionTitle": "Introduction",
+  "talkingAboutYourJobOne": "你在公司里扮演什么角色？",
+  "talkingAboutYourJobTwo": "我是设计主管。",
+  "talkingAboutYourJobThree": "你是做什么的？",
+  "talkingAboutYourJobFour": "我负责管理艺术家和平面设计师.",
+  "talkingAboutYourJobFive": "你喜欢你的工作吗?",
 
-  "introductionOne": "My name is [name].",
-  "introductionTwo": "Her/His/Their name is [name].",
-  "introductionThree": "What is your name?",
-  "introductionFour": "I don't know her/him/them.",
-  "introductionFive": "These people are my family/ friends/ classmates/ coworkers.",
+  "findingAJobTitle": "寻找工作",
 
-  "likesAndDislikesTitle": "Likes and Dislikes",
+  "findingAJobOne": "我正在找一份新工作。",
+  "findingAJobTwo": "我想在技术领域找到一份工作。",
+  "findingAJobThree": "您准备好简历了吗？",
+  "findingAJobFour": "你在哪里找工作？",
+  "findingAJobFive": "我向十几家公司递交了申请。",
 
-  "likesAndDislikesOne": "I like apples.",
-  "likesAndDislikesTwo": "I don't like running.",
-  "likesAndDislikesThree": "Surfing is fun.",
-  "likesAndDislikesFour": "I prefer the food from that restaurant.",
-  "likesAndDislikesFive": "What do you like best?",
+  "jobInterviewTitle": "工作面试",
 
-  "topicsTitle": "Topics",
-
-  "topicsOne": "What is your favorite music?",
-  "topicsTwo": "Do you prefer riding a bus or driving a car?",
-  "topicsThree": "Where do you work?",
-  "topicsFour": "How long have you live here?",
-  "topicsFive": "What do you do during your free time?",
+  "jobInterviewOne": "请向我介绍一下这个职位。",
+  "jobInterviewTwo": "这份工作属于初级职位。",
+  "jobInterviewThree": "需要什么类型的资格？",
+  "jobInterviewFour": "至少需要四年制大学学位。",
+  "jobInterviewFive": "您想找一份什么样的工作？",
 
 
 
-  "groceriesTitle": "Groceries",
-  "talkingToACashierTitle": "Talking to a Cashier",
+  "medicalTitle": "医疗",
+  "nineOneOneEmergencyTitle": "911 紧急事件",
 
-  "vegetablesTitle": "Vegetables",
+  "nineOneOneEmergencyOne": "您好，请问有什么紧急情况？",
+  "nineOneOneEmergencyTwo": "举例说明： 我心脏病发作.",
+  "nineOneOneEmergencyThree": "你叫什么名字？",
+  "nineOneOneEmergencyFour": "我的名字是 [姓名]。",
+  "nineOneOneEmergencyFive": "您的地址是哪里？",
+  "nineOneOneEmergencySix": "我的地址是 [地址]。",
+  "nineOneOneEmergencySeven": "好的，救援马上就到！",
 
-  "vegetablesOne": "tomato",
-  "vegetablesTwo": "onion",
-  "vegetablesThree": "carrot",
-  "vegetablesFour": "broccoli",
-  "vegetablesFive": "potato",
+  "symptomsOfIllnessTitle": "疾病症状.",
 
-  "fruitsTitle": "Fruits",
-  "fruitsOne": "apple",
-  "fruitsTwo": "banana",
-  "fruitsThree": "orange",
-  "fruitsFour": "lemon",
-  "fruitsFive": "strawberry",
+  "symptomsOfIllnessOne": "头痛",
+  "symptomsOfIllnessTwo": "发烧",
+  "symptomsOfIllnessThree": "喉咙痛",
+  "symptomsOfIllnessFour": "咳嗽",
+  "symptomsOfIllnessFive": "胃痛",
 
-  "bakeryAndDairyTitle": "Bakery and Dairy",
-  "bakeryAndDairyOne": "Milk",
-  "bakeryAndDairyTwo": "Butter",
-  "bakeryAndDairyThree": "Bread",
-  "bakeryAndDairyFour": "Ice Cream",
+  "makeAnAppointmentTitle": "预约",
 
-  "eggsAndMeatTitle": "Eggs and Meat",
-  "eggsAndMeatOne": "Eggs",
-  "eggsAndMeatTwo": "Beef",
-  "eggsAndMeatThree": "Fish",
-  "eggsAndMeatFour": "Shrimp"
+  "makeAnAppointmentOne": "我想预约。",
+  "makeAnAppointmentTwo": "我是一名新病人。",
+  "makeAnAppointmentThree": "我的姓名是 [姓名]，出生日期是 [出生日期]。",
+  "makeAnAppointmentFour": "我在【日期】有空/没空。",
+  "makeAnAppointmentFive": "我想重新安排预约时间。",
+
+  "commonDiseaseNamesTitle": "常见疾病名称",
+
+  "commonDiseaseNamesOne": "心脏病发作",
+  "commonDiseaseNamesTwo": "中风",
+  "commonDiseaseNamesThree": "糖尿病",
+  "commonDiseaseNamesFour": "过敏",
+  "commonDiseaseNamesFive": "头晕",
+
+
+
+  "conversationalTitle": "对话",
+  "greetingTitle": "致辞",
+
+  "greetingOne": "您好!",
+  "greetingTwo": "很高兴见到你.",
+  "greetingThree": "早安/晚安.",
+  "greetingFour": "你好吗？",
+  "greetingFive": "再见.",
+
+  "introductionTitle": "导言",
+
+  "introductionOne": "我的名字是 [姓名]。",
+  "introductionTwo": "她/他/他们的名字是 [姓名]。",
+  "introductionThree": "你叫什么名字？",
+  "introductionFour": "我不认识她/他/他们。",
+  "introductionFive": "这些人是我的家人/朋友/同学/同事。",
+
+  "likesAndDislikesTitle": "喜欢和不喜欢",
+
+  "likesAndDislikesOne": "我喜欢苹果。",
+  "likesAndDislikesTwo": "I不喜欢跑步",
+  "likesAndDislikesThree": "冲浪很有趣",
+  "likesAndDislikesFour": "我更喜欢那家餐厅的食物。",
+  "likesAndDislikesFive": "你最喜欢什么？",
+
+  "topicsTitle": "主题",
+
+  "topicsOne": "您最喜欢什么音乐？",
+  "topicsTwo": "您更喜欢乘坐公共汽车还是驾驶汽车？",
+  "topicsThree": "你在哪里工作？",
+  "topicsFour": "你住在这里多久了？",
+  "topicsFive": "您在空闲时间都做些什么？",
+
+
+
+  "groceriesTitle": "杂货",
+  "talkingToACashierTitle": "与收银员交谈",
+
+  "vegetablesTitle": "蔬菜",
+
+  "vegetablesOne": "西红柿",
+  "vegetablesTwo": "葱头",
+  "vegetablesThree": "萝卜",
+  "vegetablesFour": "青花菜",
+  "vegetablesFive": "马铃薯",
+
+  "fruitsTitle": "水果",
+  "fruitsOne": "苹果",
+  "fruitsTwo": "芭蕉",
+  "fruitsThree": "橙子",
+  "fruitsFour": "檸檬",
+  "fruitsFive": "草莓",
+
+  "bakeryAndDairyTitle": "麵包店和乳製品",
+  "bakeryAndDairyOne": "牛奶",
+  "bakeryAndDairyTwo": "黃油",
+  "bakeryAndDairyThree": "麵包",
+  "bakeryAndDairyFour": "冰淇淋",
+
+  "eggsAndMeatTitle": "雞蛋和肉",
+  "eggsAndMeatOne": "蛋",
+  "eggsAndMeatTwo": "牛肉",
+  "eggsAndMeatThree": "魚",
+  "eggsAndMeatFour": "蝦"
 
 }

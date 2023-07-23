@@ -2,167 +2,167 @@
   "@@locale": "ko",
 
 
-  "appName": "Hello, Starters!",
-  "startButton": "Let's Study English",
-  "GuideButton": "Guide",
-  "resourcesButton": "Resources",
-  "homeButton": "Home",
+  "appName": "안녕하세요",
+  "startButton": "영어 공부하기",
+  "GuideButton": "가이드",
+  "resourcesButton": "리소스",
+  "homeButton": "홈",
 
 
-  "chooseLangTitle": "Choose Language",
-  "selectYourLang": "Select Your Language:",
-  "japanese": "Japanese",
-  "korean": "Korean",
-  "chinese": "Chinese",
-  "spanish": "Spanish",
-  "vietnamese": "Vietnamese",
-  "french": "French",
-  "italian": "Italian",
-  "german": "German",
-  "portuguese": "Portuguese",
-  "english": "English",
-  "burmese": "Burmese",
-
-
-
-  "selectTopicTitle": "What topic interests you?",
-
-
-  "workTitle": "Work",
-  "partTimeJobTitle": "Part-time Job",
-
-  "partTimeJobOne": "I have a part-time job this evening.",
-  "partTimeJobTwo": "I work in a cafe.",
-  "partTimeJobThree": "How is the pay?",
-  "partTimeJobFour": "The pay is alright. I get $17 per hour",
-  "partTimeJobFive": "I get my paycheck weekly.",
-
-  "talkingAboutYourJobTitle": "Talking about your job",
-
-  "talkingAboutYourJobOne": "What's your role in the company?",
-  "talkingAboutYourJobTwo": "I'm the head of design",
-  "talkingAboutYourJobThree": "What do you do",
-  "talkingAboutYourJobFour": "I manage artists and graphic designers",
-  "talkingAboutYourJobFive": "Do you like your job?",
-
-  "findingAJobTitle": "Finding a job",
-
-  "findingAJobOne": "I am looking for a new job.",
-  "findingAJobTwo": "I want to get a job in the technological field",
-  "findingAJobThree": "Have you prepared a resume?",
-  "findingAJobFour": "Where are you looking for a job?",
-  "findingAJobFive": "I sent applications to a dozen companies",
-
-  "jobInterviewTitle": "Job Interview",
-
-  "jobInterviewOne": "Tell me a little about the position.",
-  "jobInterviewTwo": "This job is an entry level job.",
-  "jobInterviewThree": "What type of qualifications are required?",
-  "jobInterviewFour": "At least four year college degree is required.",
-  "jobInterviewFive": "What are you looking for in a job?",
+  "chooseLangTitle": "언어 선택",
+  "selectYourLang": "모국어를 선택해 주세요:",
+  "japanese": "일본어",
+  "korean": "한국어",
+  "chinese": "중국어",
+  "spanish": "스페인어",
+  "vietnamese": "베트남어",
+  "french": "프랑스어",
+  "italian": "이탈리아어",
+  "german": "독일어",
+  "portuguese": "포르투갈어",
+  "english": "영어",
+  "burmese": "버마어",
 
 
 
-  "medicalTitle": "Medical",
-  "nineOneOneEmergencyTitle": "911 Emergency",
-
-  "nineOneOneEmergencyOne": "Hello, what is your emergency?",
-  "nineOneOneEmergencyTwo": "Example: I am having a heart attack",
-  "nineOneOneEmergencyThree": "What is your name?",
-  "nineOneOneEmergencyFour": "My name is:",
-  "nineOneOneEmergencyFive": "What is your address?",
-  "nineOneOneEmergencySix": "My address is:",
-  "nineOneOneEmergencySeven": "Okay, help is on the way!",
-
-  "symptomsOfIllnessTitle": "Symptoms of Illness",
-
-  "symptomsOfIllnessOne": "Headache",
-  "symptomsOfIllnessTwo": "Fever",
-  "symptomsOfIllnessThree": "Sore Throat",
-  "symptomsOfIllnessFour": "Coughing",
-  "symptomsOfIllnessFive": "Stomach Ache",
-
-  "makeAnAppointmentTitle": "Make an appointment",
-
-  "makeAnAppointmentOne": "I would like to make an appointment",
-  "makeAnAppointmentTwo": "I am a new patient",
-  "makeAnAppointmentThree": "My name and brith date is:",
-  "makeAnAppointmentFour": "I am available/unavailable on:",
-  "makeAnAppointmentFive": "I would like to reschedule my appointment",
-
-  "commonDiseaseNamesTitle": "Common Disease Names",
-
-  "commonDiseaseNamesOne": "Heart Attack",
-  "commonDiseaseNamesTwo": "Stroke",
-  "commonDiseaseNamesThree": "Diabetes",
-  "commonDiseaseNamesFour": "Allergy",
-  "commonDiseaseNamesFive": "Dizzy",
+  "selectTopicTitle": "어떤 주제에 관심이 있으신가요?",
 
 
+  "workTitle": "업무",
+  "partTimeJobTitle": "아르바이트",
 
-  "conversationalTitle": "Conversational",
-  "greetingTitle": "Greeting",
+  "partTimeJobOne": "오늘 저녁에 아르바이트가 있어요.",
+  "partTimeJobTwo": "저는 카페에서 일합니다.",
+  "partTimeJobThree": "급여는 어떻게 되나요?",
+  "partTimeJobFour": "급여는 괜찮습니다. 시간당 17달러를 받습니다.",
+  "partTimeJobFive": "저는 매주 급여를 받습니다.",
 
-  "greetingOne": "Hello!",
-  "greetingTwo": "Nice to meet you.",
-  "greetingThree": "Good Morning/ Good Evening",
-  "greetingFour": "How are you?",
-  "greetingFive": "See you later.",
+  "talkingAboutYourJobTitle": "직업에 대해 이야기하기",
 
-  "introductionTitle": "Introduction",
+  "talkingAboutYourJobOne": "회사에서 어떤 역할을 담당하고 있나요?",
+  "talkingAboutYourJobTwo": "저는 디자인 책임자입니다.",
+  "talkingAboutYourJobThree": "무엇을 하십니까?",
+  "talkingAboutYourJobFour": "아티스트와 그래픽 디자이너를 관리합니다.",
+  "talkingAboutYourJobFive": "직업이 마음에 드시나요?",
 
-  "introductionOne": "My name is [name].",
-  "introductionTwo": "Her/His/Their name is [name].",
-  "introductionThree": "What is your name?",
-  "introductionFour": "I don't know her/him/them.",
-  "introductionFive": "These people are my family/ friends/ classmates/ coworkers.",
+  "findingAJobTitle": "일자리 찾기",
 
-  "likesAndDislikesTitle": "Likes and Dislikes",
+  "findingAJobOne": "새 직장을 찾고 있습니다.",
+  "findingAJobTwo": "기술 분야에서 일하고 싶습니다.",
+  "findingAJobThree": "이력서를 준비하셨나요?",
+  "findingAJobFour": "어디에서 일자리를 찾고 계신가요?",
+  "findingAJobFive": "12개 회사에 지원서를 보냈습니다.",
 
-  "likesAndDislikesOne": "I like apples.",
-  "likesAndDislikesTwo": "I don't like running.",
-  "likesAndDislikesThree": "Surfing is fun.",
-  "likesAndDislikesFour": "I prefer the food from that restaurant.",
-  "likesAndDislikesFive": "What do you like best?",
+  "jobInterviewTitle": "면접",
 
-  "topicsTitle": "Topics",
-
-  "topicsOne": "What is your favorite music?",
-  "topicsTwo": "Do you prefer riding a bus or driving a car?",
-  "topicsThree": "Where do you work?",
-  "topicsFour": "How long have you live here?",
-  "topicsFive": "What do you do during your free time?",
+  "jobInterviewOne": "포지션에 대해 조금만 알려주세요.",
+  "jobInterviewTwo": "이 직무는 초급 직무입니다.",
+  "jobInterviewThree": "어떤 종류의 자격이 필요하나요?",
+  "jobInterviewFour": "4년제 대학 이상의 학위가 필요합니다.",
+  "jobInterviewFive": "어떤 직무를 찾고 계신가요?",
 
 
 
-  "groceriesTitle": "Groceries",
-  "talkingToACashierTitle": "Talking to a Cashier",
+  "medicalTitle": "의료",
+  "nineOneOneEmergencyTitle": "911 긴급 상황",
 
-  "vegetablesTitle": "Vegetables",
+  "nineOneOneEmergencyOne": "안녕하세요, 긴급 상황이 무엇인가요?",
+  "nineOneOneEmergencyTwo": "예시: 심장 마비가 왔습니다.",
+  "nineOneOneEmergencyThree": "이름이 무엇인가요?",
+  "nineOneOneEmergencyFour": "제 이름은 [이름]입니다.",
+  "nineOneOneEmergencyFive": "주소가 어떻게 되나요?",
+  "nineOneOneEmergencySix": "내 주소는 [주소]입니다.",
+  "nineOneOneEmergencySeven": "좋아요, 도움이 오고 있습니다!",
 
-  "vegetablesOne": "tomato",
-  "vegetablesTwo": "onion",
-  "vegetablesThree": "carrot",
-  "vegetablesFour": "broccoli",
-  "vegetablesFive": "potato",
+  "symptomsOfIllnessTitle": "질병의 증상",
 
-  "fruitsTitle": "Fruits",
-  "fruitsOne": "apple",
-  "fruitsTwo": "banana",
-  "fruitsThree": "orange",
-  "fruitsFour": "lemon",
-  "fruitsFive": "strawberry",
+  "symptomsOfIllnessOne": "두통",
+  "symptomsOfIllnessTwo": "발열",
+  "symptomsOfIllnessThree": "인후통",
+  "symptomsOfIllnessFour": "기침",
+  "symptomsOfIllnessFive": "복통",
 
-  "bakeryAndDairyTitle": "Bakery and Dairy",
-  "bakeryAndDairyOne": "Milk",
-  "bakeryAndDairyTwo": "Butter",
-  "bakeryAndDairyThree": "Bread",
-  "bakeryAndDairyFour": "Ice Cream",
+  "makeAnAppointmentTitle": "예약하기",
 
-  "eggsAndMeatTitle": "Eggs and Meat",
-  "eggsAndMeatOne": "Eggs",
-  "eggsAndMeatTwo": "Beef",
-  "eggsAndMeatThree": "Fish",
-  "eggsAndMeatFour": "Shrimp"
+  "makeAnAppointmentOne": "예약을 하고 싶습니다.",
+  "makeAnAppointmentTwo": "저는 새 환자입니다.",
+  "makeAnAppointmentThree": "내 이름은 [이름]이고 생년월일은 [생년월일]입니다.",
+  "makeAnAppointmentFour": "날짜]에 예약 가능/불가능합니다.",
+  "makeAnAppointmentFive": "예약 일정을 변경하고 싶습니다.",
+
+  "commonDiseaseNamesTitle": "일반적인 질병 이름",
+
+  "commonDiseaseNamesOne": "심장 마비",
+  "commonDiseaseNamesTwo": "스트로크",
+  "commonDiseaseNamesThree": "당뇨병",
+  "commonDiseaseNamesFour": "알레르기",
+  "commonDiseaseNamesFive": "어지러움",
+
+
+
+  "conversationalTitle": "대화형",
+  "greetingTitle": "인사말",
+
+  "greetingOne": "안녕하세요!",
+  "greetingTwo": "만나서 반갑습니다.",
+  "greetingThree": "굿모닝/굿이브닝",
+  "greetingFour": "안녕하세요?",
+  "greetingFive": "나중에 뵙겠습니다.",
+
+  "introductionTitle": "소개",
+
+  "introductionOne": "제 이름은 [이름]입니다.",
+  "introductionTwo": "제 이름은 [이름]입니다.",
+  "introductionThree": "이름이 무엇인가요?",
+  "introductionFour": "그/그녀/그녀를 잘 모릅니다.",
+  "introductionFive": "이 사람들은 제 가족/친구/동급생/동료입니다.",
+
+  "likesAndDislikesTitle": "좋아요 및 싫어요",
+
+  "likesAndDislikesOne": "저는 사과를 좋아합니다.",
+  "likesAndDislikesTwo": "저는 달리기를 좋아하지 않습니다.",
+  "likesAndDislikesThree": "서핑은 재미있습니다.",
+  "likesAndDislikesFour": "저는 그 레스토랑의 음식을 더 좋아합니다.",
+  "likesAndDislikesFive": "어떤 점이 가장 마음에 드시나요?",
+
+  "topicsTitle": "주제",
+
+  "topicsOne": "가장 좋아하는 음악은 무엇인가요?",
+  "topicsTwo": "버스를 타는 것을 선호하시나요, 아니면 자동차를 운전하는 것을 선호하시나요?",
+  "topicsThree": "어디에서 근무하시나요?",
+  "topicsFour": "이곳에 거주한 지 얼마나 되셨나요?",
+  "topicsFive": "여가 시간에는 무엇을 하나요?",
+
+
+
+  "groceriesTitle": "식료품",
+  "talkingToACashierTitle": "계산원과 대화하기",
+
+  "vegetablesTitle": "야채",
+
+  "vegetablesOne": "토마토",
+  "vegetablesTwo": "양파",
+  "vegetablesThree": "당근",
+  "vegetablesFour": "브로콜리",
+  "vegetablesFive": "감자",
+
+  "fruitsTitle": "과일",
+  "fruitsOne": "사과",
+  "fruitsTwo": "바나나",
+  "fruitsThree": "오렌지",
+  "fruitsFour": "레몬",
+  "fruitsFive": "딸기",
+
+  "bakeryAndDairyTitle": "베이커리 및 유제품",
+  "bakeryAndDairyOne": "우유",
+  "bakeryAndDairyTwo": "버터",
+  "bakeryAndDairyThree": "빵",
+  "bakeryAndDairyFour": "아이스크림",
+
+  "eggsAndMeatTitle": "달걀 및 육류",
+  "eggsAndMeatOne": "달걀",
+  "eggsAndMeatTwo": "소고기",
+  "eggsAndMeatThree": "물고기",
+  "eggsAndMeatFour": "새우"
 
 }
