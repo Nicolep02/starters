@@ -51,7 +51,7 @@ class Topics extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(height:20),
-              Text('Select the category you would like to learn: ',
+              Text(AppLocalizations.of(context)!.selectTopicText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
@@ -59,8 +59,9 @@ class Topics extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+
               SizedBox(height:8),
-              Text(AppLocalizations.of(context)!.selectTopicText,
+              Text('Select the category you would like to learn: ',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
