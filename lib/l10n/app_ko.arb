@@ -29,6 +29,7 @@
 
 
   "workTitle": "업무",
+  "selectWorkTopic": "업무 관련 주제를 선택합니다:",
   "partTimeJobTitle": "아르바이트",
 
   "partTimeJobOne": "오늘 저녁에 아르바이트가 있어요.",
@@ -64,6 +65,7 @@
 
 
   "medicalTitle": "의료",
+  "selectMedicalTopic": "의료 관련 주제를 선택합니다:",
   "nineOneOneEmergencyTitle": "911 긴급 상황",
 
   "nineOneOneEmergencyOne": "안녕하세요, 긴급 상황이 무엇인가요?",
@@ -136,6 +138,7 @@
 
 
   "groceriesTitle": "식료품",
+  "selectGroceryTopic": "식료품 관련 주제를 선택합니다:",
   "talkingToACashierTitle": "계산원과 대화하기",
 
   "vegetablesTitle": "야채",
