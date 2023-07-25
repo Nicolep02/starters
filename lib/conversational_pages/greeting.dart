@@ -42,7 +42,7 @@ class _GreetingState extends State<Greeting> {
             ],
           ),
         ),
-        backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
+        backgroundColor: bark,
       ),
 
       body: SingleChildScrollView(
@@ -62,7 +62,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF4F939C),
+                        backgroundColor: base,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -87,7 +87,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey,
+                        backgroundColor: sakura,
                       ),
                       child: Row(
                         // mainAxisSize: MainAxisSize.min,
@@ -96,8 +96,10 @@ class _GreetingState extends State<Greeting> {
                             width: screen_limit,
                             padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
                             child: Text(AppLocalizations.of(context)!.greetingOne,
-                            style: TextStyle(fontSize: 20),
-                            ),
+                            style: TextStyle(
+                                fontSize: 20,
+                              color: nightSky,
+                            ),),
                           ), // <-- Text
                           SizedBox(
                               width: 10, height: 50
@@ -125,7 +127,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF4F939C),
+                        backgroundColor: base,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -150,7 +152,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey,
+                        backgroundColor: sakura,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -159,7 +161,8 @@ class _GreetingState extends State<Greeting> {
                             width: screen_limit,
                             padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
                             child: Text(AppLocalizations.of(context)!.greetingTwo,
-                      style: TextStyle(fontSize: 20),),
+                      style: TextStyle(fontSize: 20,
+                            color: nightSky,),),
                           ),// <-- Text
                           SizedBox(
                               width: 10, height: 50
@@ -187,7 +190,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF4F939C),
+                        backgroundColor: base,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -212,7 +215,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey,
+                        backgroundColor: sakura,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -221,7 +224,8 @@ class _GreetingState extends State<Greeting> {
                             width: screen_limit,
                             padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
                             child: Text(AppLocalizations.of(context)!.greetingThree,
-                              style: TextStyle(fontSize: 20),),
+                              style: TextStyle(fontSize: 20,
+                                color: nightSky,),),
                           ), // <-- Text
                           SizedBox(
                               width: 10, height: 50
@@ -250,7 +254,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF4F939C),
+                        backgroundColor: base,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -275,7 +279,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey,
+                        backgroundColor: sakura,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -284,7 +288,8 @@ class _GreetingState extends State<Greeting> {
                             width: screen_limit,
                             padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
                             child: Text(AppLocalizations.of(context)!.greetingFour,
-                              style: TextStyle(fontSize: 20),),
+                              style: TextStyle(fontSize: 20,
+                                color: nightSky,),),
                           ), // <-- Text
                           SizedBox(
                               width: 10, height: 50
@@ -313,7 +318,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF4F939C),
+                        backgroundColor: base,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -338,7 +343,7 @@ class _GreetingState extends State<Greeting> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey,
+                        backgroundColor: sakura,
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
@@ -347,7 +352,8 @@ class _GreetingState extends State<Greeting> {
                             width: screen_limit,
                             padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
                             child: Text(AppLocalizations.of(context)!.greetingFive,
-                              style: TextStyle(fontSize: 20),),
+                              style: TextStyle(fontSize: 20,
+                                color: nightSky,),),
                           ), // <-- Text
                           SizedBox(
                               width: 10, height: 50

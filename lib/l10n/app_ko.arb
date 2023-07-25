@@ -103,6 +103,7 @@
 
 
   "conversationalTitle": "대화형",
+  "selectConverTopic": "대화 주제를 선택합니다:",
   "greetingTitle": "인사말",
 
   "greetingOne": "안녕하세요!",
@@ -119,7 +120,7 @@
   "introductionFour": "그/그녀/그녀를 잘 모릅니다.",
   "introductionFive": "이 사람들은 제 가족/친구/동급생/동료입니다.",
 
-  "likesAndDislikesTitle": "좋아요 및 싫어요",
+  "likesAndDislikesTitle": "좋아요/싫어요",
 
   "likesAndDislikesOne": "저는 사과를 좋아합니다.",
   "likesAndDislikesTwo": "저는 달리기를 좋아하지 않습니다.",

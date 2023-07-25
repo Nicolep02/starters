@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import '../home/home.dart';
 import '../home/help.dart';
+import '../styles/colors.dart';
 
 class NavBar2 extends StatelessWidget {
   const NavBar2({Key? key}) : super(key: key);
@@ -10,19 +11,20 @@ class NavBar2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromRGBO(22, 34, 61, 1.0),
+      color: bark,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
         child: GNav(
-          backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
+          backgroundColor: bark,
           color: Colors.white,
           activeColor: Colors.white,
           tabBackgroundColor: Colors.grey.shade800,
-          padding: EdgeInsets.all(25),
+          padding: EdgeInsets.all(20),
           gap: 8,
           tabs:[
             GButton(
               icon: Icons.home,
+              backgroundColor: bark,
               text: 'Home',
               onPressed:() {
                 Navigator.push(
@@ -33,6 +35,7 @@ class NavBar2 extends StatelessWidget {
             ),
             GButton(
               icon: Icons.question_mark,
+              backgroundColor: button,
               text: 'Help',
               onPressed:() {
                 Navigator.push(
