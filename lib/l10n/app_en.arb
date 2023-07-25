@@ -92,6 +92,10 @@
   "@workTitle": {
     "description": "Work category title"
   },
+  "selectWorkTopic": "Select a Work-related Topic:",
+  "@selectWorkTopic": {
+    "description": "Work category"
+  },
   "partTimeJobTitle": "Part-time Job",
   "@partTimeJobTitle": {
     "description": "Part Time Job page title"
@@ -197,6 +201,10 @@
   "medicalTitle": "Medical",
   "@medicalTitle": {
     "description": "Medical category title"
+  },
+  "selectMedicalTopic": "Select a Medical-related Topic:",
+  "@selectMedicalTopic": {
+    "description": "Medical category"
   },
   "nineOneOneEmergencyTitle": "911 Emergency",
   "@nineOneOneEmergencyTitle": {
@@ -423,7 +431,10 @@
   "@groceriesTitle": {
     "description": "Groceries category title"
   },
-
+  "selectGroceryTopic": "Select a Grocery-related Topic:",
+  "@selectGroceryTopic": {
+    "description": "Grocery category"
+  },
   "vegetablesTitle": "Vegetables",
   "@vegetablesTitle": {
     "description": "Vegetables page title."
