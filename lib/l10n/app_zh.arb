@@ -29,6 +29,7 @@
 
 
   "workTitle": "工作",
+  "selectWorkTopic": "选择与工作相关的主题：",
   "partTimeJobTitle": "兼职工作",
 
   "partTimeJobOne": "我今晚有份兼职工作。",
@@ -64,6 +65,7 @@
 
 
   "medicalTitle": "医疗",
+  "selectMedicalTopic": "选择医学相关主题：",
   "nineOneOneEmergencyTitle": "911 紧急事件",
 
   "nineOneOneEmergencyOne": "您好，请问有什么紧急情况？",
@@ -136,6 +138,7 @@
 
 
   "groceriesTitle": "杂货",
+  "selectGroceryTopic": "Select a Grocery-related Topic:",
   "talkingToACashierTitle": "与收银员交谈",
 
   "vegetablesTitle": "蔬菜",
