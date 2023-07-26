@@ -1,3 +1,169 @@
 {
-  "@@locale": "vi"
+    "@@locale": "vi",
+
+    "appName": "Xin chào, Starters,",
+    "startButton": "bắt đầu",
+    "guideButton": "hướng dẫn",
+    "resourcesButton": "tài nguyên",
+    "homeButton": "trang chủ",
+
+
+    "chooseLangTitle": "chọn ngôn ngữ",
+    "selectYourLang": "chọn ngôn ngữ của bạn",
+    "japanese": "tiếng Nhật",
+    "korean": "Hàn Quốc",
+    "chinese": "người Trung Quốc",
+    "spanish": "người Tây Ban Nha",
+    "vietnamese": "Tiếng Việt",
+    "french": "người Pháp",
+    "italian": "người Ý",
+    "german": "tiếng Đức",
+    "portuguese": "người Bồ Đào Nha",
+    "english": "Tiếng Anh",
+    "burmese": "tiếng Miến Điện",
+
+
+
+    "selectTopicTitle": "chọn chủ đề",
+
+
+    "workTitle": "công việc",
+    "selectWorkTopic": "chọn một chủ đề liên quan đến công việc:",
+    "partTimeJobTitle": "công việc bán thời gian",
+
+    "partTimeJobOne": "Tôi có một công việc bán thời gian tối nay.",
+    "partTimeJobTwo": "tôi làm việc trong một quán cà phê",
+    "partTimeJobThree": "lương thế nào?",
+    "partTimeJobFour": "Tiền lương ổn. Tôi nhận được 17 đô la mỗi giờ。",
+    "partTimeJobFive": "Tôi nhận được tiền lương của tôi hàng tuần.",
+
+    "talkingAboutYourJobTitle": Nói về công việc của bạn",
+
+    "talkingAboutYourJobOne": "Vai trò của bạn trong công ty là gì?",
+    "talkingAboutYourJobTwo": "Tôi là trưởng phòng thiết kế。",
+    "talkingAboutYourJobThree": "bạn làm nghề gì",
+    "talkingAboutYourJobFour": "Tôi quản lý các nghệ sĩ và nhà thiết kế đồ họa.",
+    "talkingAboutYourJobFive": "Bạn có thích công việc của bạn không?",
+
+    "findingAJobTitle": "Tìm việc làm",
+
+    "findingAJobOne": "Tôi đang tìm một công việc mới.",
+    "findingAJobTwo": "Tôi muốn có một công việc trong lĩnh vực công nghệ.",
+    "findingAJobThree": "Bạn đã chuẩn bị sơ yếu lý lịch chưa?",
+    "findingAJobFour": "Bạn đang tìm việc ở đâu?",
+    "findingAJobFive": "Tôi đã gửi đơn đến hàng chục công ty.",
+
+    "jobInterviewTitle": "Phỏng vấn xin việc",
+
+    "jobInterviewOne": "Nói cho tôi biết một chút về vị trí.",
+    "jobInterviewTwo": "Công việc này là một công việc cấp nhập cảnh.",
+    "jobInterviewThree": "Những loại bằng cấp được yêu cầu?",
+    "jobInterviewFour": "Ít nhất bốn năm bằng đại học là bắt buộc.",
+    "jobInterviewFive": "Bạn đang tìm kiếm điều gì trong một công việc?",
+
+
+
+    "medicalTitle": "thuộc về y học",
+    "selectMedicalTopic": Chọn một chủ đề y tế:",
+    "nineOneOneEmergencyTitle": "911 khẩn cấp",
+
+    "nineOneOneEmergencyOne": "Xin chào, trường hợp khẩn cấp của bạn là gì?",
+    "nineOneOneEmergencyTwo": "Ví dụ: Tôi đang bị đau tim",
+    "nineOneOneEmergencyThree": "Tên bạn là gì?",
+    "nineOneOneEmergencyFour": "Tên tôi là: __________",
+    "nineOneOneEmergencyFive": "Địa chỉ của bạn là gì?",
+    "nineOneOneEmergencySix": "Địa chỉ của tôi là: __________",
+    "nineOneOneEmergencySeven": "Được rồi, trợ giúp đang trên đường đến!",
+
+    "symptomsOfIllnessTitle": "Các triệu chứng của bệnh",
+
+    "symptomsOfIllnessOne": "đau đầu",
+    "symptomsOfIllnessTwo": "Sốt",
+    "symptomsOfIllnessThree": "Đau họng",
+    "symptomsOfIllnessFour": "ho",
+    "symptomsOfIllnessFive": "Đau bụng",
+
+    "makeAnAppointmentTitle": "đặt lịch hẹn",
+
+    "makeAnAppointmentOne": "Tôi muốn một cuộc hẹn",
+    "makeAnAppointmentTwo": "tôi là một bệnh nhân mới",
+    "makeAnAppointmentThree": "Tên và ngày sinh của tôi là::_______",
+    "makeAnAppointmentFour": "Tôi rảnh/không rảnh vào::______",
+    "makeAnAppointmentFive": "Tôi muốn sắp xếp lại cuộc hẹn của tôi",
+
+    "commonDiseaseNamesTitle": "Tên bệnh thường gặp",
+
+    "commonDiseaseNamesOne": "đau tim",
+    "commonDiseaseNamesTwo": "đột quỵ",
+    "commonDiseaseNamesThree": "Bệnh tiểu đường",
+    "commonDiseaseNamesFour": "Dị ứng",
+    "commonDiseaseNamesFive": "chóng mặt",
+
+
+
+    "conversationalTitle": "đối thoại",
+    "selectConverTopic": "chọn một chủ đề đàm thoại：",
+    "greetingTitle": "lời chào hỏi",
+
+    "greetingOne": "Xin chào!",
+    "greetingTwo": "Rất vui được gặp bạn.",
+    "greetingThree": "Chào buổi sáng buổi tối tốt lành",
+    "greetingFour": "Bạn có khỏe không?",
+    "greetingFive": "Hẹn gặp lại.",
+
+    "introductionTitle": "giới thiệu",
+
+    "introductionOne": "Tên tôi là ______",
+    "introductionTwo": "Cô ấy/Anh ấy/Họ tên là ____",
+    "introductionThree": "Tên bạn là gì?",
+    "introductionFour": "Tôi không biết cô ấy/anh ấy/họ",
+    "introductionFive": "Những người này là bạn/bạn cùng lớp/đồng nghiệp của tôi.",
+
+    "likesAndDislikesTitle": "Thích và không thích",
+
+    "likesAndDislikesOne": "Tôi thích táo.",
+    "likesAndDislikesTwo": "Tôi không thích chạy.",
+    "likesAndDislikesThree": "Lướt sóng là niềm vui.",
+    "likesAndDislikesFour": "Tôi thích đồ ăn từ nhà hàng đó hơn.",
+    "likesAndDislikesFive": "Bạn thích gì nhất?",
+
+    "topicsTitle": "chủ đề",
+
+    "topicsOne": "Thể loại nhạc yêu thích của bạn là gì?",
+    "topicsTwo": "Bạn thích đi xe buýt hay lái xe hơi hơn?",
+    "topicsThree": "Bạn làm ở đâu?",
+    "topicsFour": "Bạn sống ở đây bao lâu rồi?",
+    "topicsFive": "Bạn làm gì trong thời gian rảnh?",
+
+    "groceryTitle" :"cửa hàng tạp hóa",
+     "selectGroceryTopic": "chọn chủ đề tạp hóa：",
+    "fruitsTitle": "hoa quả",
+    "fruitsOne": "quả táo",
+    "fruitsTwo": "chuối",
+    "fruitsThree": "quả cam",
+    "fruitsFour": "chanh vàng",
+    "fruitsFive": "quả dâu",
+
+    "vegetablesTitle": "Rau",
+
+    "vegetablesOne": "Cà chua",
+    "vegetablesTwo": "Củ hành",
+    "vegetablesThree": "cà rốt",
+    "vegetablesFour": "Bông cải xanh",
+    "vegetablesFive": "Khoai tây",
+
+    "bakeryTitle": "Bánh & Sữa",
+
+    "bakeryOne": "Sữa",
+    "bakeryTwo": "Bơ",
+    "bakeryThree": "bánh mỳ",
+    "bakeryFour": "Kem",
+
+    "eggsTitle": "Trứng & Thịt",
+
+        "eggsOne": "trứng",
+        "eggsTwo": "thịt bò",
+        "eggsThree": "cá",
+        "eggsFour": "con tôm"
+
 }
