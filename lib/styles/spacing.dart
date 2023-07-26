@@ -4,6 +4,13 @@ double title_subtitle_spacing = 40;
 double subtitles = 15;
 double bottom_padding = 30;
 
+//home page
+double ellipse = 890;
+double arrow_width = 35;
+double arrow_height = 33;
+double bunni_width = 167.97;
+double bunni_height = 157.6;
+
 //choose language page
 double subTitle_flag_spacing = 40;
 double flag_width = 90;

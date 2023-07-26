@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:starters/widgets/bottom_nav_2.dart';
 import '../main.dart';
 import 'select_topic.dart';
 import '../styles/spacing.dart';
@@ -239,7 +240,7 @@ class Language extends StatelessWidget {
         ),
       ),
 //__________________________________finished body_____________________________________________
-      bottomNavigationBar: NavBar1()
+      bottomNavigationBar: NavBar2()
     );
   }
 }

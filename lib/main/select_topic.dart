@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:starters/grocery_pages/grocery_main.dart';
 import 'package:starters/medical_pages/med_main.dart';
+import 'package:starters/widgets/bottom_nav_2.dart';
 import '../home/home.dart';
 import '../home/help.dart';
 import '../styles/colors.dart';
@@ -170,7 +171,7 @@ class Topics extends StatelessWidget {
         ),
 
 
-        bottomNavigationBar: NavBar1()
+        bottomNavigationBar: NavBar2()
     );
 
   }
