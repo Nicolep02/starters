@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 const nightSky = Color(0xFF060A12);
 const turquoise = Color(0xFF4F939C);
 const chartreuse = Color(0xFFBEC95B);
+const carrot = Color(0xFFFCA311);
 const white = Color(0xFFFFFFFF);
 const sakura = Color(0xFFE8A9A9);
 const bark = Color (0xFF5C4033);
