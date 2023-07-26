@@ -9,7 +9,7 @@ import '../styles/spacing.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import '../conversational_pages/converMain.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
+import 'package:starters/work_pages/workMain.dart';
 import '../widgets/bottom_nav_1.dart';
 
 class Topics extends StatelessWidget {
@@ -107,10 +107,10 @@ class Topics extends StatelessWidget {
                           width: topic_width, height: topic_height,
                           child: IconButton(
                             icon: Image.asset('assets/work_new.png'),
-                            onPressed: ()=>Navigator.of(context).pop(),
-                            //onPressed: (){
-                            //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ()));
-                            //},
+                            //onPressed: ()=>Navigator.of(context).pop(),
+                           onPressed: (){
+                             Navigator.of(context).push(MaterialPageRoute(builder: (context) => Work()));
+                            },
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.workTitle,
