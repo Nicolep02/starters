@@ -1,13 +1,14 @@
-import 'package:starters/styles/colors.dart';
+import 'package:flutter/material.dart';
+import 'package:starters/widgets/subtitle.dart';
+import '../styles/spacing.dart';
+import '../widgets/category_box.dart';
 import 'greeting.dart';
 import 'introduction.dart';
 import 'likesdislikes.dart';
 import 'varioustopics.dart';
 import '../widgets/appbar.dart';
-import 'package:flutter/material.dart';
 import '../widgets/bottom_nav_2.dart';
-import '../styles/spacing.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class Conver extends StatefulWidget{
   const Conver({Key? key}) : super(key: key);
@@ -16,8 +17,6 @@ class Conver extends StatefulWidget{
   State<Conver> createState() => _ConverState();
 }
 
-
-//need to create stless class to allow for hot reload
 class _ConverState extends State<Conver> {
   @override
   Widget build(BuildContext context) {
@@ -37,299 +36,42 @@ class _ConverState extends State<Conver> {
           ),
           child: Column(
             children: [
-              SizedBox(height: title_subtitle_spacing),
-              Text(AppLocalizations.of(context)!.selectConverTopic,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Inter',
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),
+              Subtitle(
+                  subTitleGetter: (localizations)=> localizations.selectConverTopic,
+                  engSubTitle: 'Select a Conversation Topic'),
+
+              CategoryBox(
+                  topicFunc: Greeting(),
+                  titleGetter: (localizations) => localizations.greetingTitle,
+                  engTitle: '[ Greeting ]',
+                  image: 'assets/greet.png'
               ),
-              SizedBox(height: subtitles),
-              Text('Select a Conversation Topic: ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: 'Inter',
-                      fontSize: 23,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-              SizedBox(height: subtitle_container),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                },
-                child: FractionallySizedBox(
-                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
-                  child: Container(
-                    height: container_height,
-                    color: sakura,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: icon_dimen,
-                          height: icon_dimen,
-                          child: IconButton(
-                            style: IconButton.styleFrom(
-                              backgroundColor: sakura,
-                            ),
-                            icon: Image.asset('assets/greet.png'),
-                            onPressed: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
-                            },
-                          ),
-                        ),
-                        Expanded(
-                          child: SingleChildScrollView(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  AppLocalizations.of(context)!.greetingTitle,
-                                  style: TextStyle(
-                                    fontSize: 23,
-                                    fontFamily: "Inter",
-                                    fontWeight: FontWeight.w500,
-                                    color: white,
-                                  ),
-                                ),
-                                SizedBox(width: text),
-                                Text(
-                                  '[ Greeting ]',
-                                  style: TextStyle(
-                                    fontSize: 22,
-                                    fontFamily: "Inter",
-                                    color: white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
-                          },
-                          icon: Icon(
-                            Icons.keyboard_arrow_right,
-                            color: white,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+
               SizedBox(height: container_spacings),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
-                },
-                child: FractionallySizedBox(
-                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
-                  child: Container(
-                    height: container_height,
-                    color: sakura,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: icon_dimen,
-                          height: icon_dimen,
-                          child: IconButton(
-                            style: IconButton.styleFrom(
-                              backgroundColor: sakura,
-                            ),
-                            icon: Image.asset('assets/intro.png'),
-                            onPressed: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
-                            },
-                          ),
-                        ),
-                        Expanded(
-                          child: SingleChildScrollView(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  AppLocalizations.of(context)!.introductionTitle,
-                                  style: TextStyle(
-                                    fontSize: 23,
-                                    fontFamily: "Inter",
-                                    fontWeight: FontWeight.w500,
-                                    color: white,
-                                  ),
-                                ),
-                                SizedBox(width: text),
-                                Text(
-                                  '[ Introduction ]',
-                                  style: TextStyle(
-                                    fontSize: 22,
-                                    fontFamily: "Inter",
-                                    color: white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
-                          },
-                          icon: Icon(
-                            Icons.keyboard_arrow_right,
-                            color: white,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
+
+              CategoryBox(
+                  topicFunc: Introduction(),
+                  titleGetter: (localizations) => localizations.introductionTitle,
+                  engTitle: '[ Introduction ]',
+                  image: 'assets/intro.png'
               ),
+
               SizedBox(height: container_spacings),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                },
-                child: FractionallySizedBox(
-                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
-                  child: Container(
-                    height: container_height,
-                    color: sakura,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: icon_dimen,
-                          height: icon_dimen,
-                          child: IconButton(
-                            style: IconButton.styleFrom(
-                              backgroundColor: sakura,
-                            ),
-                            icon: Image.asset('assets/likedislike.png'),
-                            onPressed: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                            },
-                          ),
-                        ),
-                        Expanded(
-                          child: SingleChildScrollView(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  AppLocalizations.of(context)!.likesAndDislikesTitle,
-                                  style: TextStyle(
-                                    fontSize: 23,
-                                    fontFamily: "Inter",
-                                    fontWeight: FontWeight.w500,
-                                    color: white,
-                                  ),
-                                ),
-                                SizedBox(width: text),
-                                Text(
-                                  '[ Likes/Dislikes ]',
-                                  style: TextStyle(
-                                    fontSize: 22,
-                                    fontFamily: "Inter",
-                                    color: white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                          },
-                          icon: Icon(
-                            Icons.keyboard_arrow_right,
-                            color: white,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
+
+              CategoryBox(
+                  topicFunc: LikesDislikes(),
+                  titleGetter: (localizations) => localizations.likesAndDislikesTitle,
+                  engTitle: '[ Likes / Dislikes ]',
+                  image: 'assets/likedislike.png'
               ),
+
               SizedBox(height: container_spacings),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                },
-                child: FractionallySizedBox(
-                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
-                  child: Container(
-                    height: container_height,
-                    color: sakura,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: icon_dimen,
-                          height: icon_dimen,
-                          child: IconButton(
-                            style: IconButton.styleFrom(
-                              backgroundColor: sakura,
-                            ),
-                            icon: Image.asset('assets/topic.png'),
-                            onPressed: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Expanded(
-                          child: SingleChildScrollView(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  AppLocalizations.of(context)!.topicsTitle,
-                                  style: TextStyle(
-                                    fontSize: 23,
-                                    fontFamily: "Inter",
-                                    fontWeight: FontWeight.w500,
-                                    color: white,
-                                  ),
-                                ),
-                                SizedBox(width: text),
-                                Text(
-                                  '[ Topics ]',
-                                  style: TextStyle(
-                                    fontSize: 22,
-                                    fontFamily: "Inter",
-                                    color: white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                          },
-                          icon: Icon(
-                            Icons.keyboard_arrow_right,
-                            color: white,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
+
+              CategoryBox(
+                  topicFunc: Topics(),
+                  titleGetter: (localizations) => localizations.topicsTitle,
+                  engTitle: '[ Topics ]',
+                  image: 'assets/topic.png'
               ),
               SizedBox(height: bottom_padding),
             ],),
