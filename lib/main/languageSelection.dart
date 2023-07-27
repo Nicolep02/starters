@@ -1,13 +1,13 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:starters/english/topics.dart';
-import 'package:starters/widgets/bottom_nav_2.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:starters/english/topics.dart';
 import '../main.dart';
 import 'select_topic.dart';
+import '../widgets/lang.dart';
 import '../styles/spacing.dart';
 import '../styles/colors.dart';
-import '../widgets/appbar.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:starters/widgets/bottom_nav_2.dart';
 
 class Language extends StatelessWidget {
   const Language({Key? key}) : super(key: key);
@@ -36,7 +36,7 @@ class Language extends StatelessWidget {
               Text(AppLocalizations.of(context)!.chooseLangTitle,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 22,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -59,7 +59,7 @@ class Language extends StatelessWidget {
               Text(AppLocalizations.of(context)!.selectYourLang,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 23,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -67,171 +67,61 @@ class Language extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            width: flag_width, height: flag_height,
-                            child: IconButton(
-                              icon: Image.asset('assets/ja.png'),
-                              onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'ja'));
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                              },
-                            ),
-                          ),
-                          Text(AppLocalizations.of(context)!.japanese),
-                          // Text('Japanese'),
-                        ],
-                      ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/ko.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'ko'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.korean),
-                        // Text('Korean'),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/zh.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'zh'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.chinese),
-                        // Text('Chinese'),
-                      ],
-                    ),
-                  ),
+                  Lang(
+                      langGetter: (localizations)=> localizations.japanese,
+                      locale: 'ja',
+                      image: 'assets/ja.png'),
+
+                  Lang(
+                      langGetter: (localizations)=> localizations.korean,
+                      locale: 'ko',
+                      image: 'assets/ko.png'),
+
+                  Lang(
+                      langGetter: (localizations)=> localizations.chinese,
+                      locale: 'zh',
+                      image: 'assets/zh.png'),
                 ],
               ),
               SizedBox(height: flag_bottom_spacing),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/es.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'es'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.spanish),
-                        // Text('Spanish'),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/vi.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'vi'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.vietnamese),
-                        // Text('Vietnamese'),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/fr.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'fr'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.french),
-                        // Text('French'),
-                      ],
-                    ),
-                  ),
+                  Lang(
+                      langGetter: (localizations)=> localizations.spanish,
+                      locale: 'es',
+                      image: 'assets/es.png'),
+
+                  Lang(
+                      langGetter: (localizations)=> localizations.vietnamese,
+                      locale: 'vi',
+                      image: 'assets/vi.png'),
+
+                  Lang(
+                      langGetter: (localizations)=> localizations.french,
+                      locale: 'fr',
+                      image: 'assets/fr.png'),
                 ],
               ),
               SizedBox(height: flag_bottom_spacing),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/it.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'it'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.italian),
-                        // Text('Italian'),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/de.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'de'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.german),
-                        // Text('German'),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          width: flag_width, height: flag_height,
-                          child: IconButton(
-                            icon: Image.asset('assets/pt.png'),
-                            onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'pt'));
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                            },
-                          ),
-                        ),
-                        Text(AppLocalizations.of(context)!.portuguese),
-                        // Text('Portuguese'),
-                      ],
-                    ),
-                  ),
+                  Lang(
+                      langGetter: (localizations)=> localizations.italian,
+                      locale: 'it',
+                      image: 'assets/it.png'),
+
+                  Lang(
+                      langGetter: (localizations)=> localizations.german,
+                      locale: 'de',
+                      image: 'assets/de.png'),
+
+                  Lang(
+                      langGetter: (localizations)=> localizations.portuguese,
+                      locale: 'pt',
+                      image: 'assets/pt.png'),
+
                 ],
               ),
               SizedBox(height: icon),
@@ -247,7 +137,11 @@ class Language extends StatelessWidget {
                       },
                     ),
                   ),
-                  Text('English'),
+                  Text('English',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 15,
+                    ),),
                   SizedBox(width: icon),
                 ],
               ),

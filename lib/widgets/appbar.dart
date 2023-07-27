@@ -30,7 +30,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
               titleGetter(localizations!),
               style: TextStyle(
                 fontFamily: 'Inter',
-                fontSize: 22,
+                fontSize: 23,
                 fontWeight: FontWeight.bold,
               ),
             ),
