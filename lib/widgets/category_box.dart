@@ -59,7 +59,7 @@ class CategoryBox extends StatelessWidget {
                           fontSize: 23,
                           fontFamily: "Inter",
                           fontWeight: FontWeight.w500,
-                          color: white,
+                          color: bark,
                         ),
                       ),
                       SizedBox(width: text),

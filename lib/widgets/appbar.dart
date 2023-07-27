@@ -21,6 +21,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 
     return AppBar(
       toolbarHeight: appbar_height,
+      backgroundColor: dropDown,
       title: Container(
         padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
         width: appbar_limit,
@@ -46,7 +47,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           ],
         ),
       ),
-      backgroundColor: bark,
     );
   }
 
