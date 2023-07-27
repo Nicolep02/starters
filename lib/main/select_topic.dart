@@ -3,11 +3,9 @@ import 'package:starters/grocery_pages/grocery_main.dart';
 import 'package:starters/medical_pages/med_main.dart';
 import 'package:starters/widgets/appbar.dart';
 import 'package:starters/widgets/bottom_nav_2.dart';
-import '../styles/colors.dart';
 import '../styles/spacing.dart';
 import '../conversational_pages/converMain.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../widgets/bottom_nav_1.dart';
 import 'package:starters/work_pages/workMain.dart';
 
 class Topics extends StatelessWidget {
@@ -19,35 +17,6 @@ class Topics extends StatelessWidget {
     return Scaffold(
         appBar: MyAppBar(titleGetter:(localizations) => localizations.selectTopicTitle,
           engTitleKey: 'Let\'s Learn English',),
-        body: Container(
-          width: screen_limit,
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SizedBox(height:20),
-                Text(AppLocalizations.of(context)!.selectTopicText,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Inter',
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-
-                SizedBox(height:8),
-                Text('Select the category you would like to learn: ',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Inter',
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),),
-              ],
-            ),
-          ),
-          backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-        ),
 
         body: SingleChildScrollView(
           child: Column(
@@ -58,7 +27,7 @@ class Topics extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 15,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -68,13 +37,10 @@ class Topics extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 15,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
-                ),
-                SizedBox(height: lang_spacing),
-
+                ),),
                 SizedBox(height: 15),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
@@ -90,7 +56,6 @@ class Topics extends StatelessWidget {
                               },
                             ),
                           ),
-                        ),
                         Text(AppLocalizations.of(context)!.conversationalTitle,
                           style: TextStyle(fontFamily: 'Inter',
                             fontSize: 20,
@@ -162,7 +127,6 @@ class Topics extends StatelessWidget {
                               },
                             ),
                           ),
-                        ),
                         Text(AppLocalizations.of(context)!.groceriesTitle,
                           style: TextStyle(fontFamily: 'Inter',
                             fontSize: 20,
