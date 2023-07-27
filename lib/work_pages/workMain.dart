@@ -7,6 +7,7 @@ import 'interview.dart';
 import 'talkingabtJob.dart';
 import 'part_time.dart';
 import 'findJob.dart';
+import '../widgets/appbar.dart';
 
 class Work extends StatefulWidget{
   const Work({Key? key}) : super(key: key);
@@ -21,35 +22,9 @@ class _WorkState extends State<Work> {
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*1.0;
-    double appbar_limit = MediaQuery.of(context).size.width*0.7;
-    double box_limit = container_width;
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: appbar_height,
-        title: Container(
-          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
-          width: appbar_limit,
-          child: Column(
-            children: [
-              Text(AppLocalizations.of(context)!.workTitle,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: text),
-              Text('Work',
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),),
-            ],
-          ),
-        ),
-        backgroundColor: bark,
-      ),
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.workTitle,
+        engTitleKey: 'Work',),
       body: SingleChildScrollView(
         child: Container(
           width: screen_limit,
@@ -67,7 +42,7 @@ class _WorkState extends State<Work> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 18,
+                  fontSize: 23,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -76,7 +51,7 @@ class _WorkState extends State<Work> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 18,
+                  fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -111,7 +86,7 @@ class _WorkState extends State<Work> {
                             Text(AppLocalizations.of(context)!.partTimeJobTitle,
                               overflow: TextOverflow.ellipsis,
                               style: const TextStyle(
-                                fontSize: 18,
+                                fontSize: 23,
                                 fontFamily: "Inter",
                                 fontWeight: FontWeight.w500,
                                 color: white,
@@ -120,7 +95,7 @@ class _WorkState extends State<Work> {
                             const Text('[ Part Time Job]',
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 22,
                                 fontFamily: "Inter",
                                 color: white,
                               ),),

@@ -5,6 +5,8 @@ import '../medical_pages/makeAppt.dart';
 import '../medical_pages/illness.dart';
 import '../medical_pages/emergency.dart';
 import '../medical_pages/disease.dart';
+import '../widgets/appbar.dart';
+import '../widgets/bottom_nav_2.dart';
 
 class Medical extends StatefulWidget{
   const Medical({Key? key}) : super(key: key);
@@ -18,20 +20,9 @@ class _MedicalState extends State<Medical> {
   @override
   Widget build(BuildContext context) {
 
-
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Medical Lessons',
-          style: TextStyle(
-            fontFamily: 'Inter',
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        centerTitle: true,
-        backgroundColor: const Color.fromRGBO(21, 33, 61, 1.0),
-      ),
-
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.medicalTitle,
+    engTitleKey: 'Medical Lessons',),
 
       body: Container(
         alignment: AlignmentDirectional.center,
@@ -109,12 +100,11 @@ class _MedicalState extends State<Medical> {
                 },
               ),
             ),
-            // ],),
-
           ],
         ),
-
-      ),);
+      ),
+      bottomNavigationBar: NavBar2(),
+    );
 
   }
 }
