@@ -12,3 +12,11 @@ const base = Color (0xFFc9b9c0);
 const button = Color(0xFFbf8065);
 const gray = Color(0xFFC2C2C2);
 const navy = Color(0xFF14213D);
+
+
+//Guide Page
+const bar = Color(0xFF48404F);
+const back = Color(0xFFFED4F0);
+const home = Color(0xFF803E79);
+const dropDown = Color(0xFFB76E79);
+const dropBox = Color(0xFFFDE9EA);

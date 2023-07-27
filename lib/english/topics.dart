@@ -1,29 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:starters/grocery_pages/grocery_main.dart';
 import 'package:starters/medical_pages/med_main.dart';
-import 'package:starters/widgets/appbar.dart';
 import 'package:starters/widgets/bottom_nav_2.dart';
 import '../styles/colors.dart';
 import '../styles/spacing.dart';
-import '../conversational_pages/converMain.dart';
+import 'C/c_main.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class Topics extends StatelessWidget {
-  const Topics({Key? key}) : super(key: key);
+class Entopics extends StatelessWidget {
+  const Entopics({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*1.0;
     return Scaffold(
-        appBar: MyAppBar(titleGetter:(localizations) => localizations.selectTopicTitle,
-          engTitleKey: 'Let\'s Learn English',),
-        body: Container(
-          width: screen_limit,
-          child: SingleChildScrollView(
+        appBar: AppBar(
+          toolbarHeight: appbar_height,
+          centerTitle: true,
+          title: Text(AppLocalizations.of(context)!.selectTopicTitle,
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          backgroundColor: navy,
+        ),
+
+        body: SingleChildScrollView(
+          child: Container(
+            width: screen_limit,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(height:20),
+                SizedBox(height : title_subtitle_spacing),
                 Text(AppLocalizations.of(context)!.selectTopicText,
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -32,19 +42,7 @@ class Topics extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-
-                SizedBox(height:8),
-                Text('Select the category you would like to learn: ',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Inter',
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: lang_spacing),
-
-                SizedBox(height: 15),
+                SizedBox(height: text_icon),
 
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -57,17 +55,12 @@ class Topics extends StatelessWidget {
                             child: IconButton(
                               icon: Image.asset('assets/conver.png'),
                               onPressed: (){
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Conver()));
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Con()));
                               },
                             ),
                           ),
-                          Text(AppLocalizations.of(context)!.conversationalTitle,
-                            style: TextStyle(fontFamily: 'Inter',
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,),),
                         ],),),
                   ],),
-
                 SizedBox(height: 20,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -85,14 +78,13 @@ class Topics extends StatelessWidget {
                               //},
                             ),
                           ),
-                          Text(AppLocalizations.of(context)!.workTitle,
-                            style: TextStyle(fontFamily: 'Inter',
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,),),
+                          // Text(AppLocalizations.of(context)!.workTitle,
+                          //   style: TextStyle(fontFamily: 'Inter',
+                          //     fontSize: 20,
+                          //     fontWeight: FontWeight.bold,),),
                         ],),),
                   ],
                 ),
-
                 SizedBox(height: 20,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -109,10 +101,10 @@ class Topics extends StatelessWidget {
                               },
                             ),
                           ),
-                          Text(AppLocalizations.of(context)!.medicalTitle,
-                            style: TextStyle(fontFamily: 'Inter',
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,),),
+                          // Text(AppLocalizations.of(context)!.medicalTitle,
+                          //   style: TextStyle(fontFamily: 'Inter',
+                          //     fontSize: 20,
+                          //     fontWeight: FontWeight.bold,),),
                         ],),),
                   ],),
 
@@ -132,10 +124,10 @@ class Topics extends StatelessWidget {
                               },
                             ),
                           ),
-                          Text(AppLocalizations.of(context)!.groceriesTitle,
-                            style: TextStyle(fontFamily: 'Inter',
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,),),
+                          // Text(AppLocalizations.of(context)!.groceriesTitle,
+                          //   style: TextStyle(fontFamily: 'Inter',
+                          //     fontSize: 20,
+                          //     fontWeight: FontWeight.bold,),),
                         ],),),
                   ],),
                 SizedBox(height:30),

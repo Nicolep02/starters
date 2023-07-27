@@ -146,7 +146,15 @@ flutter:
     - assets/intro.png
     - assets/likedislike.png
     - assets/topic.png
-    - assets/ellipse.png
+    - assets/shape.png
+    - assets/eng.png
+    - assets/flower.png
+    - assets/cpage.png
+    - assets/eng.png
+    - assets/home.png
+    - assets/lang.png
+    - assets/tpage.png
+    - assets/buttons.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

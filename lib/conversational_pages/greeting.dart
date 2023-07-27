@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../styles/colors.dart';
 import '../styles/spacing.dart';
+import '../widgets/appbar.dart';
 import '../widgets/bottom_nav_2.dart';
 
 class Greeting extends StatefulWidget {
@@ -15,35 +16,10 @@ class _GreetingState extends State<Greeting> {
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*0.74;
-    double appbar_limit = MediaQuery.of(context).size.width*0.7;
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        toolbarHeight: appbar_height,
-        title: Container(
-          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
-          width: appbar_limit,
-          child: Column(
-            children: [
-              Text(AppLocalizations.of(context)!.greetingTitle,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height:5),
-              Text('Greeting',
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),),
-            ],
-          ),
-        ),
-        backgroundColor: bark,
-      ),
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.greetingTitle,
+        engTitleKey: 'Greeting',),
 
       body: SingleChildScrollView(
         child: Column(

@@ -4,18 +4,52 @@ import 'dart:ui';
 import '../styles/spacing.dart';
 import '../styles/colors.dart';
 
-//Choose Lang appbar  STILL work in progress
-Widget ChooseLangBar(String title){
-  return AppBar(
-    toolbarHeight: appbar_height,
-    backgroundColor: navy,
-    title: Text(title,
-      style: TextStyle(
-        fontFamily: 'Inter',
-        fontSize: 25,
-        fontWeight: FontWeight.bold,
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final String Function(AppLocalizations) titleGetter;
+  final String engTitleKey;
+
+  const MyAppBar({
+    required this.titleGetter,
+    required this.engTitleKey,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    double appbar_limit = MediaQuery.of(context).size.width * 0.7;
+    AppLocalizations? localizations = AppLocalizations.of(context);
+
+    return AppBar(
+      toolbarHeight: appbar_height,
+      title: Container(
+        padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
+        width: appbar_limit,
+        child: Column(
+          children: [
+            Text(
+              titleGetter(localizations!),
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: text),
+            Text(
+              engTitleKey,
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
       ),
-    ),
-    centerTitle: true,
-  );
+      backgroundColor: bark,
+    );
+  }
+
+  @override
+  Size get preferredSize => Size.fromHeight(appbar_height);
 }

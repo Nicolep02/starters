@@ -11,14 +11,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // double ellipse_limit = MediaQuery.of(context).size.width*0.8;
     return Scaffold(
-      backgroundColor: turquoise,
+      backgroundColor: home,
       body: SingleChildScrollView(
         child: Container(
           alignment: Alignment.center,
           height: ellipse,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/ellipse.png'),
+              image: AssetImage('assets/shape.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
                     fontSize: 40.0,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.0,
-                    color: Colors.white,
+                    color: white,
                     fontFamily: 'IrishGrover',
                   ),
                 ),
@@ -43,8 +43,7 @@ class Home extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(170, 0, 0, 0),
                 child: Image.asset(
                   'assets/homeBunni.png',
-                  width: bunni_width,
-                  height: bunni_height,
+                  width: bunni,
                 ),
               ),
               Column(
@@ -73,7 +72,7 @@ class Home extends StatelessWidget {
                           child: Text('Let\'s study English',
                             style: TextStyle(
                               fontFamily: 'Inter',
-                              color: Colors.white,
+                              color: white,
                               fontSize: 24,
                             ),
                           ),
@@ -105,7 +104,7 @@ class Home extends StatelessWidget {
                           child: Text('Guide',
                             style: TextStyle(
                               fontFamily: 'Inter',
-                              color: Colors.white,
+                              color: white,
                               fontSize: 24,
                             ),
                           ),
@@ -135,7 +134,7 @@ class Home extends StatelessWidget {
                           child: Text('Resources',
                             style: TextStyle(
                               fontFamily: 'Inter',
-                              color: Colors.white,
+                              color: white,
                               fontSize: 24,
                             ),
                           ),
