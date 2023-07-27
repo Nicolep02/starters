@@ -11,11 +11,11 @@ class NavBar2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: bark,
+      color: dropDown,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
         child: GNav(
-          backgroundColor: bark,
+          backgroundColor: dropDown,
           color: Colors.white,
           activeColor: Colors.white,
           tabBackgroundColor: Colors.grey.shade800,
@@ -26,6 +26,7 @@ class NavBar2 extends StatelessWidget {
               icon: Icons.home,
               backgroundColor: sakura,
               text: 'Home',
+              textColor: nightSky,
               onPressed:() {
                 Navigator.push(
                     context,
