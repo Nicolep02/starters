@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../styles/colors.dart';
 import '../styles/spacing.dart';
 import '../widgets/bottom_nav_2.dart';
+import '../widgets/appbar.dart';
 
 class TalkAbtJob extends StatefulWidget {
   const TalkAbtJob({Key? key}) : super(key: key);
@@ -18,15 +19,8 @@ class _TalkAbtJobState extends State<TalkAbtJob> {
 
     return Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: nightSky,
-          title: Text(AppLocalizations.of(context)!.talkingAboutYourJobTitle,
-            style: const TextStyle(
-                fontFamily: 'Inter'
-            ),
-          ),
-          centerTitle: true,
-        ),
+        appBar: MyAppBar(titleGetter:(localizations) => localizations.talkingAboutYourJobTitle,
+                engTitleKey: 'Talking About Job',),
 
         body: SingleChildScrollView(
           child: Column(

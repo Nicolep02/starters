@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../styles/colors.dart';
 import '../styles/spacing.dart';
 import '../widgets/bottom_nav_2.dart';
+import '../widgets/appbar.dart';
 
 class PartTime extends StatefulWidget {
   const PartTime({Key? key}) : super(key: key);
@@ -18,15 +19,8 @@ class _PartTimeState extends State<PartTime> {
 
     return Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: nightSky,
-          title: Text(AppLocalizations.of(context)!.partTimeJobTitle,
-            style: const TextStyle(
-                fontFamily: 'Inter'
-            ),
-          ),
-          centerTitle: true,
-        ),
+        appBar: MyAppBar(titleGetter:(localizations) => localizations.partTimeJobTitle,
+    engTitleKey: 'Part Time Job',),
 
         body: SingleChildScrollView(
           child: Column(

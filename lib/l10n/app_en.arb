@@ -198,11 +198,11 @@
 
 
 
-  "medicalTitle": "Medical",
+  "medicalTitle": "Medical Lessons",
   "@medicalTitle": {
     "description": "Medical category title"
   },
-  "selectMedicalTopic": "Select a Medical-related Topic:",
+  "selectMedicalTopic": "Select a Medical-related Topic below:",
   "@selectMedicalTopic": {
     "description": "Medical category"
   },

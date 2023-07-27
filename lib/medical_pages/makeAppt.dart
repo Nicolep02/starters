@@ -4,6 +4,7 @@ import '../medical_pages/med_main.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../styles/colors.dart';
 import '../styles/spacing.dart';
+import '../widgets/appbar.dart';
 import '../widgets/bottom_nav_2.dart';
 
 class Appt extends StatefulWidget {
@@ -20,15 +21,8 @@ class _ApptState extends State<Appt> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: nightSky,
-        title: Text(AppLocalizations.of(context)!.makeAnAppointmentTitle,
-          style: TextStyle(
-              fontFamily: 'Inter'
-          ),
-        ),
-        centerTitle: true,
-      ),
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.makeAnAppointmentTitle,
+        engTitleKey: 'Make an appointment',),
 
       body: SingleChildScrollView(
         child: Column(
@@ -348,6 +342,7 @@ class _ApptState extends State<Appt> {
               ],),
               ],),
       ),
+      bottomNavigationBar: NavBar2(),
     );
   }
 }

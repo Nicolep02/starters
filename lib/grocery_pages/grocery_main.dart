@@ -4,9 +4,8 @@ import 'fruitsPage.dart';
 import 'vegetables.dart';
 import 'bakery&dairy.dart';
 import 'eggsandmeats.dart';
-import '../home/home.dart';
-import '../home/help.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
+import '../widgets/bottom_nav_2.dart';
+import '../widgets/appbar.dart';
 
 
 class Grocery extends StatefulWidget{
@@ -22,17 +21,8 @@ class _GroceryState extends State<Grocery> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Groceries',
-        style: TextStyle(
-        fontFamily: 'Inter',
-        fontSize: 25,
-        fontWeight: FontWeight.bold,
-    ),
-    ),
-        centerTitle: true,
-        backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-      ),
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.groceriesTitle,
+                      engTitleKey: 'Groceries',),
       body: Container(
         alignment: AlignmentDirectional.center,
         decoration: BoxDecoration(
@@ -107,42 +97,7 @@ class _GroceryState extends State<Grocery> {
       ),
 
       ),
-      bottomNavigationBar: Container(
-        color: Color.fromRGBO(22, 34, 61, 1.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
-          child: GNav(
-            backgroundColor: Color.fromRGBO(22, 34, 61, 1.0),
-            color: Colors.white,
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade800,
-            padding: EdgeInsets.all(25),
-            gap: 8,
-            tabs:[
-              GButton(
-                icon: Icons.home,
-                text: 'Home',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Home()));
-                },
-              ),
-              GButton(
-                icon: Icons.question_mark,
-                text: 'Help',
-                onPressed:() {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Help()));
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: NavBar2(),
     );
 
 }
