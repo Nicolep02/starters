@@ -18,20 +18,52 @@ class Topics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*1.0;
+<<<<<<< Updated upstream
+=======
+    double appbar_limit = MediaQuery.of(context).size.width*0.7;
+>>>>>>> Stashed changes
     return Scaffold(
         appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-        title: const Text(
-            'Let\'s Learn English!',
-            style: TextStyle(
-            fontFamily: 'Inter',
-            fontSize: 23,
-            fontWeight: FontWeight.bold,
-        ),
-        ),
+          toolbarHeight: appbar_height,
+          title: Container(
+            padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
+            width: appbar_limit,
+            child: Column(
+              children: [
+                Text(AppLocalizations.of(context)!.selectTopicTitle,
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height:5),
+                Text('Let\'s Learn English!',
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),),
+              ],
+            ),
+          ),
+          backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
+
+
+
+        // centerTitle: true,
+        // backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
+        // title: const Text(
+        //     'Let\'s Learn English!',
+        //     style: TextStyle(
+        //     fontFamily: 'Inter',
+        //     fontSize: 23,
+        //     fontWeight: FontWeight.bold,
+        // ),
+        // ),
         ),
 
+<<<<<<< Updated upstream
         body: SingleChildScrollView(
           child:
           Container(
@@ -62,6 +94,70 @@ class Topics extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 ),
                 ),
+=======
+    body: SingleChildScrollView(
+      child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+      SizedBox(height:20),
+      Text('Select the category you would like to learn: ',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: 'Inter',
+          fontSize: 23,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      SizedBox(height:8),
+      Text(AppLocalizations.of(context)!.selectTopicText,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: 'Inter',
+          fontSize: 23,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    // Row(
+    // mainAxisAlignment: MainAxisAlignment.start,
+    // crossAxisAlignment: CrossAxisAlignment.end,
+    // children: [
+    //     const SizedBox(height: 60,),
+    //       const Text('Select the category you would like to learn:',
+    //         textAlign: TextAlign.center,
+    //         style: TextStyle(
+    //           fontFamily: 'Inter',
+    //           fontSize: 23,
+    //           fontWeight: FontWeight.bold,
+    //         ),
+    //       ),
+    //   Text(AppLocalizations.of(context)!.selectTopicText,
+    //     textAlign: TextAlign.center,
+    //     style: TextStyle(
+    //       fontFamily: 'Inter',
+    //       fontSize: 23,
+    //       fontWeight: FontWeight.bold,
+    //     ),
+    //   ),
+    //   ],),
+        SizedBox(height: lang_spacing),
+      //   Row(
+      //     mainAxisSize: MainAxisSize.min,
+      //     children: [
+      //       Container(
+      //         //width: screen_limit,
+      //         padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+      //         child: Text(AppLocalizations.of(context)!.selectTopicText,
+      //           style: TextStyle(fontFamily: 'Inter',
+      //             fontSize: 23,
+      //             fontWeight: FontWeight.bold,),),
+      //       ), // <-- Text
+      //     ],
+      //   ),
+      // ],
+      //   ),
+      //
+      SizedBox(height: 15),
+>>>>>>> Stashed changes
 
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -149,12 +245,20 @@ class Topics extends StatelessWidget {
               fontWeight: FontWeight.bold,),),
     ],),),
             ],),
+<<<<<<< Updated upstream
 
 
     ],),
             ),),
 
 
+=======
+
+    ],),
+    ),
+
+
+>>>>>>> Stashed changes
       bottomNavigationBar: NavBar1()
         );
 

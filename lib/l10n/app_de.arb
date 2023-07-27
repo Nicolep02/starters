@@ -1,3 +1,170 @@
 {
-  "@@locale": "de"
+  "@@locale": "de",
+
+  "appName": "Hallo,",
+  "startButton": "Lass uns Englisch lernen",
+  "guideButton": "Führung",
+  "resourcesButton": "Ressourcen",
+  "homeButton": "Heim",
+
+
+  "chooseLangTitle": "Sprache wählen",
+  "selectYourLang": "Bitte wählen Sie Ihre Muttersprache aus:",
+  "japanese": "Japanisch",
+  "korean": "Koreanisch",
+  "chinese": "Chinesisch",
+  "spanish": "Spanisch",
+  "vietnamese": "Vietnamesisch",
+  "french": "Französisch",
+  "italian": "Italienisch",
+  "german": "Deutsch",
+  "portuguese": "Portugiesisch",
+  "english": "Englisch",
+  "burmese": "Birmanisch",
+
+
+
+  "selectTopicTitle": "Lass uns Englisch lernen",
+  "selectTopicText": "Wählen Sie die Kategorie aus, die Sie lernen möchten:",
+
+
+  "workTitle": "Arbeiten",
+  "partTimeJobTitle": "Teilzeit-Job",
+
+  "partTimeJobOne": "Ich habe heute Abend einen Teilzeitjob.",
+  "partTimeJobTwo": "Ich arbeite in einem Café.",
+  "partTimeJobThree": "Ich arbeite in einem Café.？",
+  "partTimeJobFour": "Die Bezahlung ist in Ordnung. Ich verdiene 17 $ pro Stunde.",
+  "partTimeJobFive": "Ich bekomme meinen Gehaltsscheck wöchentlich.",
+
+  "talkingAboutYourJobTitle": "Sprechen Sie über Ihren Job",
+
+  "talkingAboutYourJobOne": "Welche Rolle spielen Sie im Unternehmen?",
+  "talkingAboutYourJobTwo": "Ich bin der Leiter Design.",
+  "talkingAboutYourJobThree": "Was hast du zu tun?",
+  "talkingAboutYourJobFour": "Ich verwalte Künstler und Grafikdesigner.",
+  "talkingAboutYourJobFive": "Magst du deinen Job?",
+
+  "findingAJobTitle": "Einen Job finden",
+
+  "findingAJobOne": "Ich suche einen neuen Job.",
+  "findingAJobTwo": "Ich möchte einen Job im technischen Bereich bekommen.",
+  "findingAJobThree": "Haben Sie einen Lebenslauf vorbereitet?",
+  "findingAJobFour": "Wo suchen Sie einen Job?",
+  "findingAJobFive": "Ich habe Bewerbungen an ein Dutzend Unternehmen geschickt.",
+
+  "jobInterviewTitle": "Vorstellungsgespräch",
+
+  "jobInterviewOne": "Erzählen Sie mir etwas über die Position.",
+  "jobInterviewTwo": "Bei diesem Job handelt es sich um einen Einstiegsjob.",
+  "jobInterviewThree": "Welche Qualifikationen sind erforderlich?",
+  "jobInterviewFour": "Ein mindestens vierjähriger Hochschulabschluss ist erforderlich.",
+  "jobInterviewFive": "Was suchen Sie in einem Job?",
+
+
+
+  "medicalTitle": "Medizinisch",
+  "nineOneOneEmergencyTitle": "911 Notfall",
+
+  "nineOneOneEmergencyOne": "Hallo, was ist Ihr Notfall?",
+  "nineOneOneEmergencyTwo": "Beispiel: Ich habe einen Herzinfarkt.",
+  "nineOneOneEmergencyThree": "Wie heissen Sie?",
+  "nineOneOneEmergencyFour": "Ich heiße:",
+  "nineOneOneEmergencyFive": "Welche ist Ihre Adresse?",
+  "nineOneOneEmergencySix": "Meine Adresse ist:",
+  "nineOneOneEmergencySeven": "Okay, Hilfe ist unterwegs!",
+
+  "symptomsOfIllnessTitle": "Krankheitssymptome",
+
+  "symptomsOfIllnessOne": "Kopfschmerzen",
+  "symptomsOfIllnessTwo": "Fieber",
+  "symptomsOfIllnessThree": "Halsentzündung",
+  "symptomsOfIllnessFour": "Husten",
+  "symptomsOfIllnessFive": "Stomach Ache",
+
+  "makeAnAppointmentTitle": "Einen Termin machen",
+
+  "makeAnAppointmentOne": "Ich würde gerne einen Termin abmachen",
+  "makeAnAppointmentTwo": "Ich bin ein neuer Patient",
+  "makeAnAppointmentThree": "Mein Name und Geburtsdatum ist:",
+  "makeAnAppointmentFour": "Ich bin verfügbar/nicht verfügbar unter:",
+  "makeAnAppointmentFive": "Ich möchte meinen Termin verschieben",
+
+  "commonDiseaseNamesTitle": "Häufige Krankheitsnamen",
+
+  "commonDiseaseNamesOne": "Herzinfarkt",
+  "commonDiseaseNamesTwo": "Schlaganfall",
+  "commonDiseaseNamesThree": "Diabetes",
+  "commonDiseaseNamesFour": "Allergie",
+  "commonDiseaseNamesFive": "Schwindlig",
+
+
+
+  "conversationalTitle": "Konversation",
+  "selectConverTopic": "Wählen Sie ein Gesprächsthema:",
+
+  "greetingTitle": "Gruß",
+
+  "greetingOne": "Hallo!",
+  "greetingTwo": "Freut mich, Sie kennenzulernen.",
+  "greetingThree": "Guten Morgen/ guten Abend",
+  "greetingFour": "Wie geht es dir?",
+  "greetingFive": "Bis später.",
+
+  "introductionTitle": "Einführung",
+
+  "introductionOne": "Mein Name ist [Name].",
+  "introductionTwo": "Ihr/Sein/Ihr Name ist [Name].",
+  "introductionThree": "Wie heissen Sie?",
+  "introductionFour": "Ich kenne sie/ihn/sie nicht.",
+  "introductionFive": "Diese Leute sind meine Familie/Freunde/Klassenkameraden/Kollegen.",
+
+  "likesAndDislikesTitle": "Vorlieben und Abneigungen",
+
+  "likesAndDislikesOne": "Ich mag Äpfel.",
+  "likesAndDislikesTwo": "Ich renne nicht gern..",
+  "likesAndDislikesThree": "Surfen macht Spaß.",
+  "likesAndDislikesFour": "Ich bevorzuge das Essen in diesem Restaurant.",
+  "likesAndDislikesFive": "Was magst du am liebsten?",
+
+  "topicsTitle": "Themen",
+
+  "topicsOne": "Was ist deine Lieblingsmusik?",
+  "topicsTwo": "Fahren Sie lieber mit dem Bus oder lieber mit dem Auto?",
+  "topicsThree": "Wo arbeitest du?",
+  "topicsFour": "Wie lange lebst du schon hier?",
+  "topicsFive": "Was machst du in deiner Freizeit?",
+
+  "groceriesTitle" :"Lebensmittel",
+
+  "fruitsTitle": "Früchte",
+  "fruitsOne": "Apfel",
+  "fruitsTwo": "Banane",
+  "fruitsThree": "Orange",
+  "fruitsFour": "Zitrone",
+  "fruitsFive": "Erdbeere",
+
+  "vegetablesTitle": "Gemüse",
+
+  "vegetablesOne": "Tomate",
+  "vegetablesTwo": "Zwiebel",
+  "vegetablesThree": "Karotte",
+  "vegetablesFour": "Brokkoli",
+  "vegetablesFive": "Kartoffel",
+
+  "bakeryTitle": "Bäckerei und Molkerei",
+
+  "bakeryOne": "Milch",
+  "bakeryTwo": "Butter",
+  "bakeryThree": "Brot",
+  "bakeryFour": "Eiscreme",
+
+  "eggsTitle": "Eier und Fleisch",
+
+  "eggsOne": "Eier",
+  "eggsTwo": "Rindfleisch",
+  "eggsThree": "Fisch",
+  "eggsFour": "Garnele"
+
+
 }
