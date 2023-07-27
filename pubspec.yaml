@@ -84,7 +84,6 @@ flutter:
     - assets/jobInterview.jpeg
     - assets/medical.jpeg
     - assets/medicine.png
-    - assets/partTimeJob.jpeg
     - assets/pointer.png
     - assets/talkingAboutWork.jpeg
     - assets/work.jpeg
@@ -146,7 +145,10 @@ flutter:
     - assets/intro.png
     - assets/likedislike.png
     - assets/topic.png
+    - assets/bgWork.png
+    - assets/parttime.jpeg
     - assets/ellipse.png
+    - 
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

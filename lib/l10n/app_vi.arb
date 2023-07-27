@@ -12,19 +12,21 @@
     "selectYourLang": "chọn ngôn ngữ của bạn",
     "japanese": "tiếng Nhật",
     "korean": "Hàn Quốc",
-    "chinese": "người Trung Quốc",
-    "spanish": "người Tây Ban Nha",
+    "chinese": "Trung Quốc",
+    "spanish": "Tây Ban Nha",
     "vietnamese": "Tiếng Việt",
-    "french": "người Pháp",
-    "italian": "người Ý",
+    "french": " Pháp",
+    "italian": " Ý",
     "german": "tiếng Đức",
-    "portuguese": "người Bồ Đào Nha",
+    "portuguese": "Bồ Đào Nha",
     "english": "Tiếng Anh",
     "burmese": "tiếng Miến Điện",
 
 
 
     "selectTopicTitle": "chọn chủ đề",
+    "selectTopicText": "chọn chủ đề bạn muốn học:",
+
 
 
     "workTitle": "công việc",
@@ -37,7 +39,7 @@
     "partTimeJobFour": "Tiền lương ổn. Tôi nhận được 17 đô la mỗi giờ。",
     "partTimeJobFive": "Tôi nhận được tiền lương của tôi hàng tuần.",
 
-    "talkingAboutYourJobTitle": Nói về công việc của bạn",
+    "talkingAboutYourJobTitle": "Nói về công việc của bạn",
 
     "talkingAboutYourJobOne": "Vai trò của bạn trong công ty là gì?",
     "talkingAboutYourJobTwo": "Tôi là trưởng phòng thiết kế。",
@@ -64,7 +66,7 @@
 
 
     "medicalTitle": "thuộc về y học",
-    "selectMedicalTopic": Chọn một chủ đề y tế:",
+    "selectMedicalTopic": "Chọn một chủ đề y tế:",
     "nineOneOneEmergencyTitle": "911 khẩn cấp",
 
     "nineOneOneEmergencyOne": "Xin chào, trường hợp khẩn cấp của bạn là gì?",

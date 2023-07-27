@@ -9,8 +9,8 @@ import '../styles/spacing.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import '../conversational_pages/converMain.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:starters/work_pages/workMain.dart';
 import '../widgets/bottom_nav_1.dart';
+import 'package:starters/work_pages/workMain.dart';
 
 class Topics extends StatelessWidget {
   const Topics({Key? key}) : super(key: key);
@@ -30,7 +30,7 @@ class Topics extends StatelessWidget {
                 Text(AppLocalizations.of(context)!.selectTopicTitle,
                   style: TextStyle(
                     fontFamily: 'Inter',
-                    fontSize: 22,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -38,7 +38,7 @@ class Topics extends StatelessWidget {
                 Text('Let\'s Learn English!',
                   style: TextStyle(
                     fontFamily: 'Inter',
-                    fontSize: 22,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),),
               ],
@@ -56,7 +56,7 @@ class Topics extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 23,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -66,7 +66,7 @@ class Topics extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: 23,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -91,7 +91,7 @@ class Topics extends StatelessWidget {
                         ),
                         Text(AppLocalizations.of(context)!.conversationalTitle,
                           style: TextStyle(fontFamily: 'Inter',
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,),),
                       ],),),
                 ],),
@@ -108,14 +108,14 @@ class Topics extends StatelessWidget {
                           child: IconButton(
                             icon: Image.asset('assets/work_new.png'),
                             //onPressed: ()=>Navigator.of(context).pop(),
-                           onPressed: (){
-                             Navigator.of(context).push(MaterialPageRoute(builder: (context) => Work()));
+                            onPressed: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Work()));
                             },
                           ),
                         ),
                         Text(AppLocalizations.of(context)!.workTitle,
                           style: TextStyle(fontFamily: 'Inter',
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,),),
                       ],),),
                 ],
@@ -139,7 +139,7 @@ class Topics extends StatelessWidget {
                         ),
                         Text(AppLocalizations.of(context)!.medicalTitle,
                           style: TextStyle(fontFamily: 'Inter',
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,),),
                       ],),),
                 ],),
@@ -162,7 +162,7 @@ class Topics extends StatelessWidget {
                         ),
                         Text(AppLocalizations.of(context)!.groceriesTitle,
                           style: TextStyle(fontFamily: 'Inter',
-                            fontSize: 20,
+                            fontSize: 15,
                             fontWeight: FontWeight.bold,),),
                       ],),),
                 ],),

@@ -21,7 +21,7 @@ class _MedicalState extends State<Medical> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Medical Lessons',
+        title: const Text('Medical Lessons',
           style: TextStyle(
             fontFamily: 'Inter',
             fontSize: 25,
@@ -29,7 +29,7 @@ class _MedicalState extends State<Medical> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
+        backgroundColor: const Color.fromRGBO(21, 33, 61, 1.0),
       ),
 
 
@@ -53,7 +53,7 @@ class _MedicalState extends State<Medical> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 120),
+            const SizedBox(height: 120),
             Container(
               // decoration: BoxDecoration(
               //   color: Colors.black,
