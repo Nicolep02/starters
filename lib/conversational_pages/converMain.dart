@@ -58,56 +58,70 @@ class _ConverState extends State<Conver> {
               SizedBox(height: subtitle_container),
               InkWell(
                 onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
                 },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                          width: icon_dimen, height: icon_dimen,
+                child: FractionallySizedBox(
+                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
+                  child: Container(
+                    height: container_height,
+                    color: sakura,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: icon_dimen,
+                          height: icon_dimen,
                           child: IconButton(
                             style: IconButton.styleFrom(
                               backgroundColor: sakura,
                             ),
-                            icon: Image.asset('assets/greet.png',
-                            ),
+                            icon: Image.asset('assets/greet.png'),
                             onPressed: (){
                               Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
                             },
                           ),
                         ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.greetingTitle,
-                                style: TextStyle(
-                                fontSize: 23,
-                                fontFamily: "Inter",
-                                  fontWeight: FontWeight.w500,
-                                  color: white,
-                                ),),
-                              SizedBox(width: text),
-                              Text('[ Greeting ]',
-                                style: TextStyle(
-                                  fontSize: 22,
-                                  fontFamily: "Inter",
-                                  color: white,
-                                ),),
-                          ],
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.greetingTitle,
+                                  style: TextStyle(
+                                    fontSize: 23,
+                                    fontFamily: "Inter",
+                                    fontWeight: FontWeight.w500,
+                                    color: white,
+                                  ),
+                                ),
+                                SizedBox(width: text),
+                                Text(
+                                  '[ Greeting ]',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontFamily: "Inter",
+                                    color: white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
+                        IconButton(
+                          onPressed: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Greeting()));
+                          },
+                          icon: Icon(
+                            Icons.keyboard_arrow_right,
+                            color: white,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: container_spacings),
@@ -115,54 +129,68 @@ class _ConverState extends State<Conver> {
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
                 },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
+                child: FractionallySizedBox(
+                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
+                  child: Container(
+                    height: container_height,
+                    color: sakura,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: icon_dimen,
+                          height: icon_dimen,
+                          child: IconButton(
+                            style: IconButton.styleFrom(
+                              backgroundColor: sakura,
+                            ),
+                            icon: Image.asset('assets/intro.png'),
+                            onPressed: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
+                            },
                           ),
-                          icon: Image.asset('assets/intro.png',
+                        ),
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.introductionTitle,
+                                  style: TextStyle(
+                                    fontSize: 23,
+                                    fontFamily: "Inter",
+                                    fontWeight: FontWeight.w500,
+                                    color: white,
+                                  ),
+                                ),
+                                SizedBox(width: text),
+                                Text(
+                                  '[ Introduction ]',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontFamily: "Inter",
+                                    color: white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
+                        ),
+                        IconButton(
                           onPressed: (){
                             Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
                           },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.introductionTitle,
-                              style: TextStyle(
-                                fontSize: 23,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            Text('[ Introduction ]',
-                              style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Introduction()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
+                          icon: Icon(
+                            Icons.keyboard_arrow_right,
+                            color: white,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: container_spacings),
@@ -170,54 +198,68 @@ class _ConverState extends State<Conver> {
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
                 },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
+                child: FractionallySizedBox(
+                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
+                  child: Container(
+                    height: container_height,
+                    color: sakura,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: icon_dimen,
+                          height: icon_dimen,
+                          child: IconButton(
+                            style: IconButton.styleFrom(
+                              backgroundColor: sakura,
+                            ),
+                            icon: Image.asset('assets/likedislike.png'),
+                            onPressed: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
+                            },
                           ),
-                          icon: Image.asset('assets/likedislike.png',
+                        ),
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.likesAndDislikesTitle,
+                                  style: TextStyle(
+                                    fontSize: 23,
+                                    fontFamily: "Inter",
+                                    fontWeight: FontWeight.w500,
+                                    color: white,
+                                  ),
+                                ),
+                                SizedBox(width: text),
+                                Text(
+                                  '[ Likes/Dislikes ]',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontFamily: "Inter",
+                                    color: white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
+                        ),
+                        IconButton(
                           onPressed: (){
                             Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
                           },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.likesAndDislikesTitle,
-                              style: TextStyle(
-                                fontSize: 23,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            Text('[ Likes/Dislikes ]',
-                              style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
+                          icon: Icon(
+                            Icons.keyboard_arrow_right,
+                            color: white,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: container_spacings),
@@ -225,54 +267,68 @@ class _ConverState extends State<Conver> {
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
                 },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
+                child: FractionallySizedBox(
+                  widthFactor: 0.9, // Adjust the value as needed to control the width of the container
+                  child: Container(
+                    height: container_height,
+                    color: sakura,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: icon_dimen,
+                          height: icon_dimen,
+                          child: IconButton(
+                            style: IconButton.styleFrom(
+                              backgroundColor: sakura,
+                            ),
+                            icon: Image.asset('assets/topic.png'),
+                            onPressed: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                            },
                           ),
-                          icon: Image.asset('assets/intro.png',
+                        ),
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.topicsTitle,
+                                  style: TextStyle(
+                                    fontSize: 23,
+                                    fontFamily: "Inter",
+                                    fontWeight: FontWeight.w500,
+                                    color: white,
+                                  ),
+                                ),
+                                SizedBox(width: text),
+                                Text(
+                                  '[ Topics ]',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontFamily: "Inter",
+                                    color: white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
+                        ),
+                        IconButton(
                           onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => LikesDislikes()));
                           },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.topicsTitle,
-                              style: TextStyle(
-                                fontSize: 23,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            Text('[ Topics ]',
-                              style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
+                          icon: Icon(
+                            Icons.keyboard_arrow_right,
+                            color: white,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: bottom_padding),

@@ -234,23 +234,24 @@ class Language extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(height: icon),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  SizedBox(
+                    width: en_width, height: en_height,
+                    child: IconButton(
+                      icon: Image.asset('assets/eng.png'),
+                      onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'en'));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => Language()));
+                      },
+                    ),
+                  ),
+                  Text('English'),
+                  SizedBox(width: icon),
+                ],
+              ),
               SizedBox(height: flag_bottom_spacing),
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.end,
-              //   children: [
-              //     SizedBox(
-              //       width: en_width, height: en_height,
-              //       child: IconButton(
-              //         icon: Image.asset('assets/eng.png'),
-              //         onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'en'));
-              //         Navigator.of(context).push(MaterialPageRoute(builder: (context) => Entopics()));
-              //         },
-              //       ),
-              //     ),
-              //     Text('English'),
-              //     SizedBox(width: 40),
-              //   ],
-              // ),
             ],),
         ),
       ),
