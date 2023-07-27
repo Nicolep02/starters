@@ -1,3 +1,170 @@
 {
-  "@@locale": "fr"
+    "@@locale": "fr",
+
+    "appName": "Bonjour,",
+    "startButton": "commencer",
+    "guideButton": "guide",
+    "resourcesButton": "ressources",
+    "homeButton": "maison",
+
+
+    "chooseLangTitle": "Choisissez la langue",
+    "selectYourLang": "choisissez votre langue",
+    "japanese": "japonaise",
+    "korean": "coréen",
+    "chinese": "chinois",
+    "spanish": "espagnol",
+    "vietnamese": "vietnamien",
+    "french": "français",
+    "italian": "italien",
+    "german": "allemand",
+    "portuguese": "Portugais",
+    "english": "Anglais",
+    "burmese": "birman",
+
+
+
+    "selectTopicTitle": "choisissons un sujet",
+    "selectTopicText": "Choisissez un sujet qui tu es intéressé par:",
+
+
+    "workTitle": "travail",
+    "selectWorkTopic": "sélectionner un sujet lié au travail：",
+    "partTimeJobTitle": "Travail à temps partiel",
+
+    "partTimeJobOne": "J'ai un travail à temps partiel ce soir.",
+    "partTimeJobTwo": "je travaille dans un café。",
+    "partTimeJobThree": "je travaille dans un café",
+    "partTimeJobFour": "Le salaire est correct. Je reçois 17 $ de l'heure",
+    "partTimeJobFive": "Je reçois mon salaire chaque semaine.",
+
+    "talkingAboutYourJobTitle": "Parler de votre travail",
+
+    "talkingAboutYourJobOne": "Quel est votre rôle dans l'entreprise ?",
+    "talkingAboutYourJobTwo": "Je suis le chef du design",
+    "talkingAboutYourJobThree": "Quel est ton métier？",
+    "talkingAboutYourJobFour": "Je manage des artistes et des graphistes.",
+    "talkingAboutYourJobFive": "Est-ce que tu aimes ton travail?",
+
+    "findingAJobTitle": "Trouver un emploi",
+
+    "findingAJobOne": "Je suis à la recherche d'un nouvel emploi.",
+    "findingAJobTwo": "Je veux obtenir un emploi dans le domaine technologique.",
+    "findingAJobThree": "Avez-vous préparé un curriculum vitae?",
+    "findingAJobFour": "Où cherchez-vous un emploi ?",
+    "findingAJobFive": "J'ai envoyé des candidatures à une dizaine d'entreprises.",
+
+    "jobInterviewTitle": "Job Interview",
+
+    "jobInterviewOne": "Parlez-moi un peu du poste.",
+    "jobInterviewTwo": "Ce travail est un travail d'entrée de gamme.",
+    "jobInterviewThree": "Quel type de diplômes sont requis ?",
+    "jobInterviewFour": "Un diplôme d'études collégiales d'au moins quatre ans est requis.",
+    "jobInterviewFive": "Que recherchez-vous dans un emploi ?",
+
+
+
+    "medicalTitle": "médical",
+    "selectMedicalTopic": "choisir un sujet médical:",
+    "nineOneOneEmergencyTitle": "Urgence 911",
+
+    "nineOneOneEmergencyOne": "Bonjour, quelle est votre urgence ？",
+    "nineOneOneEmergencyTwo": "Exemple : Je fais une crise cardiaque",
+    "nineOneOneEmergencyThree": "Quel est ton nom?",
+    "nineOneOneEmergencyFour": "Mon nom est: _____",
+    "nineOneOneEmergencyFive": "Quelle est votre adresse?",
+    "nineOneOneEmergencySix": "Mon adresse est: _______",
+    "nineOneOneEmergencySeven": "OK, l'aide est en route !",
+
+    "symptomsOfIllnessTitle": "Symptômes de la maladie",
+
+    "symptomsOfIllnessOne": "Mal de tête",
+    "symptomsOfIllnessTwo": "fièvre",
+    "symptomsOfIllnessThree": "mal de gorge",
+    "symptomsOfIllnessFour": "tousser",
+    "symptomsOfIllnessFive": "maux d'estomac",
+
+    "makeAnAppointmentTitle": "prendre rendez-vous",
+
+    "makeAnAppointmentOne": "Je souhaite prendre rendez-vous",
+    "makeAnAppointmentTwo": "je suis un nouveau patient",
+    "makeAnAppointmentThree": "Mon nom et ma date de naissance sont____",
+    "makeAnAppointmentFour": "Je suis disponible/indisponible sur___",
+    "makeAnAppointmentFive": "Je souhaite reporter mon rendez-vous",
+
+    "commonDiseaseNamesTitle": "Noms communs des maladies",
+
+    "commonDiseaseNamesOne": "crise cardiaque",
+    "commonDiseaseNamesTwo": "coups",
+    "commonDiseaseNamesThree": "diabète",
+    "commonDiseaseNamesFour": "allergie",
+    "commonDiseaseNamesFive": "Vertigineux",
+
+
+
+    "conversationalTitle": "de la conversation",
+    "selectConverTopic": "sélectionner un sujet de conversation：",
+    "greetingTitle": "Salutation",
+
+    "greetingOne": "Bonjour!",
+    "greetingTwo": "Ravi de vous rencontrer.",
+    "greetingThree": "bonjour/bonne soirée",
+    "greetingFour": "Comment allez-vous?",
+    "greetingFive": "À plus tard.",
+
+    "introductionTitle": "Introduction",
+
+    "introductionOne": "Mon nom est ______",
+    "introductionTwo": "Son/Son/Leur nom est ______",
+    "introductionThree": "Quel est ton nom?",
+    "introductionFour": "je ne la connais pas",
+    "introductionFive": "Ces personnes sont mes amis/camarades de classe/collègues.",
+
+    "likesAndDislikesTitle": "aime et n'aime pas",
+
+    "likesAndDislikesOne": "J'aime les pommes.",
+    "likesAndDislikesTwo": "Je n'aime pas courir.",
+    "likesAndDislikesThree": "Le surf est amusant.",
+    "likesAndDislikesFour": "Je préfère la nourriture de ce restaurant.",
+    "likesAndDislikesFive": "Qu'est-ce tu aime le mieux?",
+
+    "topicsTitle": "Les sujets",
+
+    "topicsOne": "Quelle est votre musique préférée?",
+    "topicsTwo": "Préférez-vous prendre le bus ou conduire une voiture ?",
+    "topicsThree": "Où travaillez-vous?",
+    "topicsFour": "Depuis combien de temps vivez-vous ici ?",
+    "topicsFive": "Que faites-vous pendant votre temps libre?",
+
+    "groceriesTitle" :"épiceries",
+    "selectGroceryTopic": "sélectionner un sujet d'épicerie：",
+    "fruitsTitle": "des fruits",
+    "fruitsOne": "pomme",
+    "fruitsTwo": "banane",
+    "fruitsThree": "orange",
+    "fruitsFour": "citron",
+    "fruitsFive": "fraise",
+
+    "vegetablesTitle": "Légumes",
+
+    "vegetablesOne": "Tomate",
+    "vegetablesTwo": "Onion",
+    "vegetablesThree": "Carotte",
+    "vegetablesFour": "Brocoli",
+    "vegetablesFive": "Pomme de terre",
+
+    "bakeryTitle": "Boulangerie et produits laitiers",
+
+    "bakeryOne": "lait",
+    "bakeryTwo": "beurre",
+    "bakeryThree": "pain",
+    "bakeryFour": "Glace",
+
+    "eggsTitle": "Oeufs & Viande",
+
+    "eggsOne": "Œuf",
+    "eggsTwo": "Bœuf",
+    "eggsThree": "Poisson",
+    "eggsFour": "crevette"
+
 }

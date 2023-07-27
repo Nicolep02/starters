@@ -28,6 +28,7 @@
 
 
     "workTitle": "trabajar",
+    "selectWorkTopic": "Seleccione un tema relacionado con el trabajo:",
     "partTimeJobTitle": "el trabajo de medio tiempo",
 
     "partTimeJobOne": "Tengo un trabajo de medio tiempo esta noche.",
@@ -63,6 +64,7 @@
 
 
     "medicalTitle": "médico",
+    "selectMedicalTopic": "Seleccione un tema médico:",
     "nineOneOneEmergencyTitle": "Emergencia 911",
 
     "nineOneOneEmergencyOne": "Hola, cual es tu emergencia?",
@@ -100,6 +102,7 @@
 
 
     "conversationalTitle": "conversacional",
+    "selectConverTopic": "Seleccione un tema de conversación：",
     "greetingTitle": "saludos",
 
     "greetingOne": "Hola!",
@@ -133,7 +136,7 @@
     "topicsFive": "¿Qué haces durante tu tiempo libre?",
 
     "groceryTitle" :"comestibles",
-
+     "selectGroceryTopic": "Seleccione un tema de comestibles：",
     "fruitsTitle": "frutas",
     "fruitsOne": "manzana",
     "fruitsTwo": "banana",
@@ -164,3 +167,4 @@
         "eggsFour": "camarón"
 
 }
+

@@ -6,10 +6,11 @@ import '../main.dart';
 import 'select_topic.dart';
 import '../styles/spacing.dart';
 import '../styles/colors.dart';
+import '../widgets/appbar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Language extends StatelessWidget {
-  Language({Key? key}) : super(key: key);
+  const Language({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
