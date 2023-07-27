@@ -41,7 +41,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
               style: TextStyle(
                 fontFamily: 'Inter',
                 fontSize: 22,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
+                color: nightSky,
               ),
             ),
           ],
