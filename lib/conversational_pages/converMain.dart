@@ -1,9 +1,9 @@
 import 'package:starters/styles/colors.dart';
-
 import 'greeting.dart';
 import 'introduction.dart';
 import 'likesdislikes.dart';
 import 'varioustopics.dart';
+import '../widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import '../widgets/bottom_nav_2.dart';
 import '../styles/spacing.dart';
@@ -22,35 +22,9 @@ class _ConverState extends State<Conver> {
   @override
   Widget build(BuildContext context) {
     double screen_limit = MediaQuery.of(context).size.width*1.0;
-    double appbar_limit = MediaQuery.of(context).size.width*0.7;
-    double box_limit = container_width;
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: appbar_height,
-        title: Container(
-          padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
-          width: appbar_limit,
-          child: Column(
-            children: [
-              Text(AppLocalizations.of(context)!.conversationalTitle,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: text),
-              Text('Conversational',
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),),
-            ],
-          ),
-        ),
-        backgroundColor: bark,
-      ),
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.conversationalTitle,
+        engTitleKey: 'Conversational',),
       body: SingleChildScrollView(
         child: Container(
           width: screen_limit,

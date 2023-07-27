@@ -1,40 +1,67 @@
 import 'package:flutter/material.dart';
-
+import '../widgets/guide_panel.dart';
+import 'package:starters/styles/colors.dart';
+import '../widgets/bottom_nav_2.dart';
+import '../styles/spacing.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class Help extends StatelessWidget {
   const Help({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-      body: Align(
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Row(
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.fromLTRB(20, 80, 0, 5),
-                    child: IconButton(
-                      icon: Image.asset('assets/backArrow.png'),
-                      iconSize: 0,
-                      onPressed: ()=>Navigator.of(context).pop(),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(10, 70, 10, 0),
-                    child: Text(
-                      'Back Button - previous page',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromRGBO(252, 163, 17, 1.0),
-                      ),),
-                  )
-                ],
-              ),
-            ],
+    double app_limit = MediaQuery.of(context).size.width*0.9;
+    double app_height = MediaQuery.of(context).size.height*1;
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: appbar_height,
+          centerTitle: true,
+          backgroundColor: bark,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+          title: Container(
+            padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+            width: app_limit,
+            child: Column(
+              //dont' forget to add these to translations
+              children: [
+                // Text(AppLocalizations.of(context)!.conversationalTitle,
+                //   style: TextStyle(
+                //     fontFamily: 'Inter',
+                //     fontSize: 22,
+                //     fontWeight: FontWeight.bold,
+                //   ),
+                // ),
+                // SizedBox(height: text),
+                Text('Guide',
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),),
+              ],
+            ),
+          ),
         ),
+        body:Center(
+          child: Container(
+              color: back,
+              height: app_height,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: title_subtitle),
+                    const Panel(),
+                  ],
+                ),
+              )
+          ),
+        ),
+        bottomNavigationBar: NavBar2(),
       ),
     );
   }

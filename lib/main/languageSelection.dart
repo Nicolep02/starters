@@ -1,10 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:starters/english/topics.dart';
 import 'package:starters/widgets/bottom_nav_2.dart';
 import '../main.dart';
 import 'select_topic.dart';
 import '../styles/spacing.dart';
-import '../widgets/bottom_nav_1.dart';
 import '../styles/colors.dart';
 import '../widgets/appbar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -19,11 +19,12 @@ class Language extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: appbar_height,
-        backgroundColor: navy,
+        backgroundColor: bark,
         title: Container(
           padding: EdgeInsets.fromLTRB(0, 10, 5, 0),
           width: appbar_limit,
-          child: Column(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Text('Choose Language',
               //   style: TextStyle(
@@ -31,7 +32,7 @@ class Language extends StatelessWidget {
               //     fontSize: 22,
               //     fontWeight: FontWeight.bold,
               //   ),),
-              SizedBox(height:5),
+              SizedBox(height : hgap),
               Text(AppLocalizations.of(context)!.chooseLangTitle,
                 style: TextStyle(
                   fontFamily: 'Inter',
@@ -42,14 +43,13 @@ class Language extends StatelessWidget {
             ],
           ),
         )
-
       ),
       body:SingleChildScrollView(
         child: Container(
           width: screen_limit,
           child: Column(
             children: [
-              SizedBox(height: title_subtitle_spacing),
+              SizedBox(height: title_subtitle),
               // Text('Please Select your native Language',
               //   style: TextStyle(
               //     fontFamily: 'Inter',
@@ -235,8 +235,23 @@ class Language extends StatelessWidget {
                 ],
               ),
               SizedBox(height: flag_bottom_spacing),
-            ],
-          ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  SizedBox(
+                    width: en_width, height: en_height,
+                    child: IconButton(
+                      icon: Image.asset('assets/eng.png'),
+                      onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'en'));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => Entopics()));
+                      },
+                    ),
+                  ),
+                  Text('English'),
+                  SizedBox(width: 40),
+                ],
+              ),
+            ],),
         ),
       ),
 //__________________________________finished body_____________________________________________

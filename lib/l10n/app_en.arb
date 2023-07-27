@@ -375,7 +375,7 @@
     "description": "The fifth phrase under Introduction page"
   },
 
-  "likesAndDislikesTitle": "Likes and Dislikes",
+  "likesAndDislikesTitle": "Likes / Dislikes",
   "@likesAndDislikesTitle": {
     "description": "Likes and Dislikes page title."
   },
