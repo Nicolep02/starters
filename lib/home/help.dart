@@ -16,7 +16,7 @@ class Help extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: appbar_height,
           centerTitle: true,
-          backgroundColor: bark,
+          backgroundColor: dropDown,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
@@ -40,7 +40,7 @@ class Help extends StatelessWidget {
                 Text('Guide',
                   style: TextStyle(
                     fontFamily: 'Inter',
-                    fontSize: 22,
+                    fontSize: 27,
                     fontWeight: FontWeight.bold,
                   ),),
               ],
