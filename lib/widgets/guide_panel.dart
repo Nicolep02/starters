@@ -45,7 +45,10 @@ class _PanelState extends State<Panel> {
 
   @override
   Widget build(BuildContext context) {
-    double app_limit = MediaQuery.of(context).size.width*0.9;
+    double app_limit = MediaQuery
+        .of(context)
+        .size
+        .width * 0.9;
 
     return SingleChildScrollView(
       child: Container(
@@ -57,66 +60,73 @@ class _PanelState extends State<Panel> {
 
   Widget _renderSteps() {
     return ExpansionPanelList(
-            expansionCallback: (int index, bool isExpanded) {
-            setState(() {
-              _steps[index].isExpanded = !isExpanded;
-            });
-          },
-          children: _steps.map<ExpansionPanel>((Step step) {
-          return ExpansionPanel(
-            headerBuilder: (BuildContext context, bool isExpanded) {
-              return SingleChildScrollView(
-                // color: dropDown,
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: Row(
-                  children: [
-                    SizedBox(width: hgap),
+      expansionCallback: (int index, bool isExpanded) {
+        setState(() {
+          _steps[index].isExpanded = !isExpanded;
+        });
+      },
+      children: _steps.map<ExpansionPanel>((Step step) {
+        return ExpansionPanel(
+          headerBuilder: (BuildContext context, bool isExpanded) {
+            return SingleChildScrollView(
+              // color: dropDown,
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+              child: Row(
+                children: [
+                  SizedBox(width: hgap),
+                  if (_steps.indexOf(step) >
+                      0) // Conditionally render the image for non-first items
                     Image.asset(
                       'assets/flower.png',
                       width: icon,
                       height: icon,
                     ),
-                    SizedBox(width: wgap), // Add some spacing between the image and the title
-                    Container(
-                      child: Text(step.title,
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: bar,
-                        ),),
+                  SizedBox(width: wgap),
+                  // Add some spacing between the image and the title
+                  Container(
+                    child: Text(
+                      step.title,
+                      style: TextStyle(
+                        fontFamily: 'Inter',
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: bar,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+          body: SingleChildScrollView(
+            child: Container(
+              color: sakura,
+              child: ListTile(
+                title: Column(
+                  children: [
+                    if (_steps.indexOf(step) >
+                        0) // Conditionally render the image for non-first items
+                      Image.asset(
+                        step.image,
+                        width: 200,
+                      ),
+                    Text(
+                      step.body,
+                      style: TextStyle(
+                        fontFamily: 'Inter',
+                        fontSize: 20,
+                        color: nightSky,
+                        height: 1.4,
+                      ),
                     ),
                   ],
                 ),
-              );
-            },
-            body: SingleChildScrollView(
-              child: Container(
-                color: sakura,
-                child: ListTile(
-                  title: Column(
-                    children: [
-                      Image.asset(
-                        step.image,
-                        width: 100,
-                      ),
-                      Text(
-                        step.body,
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontSize: 20,
-                          color: nightSky,
-                          height: 1.4,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
               ),
             ),
-            isExpanded: step.isExpanded,
-          );
-          }).toList(),
+          ),
+          isExpanded: step.isExpanded,
+        );
+      }).toList(),
     );
   }
 }
