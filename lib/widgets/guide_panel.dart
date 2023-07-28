@@ -18,7 +18,7 @@ class Step {
 
 List<Step> getSteps() {
   return [
-    Step('About Starters', 'This application is for people who wants to learn english '
+    Step('About STARTERS', 'This application is for people who wants to learn english '
                             'as soon as possible. Through research, we collect most commonly'
                             'conversed topics in common and important scenarios. '
                             'By studying English back-to-back with native language '
@@ -68,33 +68,36 @@ class _PanelState extends State<Panel> {
       children: _steps.map<ExpansionPanel>((Step step) {
         return ExpansionPanel(
           headerBuilder: (BuildContext context, bool isExpanded) {
-            return SingleChildScrollView(
-              // color: dropDown,
-              padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-              child: Row(
-                children: [
-                  SizedBox(width: hgap),
-                  if (_steps.indexOf(step) >
-                      0) // Conditionally render the image for non-first items
-                    Image.asset(
-                      'assets/flower.png',
-                      width: icon,
-                      height: icon,
-                    ),
-                  SizedBox(width: wgap),
-                  // Add some spacing between the image and the title
-                  Container(
-                    child: Text(
-                      step.title,
-                      style: TextStyle(
-                        fontFamily: 'Inter',
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: bar,
+            return Container(
+              alignment: Alignment.center,
+              height: container_height,
+              child: SingleChildScrollView(
+                // color: dropDown,
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: Row(
+                  children: [
+                    SizedBox(width: hgap),
+                    if (_steps.indexOf(step) >
+                        0) // Conditionally render the image for non-first items
+                      Image.asset(
+                        'assets/flower.png',
+                        width: icon,
+                      ),
+                    SizedBox(width: wgap),
+                    // Add some spacing between the image and the title
+                    Container(
+                      child: Text(
+                        step.title,
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold,
+                          color: bar,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             );
           },

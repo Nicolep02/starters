@@ -12,7 +12,7 @@ double arrow_height = 33;
 double bunni = 220;
 
 //guide
-double icon = 35;
+double icon = 20;
 
 //choose language page
 double title_subtitle = 60;
