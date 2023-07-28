@@ -28,7 +28,7 @@ class CategoryBox extends StatelessWidget {
         widthFactor: 0.9, // Adjust the value as needed to control the width of the container
         child: Container(
           height: container_height,
-          color: sakura,
+          color: bark,
           child: Row(
             mainAxisSize: MainAxisSize.min, // Set mainAxisSize to MainAxisSize.min
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,7 +68,7 @@ class CategoryBox extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 22,
                           fontFamily: "Inter",
-                          color: bark,
+                          color: white,
                         ),
                       ),
                     ],
