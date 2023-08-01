@@ -70,16 +70,19 @@ class Language extends StatelessWidget {
                   Lang(
                       langGetter: (localizations)=> localizations.japanese,
                       locale: 'ja',
+                      tts: 'ja-JP',
                       image: 'assets/ja.png'),
 
                   Lang(
                       langGetter: (localizations)=> localizations.korean,
                       locale: 'ko',
+                      tts: 'ko-KR',
                       image: 'assets/ko.png'),
 
                   Lang(
                       langGetter: (localizations)=> localizations.chinese,
                       locale: 'zh',
+                      tts: 'zh-CN',
                       image: 'assets/zh.png'),
                 ],
               ),
@@ -90,16 +93,19 @@ class Language extends StatelessWidget {
                   Lang(
                       langGetter: (localizations)=> localizations.spanish,
                       locale: 'es',
+                      tts: 'en-ES',
                       image: 'assets/es.png'),
 
                   Lang(
                       langGetter: (localizations)=> localizations.vietnamese,
                       locale: 'vi',
+                      tts: 'vi-VN',
                       image: 'assets/vi.png'),
 
                   Lang(
                       langGetter: (localizations)=> localizations.french,
                       locale: 'fr',
+                      tts: 'fr-FR',
                       image: 'assets/fr.png'),
                 ],
               ),
@@ -110,16 +116,19 @@ class Language extends StatelessWidget {
                   Lang(
                       langGetter: (localizations)=> localizations.italian,
                       locale: 'it',
+                      tts: 'it-IT',
                       image: 'assets/it.png'),
 
                   Lang(
                       langGetter: (localizations)=> localizations.german,
                       locale: 'de',
+                      tts: 'de-DE',
                       image: 'assets/de.png'),
 
                   Lang(
                       langGetter: (localizations)=> localizations.portuguese,
                       locale: 'pt',
+                      tts: 'pt-BR',
                       image: 'assets/pt.png'),
 
                 ],
@@ -132,7 +141,7 @@ class Language extends StatelessWidget {
                     width: en_width, height: en_height,
                     child: IconButton(
                       icon: Image.asset('assets/eng.png'),
-                      onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'en'));
+                      onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: 'en'), 'en');
                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => Language()));
                       },
                     ),

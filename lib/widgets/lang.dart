@@ -8,11 +8,13 @@ import '../main/select_topic.dart';
 class Lang extends StatelessWidget {
   final String Function(AppLocalizations) langGetter;
   final String locale;
+  final String tts;
   final String image;
 
   const Lang({
     required this.langGetter,
     required this.locale,
+    required this.tts,
     required this.image,
     Key? key}) : super(key: key);
 
@@ -26,7 +28,7 @@ class Lang extends StatelessWidget {
             width: flag_width, height: flag_height,
             child: IconButton(
               icon: Image.asset(image),
-              onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: locale));
+              onPressed: () {MyApp.of(context)?.setLocale(Locale.fromSubtags(languageCode: locale), tts);
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => Topics()));
               },
             ),
