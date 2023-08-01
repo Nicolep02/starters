@@ -24,9 +24,9 @@ class NavBar2 extends StatelessWidget {
           tabs:[
             GButton(
               icon: Icons.home,
-              backgroundColor: sakura,
+              backgroundColor: bark,
               text: 'Home',
-              textColor: nightSky,
+              textColor: white,
               onPressed:() {
                 Navigator.push(
                     context,
