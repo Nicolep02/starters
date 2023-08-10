@@ -1,21 +1,6 @@
 {
   "@@locale": "it",
 
-
-  "guidePage": "Guide",
-  "about": "About STARTERS",
-  "aboutPara": "This application is for people who wants to learn english\nas soon as possible. Through research, we collect most commonly\nconversed topics in common and important scenarios.\nBy studying English back-to-back with native language\nand text-to-speech feature, we hope for the users to develop\nflexibility in conversing with English.",
-  "langSelect": "Language Selection",
-  "lang": "Select a language to practice English with.",
-  "topicSelect": "Topic Selection",
-  "topic": "Choose the type of environment you would like to imagine to be in.",
-  "subtopicSelect": "Subtopic Selection",
-  "subtopic": "Choose a scenario you want to practice speaking in.",
-  "buttons": "Buttons Explanation",
-  "buttonEx": "Back button: Goes back to previous page\nHome button: Goes back to welcome page\nHelp button: Goes to this(\\'Guide\\') page\nText-to-Speech: Application reads out the phrase beside it.\n",
-
-
-
   "appName": "Ciao, principianti!",
   "startButton": "Studiamo l'inglese",
   "GuideButton": "Guida",
