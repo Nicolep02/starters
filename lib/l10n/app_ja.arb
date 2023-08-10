@@ -153,14 +153,14 @@
     "vegetablesFour": "ブロッコリー",
     "vegetablesFive": "じゃがいも",
 
-    "bakeryTitle": "パン屋と乳製品",
+    "bakeryAndDairyTitle": "パン屋と乳製品",
 
     "bakeryOne": "牛乳",
     "bakeryTwo": "バター",
     "bakeryThree": "パン",
     "bakeryFour": "アイスクリーム",
 
-    "eggsTitle": "卵と肉",
+    "eggsAndMeatTitle": "卵と肉",
 
     "eggsOne": "卵",
     "eggsTwo": "牛肉",
@@ -168,5 +168,7 @@
     "eggsFour": "エビ"
 
 }
+
+
 
 
