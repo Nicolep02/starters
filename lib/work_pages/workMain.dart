@@ -1,13 +1,15 @@
-import 'package:starters/styles/colors.dart';
 import 'package:flutter/material.dart';
-import '../widgets/bottom_nav_2.dart';
+import 'package:starters/widgets/subtitle.dart';
 import '../styles/spacing.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'interview.dart';
-import 'talkingabtJob.dart';
-import 'part_time.dart';
+import '../widgets/category_box.dart';
+import '../widgets/background.dart';
 import 'findJob.dart';
+import 'interview.dart';
+import 'part_time.dart';
+import 'talkingabtJob.dart';
 import '../widgets/appbar.dart';
+import '../widgets/bottom_nav_2.dart';
+
 
 class Work extends StatefulWidget{
   const Work({Key? key}) : super(key: key);
@@ -16,273 +18,66 @@ class Work extends StatefulWidget{
   State<Work> createState() => _WorkState();
 }
 
-
-//need to create stless class to allow for hot reload
 class _WorkState extends State<Work> {
   @override
   Widget build(BuildContext context) {
-    double screen_limit = MediaQuery.of(context).size.width*1.0;
     return Scaffold(
-      appBar: MyAppBar(titleGetter:(localizations) => localizations.workTitle,
-        engTitleKey: 'Work',),
-      body: SingleChildScrollView(
-        child: Container(
-          width: screen_limit,
-          alignment: AlignmentDirectional.center,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/bgCon.png'),
-              fit: BoxFit.cover,
+      appBar: MyAppBar(titleGetter:(localizations) => localizations.conversationalTitle,
+          engTitleKey: 'Work'),
+
+      body: Stack(
+        children: [
+          BgImage(bg: 'assets/bgCon.png'),
+          Center(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Subtitle(
+                      subTitleGetter: (localizations)=> localizations.selectWorkTopic,
+                      engSubTitle: 'Select a Work relatedTopic'),
+
+                  CategoryBox(
+                      topicFunc: PartTime(),
+                      titleGetter: (localizations) => localizations.partTimeJobTitle,
+                      engTitle: '[ Part-Time Job ]',
+                      image: 'assets/parttime.jpeg'
+                  ),
+
+                  SizedBox(height: container_spacings),
+
+                  CategoryBox(
+                      topicFunc: TalkAbtJob(),
+                      titleGetter: (localizations) => localizations.talkingAboutYourJobTitle,
+                      engTitle: '[ Talking About Job ]',
+                      image: 'assets/talkingAboutWork.jpeg'
+                  ),
+
+                  SizedBox(height: container_spacings),
+
+                  CategoryBox(
+                      topicFunc: FindJob(),
+                      titleGetter: (localizations) => localizations.findingAJobTitle,
+                      engTitle: '[ Finding a Job ]',
+                      image: 'assets/findingJob.jpeg'
+                  ),
+
+                  SizedBox(height: container_spacings),
+
+                  CategoryBox(
+                      topicFunc: Interview(),
+                      titleGetter: (localizations) => localizations.jobInterviewTitle,
+                      engTitle: '[ Job Interview ]',
+                      image: 'assets/jobInterview.jpeg'
+                  ),
+                  SizedBox(height: bottom_padding),
+                ],),
             ),
           ),
-          child: Column(
-            children: [
-              SizedBox(height: title_subtitle_spacing),
-              Text(AppLocalizations.of(context)!.selectWorkTopic,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 23,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: subtitles),
-              Text('Select a Work related Topic: ',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: subtitle_container),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => PartTime()));
-                },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
-                          ),
-                          icon: Image.asset('assets/parttime.jpeg',
-                          ),
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PartTime()));
-                          },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.partTimeJobTitle,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                fontSize: 23,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            const Text('[ Part Time Job]',
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => PartTime()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
-                ),
-              ),
-              SizedBox(height: container_spacings),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => TalkAbtJob()));
-                },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
-                          ),
-                          icon: Image.asset('assets/talkingAboutWork.jpeg',
-                          ),
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => TalkAbtJob()));
-                          },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.talkingAboutYourJobTitle,
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            Text('[Talking About Job ]',
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => TalkAbtJob()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
-                ),
-              ),
-              SizedBox(height: container_spacings),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => FindJob()));
-                },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
-                          ),
-                          icon: Image.asset('assets/findingJob.jpeg',
-                          ),
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) =>FindJob()));
-                          },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.findingAJobTitle,
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            Text('[ Finding a Job ]',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => FindJob()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
-                ),
-              ),
-              SizedBox(height: container_spacings),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Interview()));
-                },
-                child: Container(
-                  width: container_width, height: container_height,
-                  color: sakura,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: icon_dimen, height: icon_dimen,
-                        child: IconButton(
-                          style: IconButton.styleFrom(
-                            backgroundColor: sakura,
-                          ),
-                          icon: Image.asset('assets/jobInterview.jpeg',
-                          ),
-                          onPressed: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Interview()));
-                          },
-                        ),
-                      ),
-                      FittedBox(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(AppLocalizations.of(context)!.jobInterviewTitle,
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontFamily: "Inter",
-                                fontWeight: FontWeight.w500,
-                                color: white,
-                              ),),
-                            SizedBox(width: text),
-                            Text('[ Job Interview]',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontFamily: "Inter",
-                                color: white,
-                              ),),
-                          ],
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Interview()));
-                        },
-                        icon:Icon(Icons.keyboard_arrow_right,
-                          color: white,
-                        ),)
-                    ],),
-                ),
-              ),
-              SizedBox(height: bottom_padding),
-            ],),
-        ),
+        ],
       ),
       bottomNavigationBar: NavBar2(),
     );
-
   }
 }
+
