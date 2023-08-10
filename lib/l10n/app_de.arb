@@ -151,14 +151,14 @@
   "vegetablesFour": "Brokkoli",
   "vegetablesFive": "Kartoffel",
 
-  "bakeryTitle": "Bäckerei und Molkerei",
+  "bakeryAndDairyTitle": "Bäckerei und Molkerei",
 
   "bakeryOne": "Milch",
   "bakeryTwo": "Butter",
   "bakeryThree": "Brot",
   "bakeryFour": "Eiscreme",
 
-  "eggsTitle": "Eier und Fleisch",
+  "eggsAndMeatTitle": "Eier und Fleisch",
 
   "eggsOne": "Eier",
   "eggsTwo": "Rindfleisch",
