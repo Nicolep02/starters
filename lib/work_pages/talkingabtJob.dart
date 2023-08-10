@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../styles/colors.dart';
-import '../styles/spacing.dart';
-import '../widgets/bottom_nav_2.dart';
+import '../widgets/phrases.dart';
 import '../widgets/appbar.dart';
+import '../widgets/bottom_nav_2.dart';
 
 class TalkAbtJob extends StatefulWidget {
   const TalkAbtJob({Key? key}) : super(key: key);
@@ -15,337 +13,44 @@ class TalkAbtJob extends StatefulWidget {
 class _TalkAbtJobState extends State<TalkAbtJob> {
   @override
   Widget build(BuildContext context) {
-    double screen_Limit = MediaQuery.of(context).size.width*0.74;
-
     return Scaffold(
         backgroundColor: Colors.white,
-        appBar: MyAppBar(titleGetter:(localizations) => localizations.talkingAboutYourJobTitle,
-                engTitleKey: 'Talking About Job',),
+        appBar: MyAppBar(titleGetter:(localizations) => localizations.greetingTitle,
+          engTitleKey: 'Talking About Job',),
 
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  //SizedBox(width: 30),
-                  const SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF4F939C),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: const Text("What’s your role in the company?",
-                                style: TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: lang_spacing ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey,
-                        ),
-                        child: Row(
-                          // mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: Text(AppLocalizations.of(context)!.talkingAboutYourJobOne,
-                                style: const TextStyle(fontSize: 20),
-                              ),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],),
+              Phrases(
+                  engText: 'What is your role in the company?',
+                  phraseGetter: (localizations)=> localizations.talkingAboutYourJobOne),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  //SizedBox(width: 30),
-                  const SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF4F939C),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: const Text("I’m the head of design.",
-                                style: TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: lang_spacing),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: Text(AppLocalizations.of(context)!.talkingAboutYourJobTwo,
-                                style: const TextStyle(fontSize: 20),),
-                            ),// <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  //SizedBox(width: 30),
-                  const SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF4F939C),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: const Text("What do you do?",
-                                style: TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: lang_spacing),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: Text(AppLocalizations.of(context)!.talkingAboutYourJobThree,
-                                style: const TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  //SizedBox(width: 30),
-                  const SizedBox(width: 20),
+              Phrases(
+                  engText: 'I am the head of design.',
+                  phraseGetter: (localizations) => localizations.talkingAboutYourJobTwo),
 
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF4F939C),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: const Text("I manage artists and graphic designers.",
-                                style: TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: lang_spacing),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: Text(AppLocalizations.of(context)!.talkingAboutYourJobFour,
-                                style: const TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  //SizedBox(width: 30),
-                  const SizedBox(width: 20),
+              Phrases(
+                  engText: 'What do you do?',
+                  phraseGetter: (localizations) => localizations.talkingAboutYourJobThree),
 
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF4F939C),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: const Text("Do you like your job?",
-                                style: TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: lang_spacing),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Container(
-                              width: screen_Limit,
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
-                              child: Text(AppLocalizations.of(context)!.talkingAboutYourJobFive,
-                                style: const TextStyle(fontSize: 20),),
-                            ), // <-- Text
-                            const SizedBox(
-                                width: 10, height: 50
-                            ),
-                            const Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 50),
-                    ],
-                  ),
-                ],),
+              Phrases(
+                  engText: 'I manage artists and graphic designers.',
+                  phraseGetter: (localizations) => localizations.talkingAboutYourJobFour),
+
+              Phrases(
+                  engText: 'Do you like your job?',
+                  phraseGetter: (localizations) => localizations.talkingAboutYourJobFive),
             ],
           ),
         ),
-        bottomNavigationBar: const NavBar2()
+        bottomNavigationBar: NavBar2()
     );
   }
 }
+
+
+
+
+
 
