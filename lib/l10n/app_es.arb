@@ -152,14 +152,14 @@
     "vegetablesFour": "brócoli",
     "vegetablesFive": "papa",
 
-    "bakeryTitle": "Panadería y Lácteos",
+    "bakeryAndDairyTitle": "Panadería y Lácteos",
 
     "bakeryOne": "Leche",
     "bakeryTwo": "manteca",
     "bakeryThree": "pan",
     "bakeryFour": "helado",
 
-    "eggsTitle": "Huevos y Carne",
+    "eggsAndMeatTitle": "Huevos y Carne",
 
         "eggsOne": "huevo",
         "eggsTwo": "carne de res",
@@ -167,4 +167,6 @@
         "eggsFour": "camarón"
 
 }
+
+
 
