@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../styles/colors.dart';
+import '../widgets/phrases.dart';
+import '../widgets/iconphrase.dart';
 import '../medical_pages/med_main.dart';
 import '../widgets/appbar.dart';
 import '../widgets/bottom_nav_2.dart';
@@ -12,23 +14,19 @@ class Illness extends StatefulWidget {
 }
 //need to create stless class to allow for hot reload
 class _IllnessState extends State<Illness> {
-  get width => null;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: MyAppBar(titleGetter:(localizations) => localizations.symptomsOfIllnessTitle,
-        engTitleKey: 'Symptoms of Illness',),
+        backgroundColor: Colors.white,
+        appBar: MyAppBar(titleGetter:(localizations) => localizations.symptomsOfIllnessTitle,
+          engTitleKey: 'Symptoms of Illness',),
 
-      body: SingleChildScrollView(
-        child: Center(
+        body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
 
-              Row(//apple
+              Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -44,64 +42,18 @@ class _IllnessState extends State<Illness> {
                       width: 300, height: 400,),
                     //],
                   ),
-                  SizedBox(width: 15,),
-                  // Expanded(
-                  // child:
-                  Column(
-                    children: [
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF4F939C),
-                        ),
-                        child: Row( //Translated phrase/box
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('Headache',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 60, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 5,),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('native',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 60, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  //),
-                ],),
+//SizedBox(width: 15,),
+                  Description(
+                      engText: 'Headache',
+                      descriptionGetter: (localizations)=> localizations.symptomsOfIllnessOne),
+                ],
+              ),
 
-              Row(//banana
-                mainAxisAlignment: MainAxisAlignment.center,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  //SizedBox(width: 30),
-
+                  SizedBox(width: 18),
                   Container(
                     //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     //children: [
@@ -113,57 +65,14 @@ class _IllnessState extends State<Illness> {
                       width: 300, height: 400,),
                     //],
                   ),
-                  SizedBox(width: 15,),
+//SizedBox(width: 15,),
+                  Description(
+                      engText: 'Fever',
+                      descriptionGetter: (localizations)=> localizations.symptomsOfIllnessTwo),
+                ],
+              ),
 
-                  Column(
-                    children: [
-                      SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF4F939C),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('Fever',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 100, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 5,),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('native',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 60, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],),
-
-              Row(//orange
+              Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -179,59 +88,14 @@ class _IllnessState extends State<Illness> {
                       width: 300, height: 400,),
                     //],
                   ),
-                  SizedBox(width: 15,),
-                  // Expanded(
-                  // child:
-                  Column(
-                    children: [
-                      SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF4F939C),
-                        ),
-                        child: Row( //Translated phrase/box
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('Sore Throat',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 45, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 5,),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('native',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 40, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  //),
-                ],),
+//SizedBox(width: 15,),
+                  Description(
+                      engText: 'Sore Throat',
+                      descriptionGetter: (localizations)=> localizations.symptomsOfIllnessThree),
+                ],
+              ),
 
-              Row(//lemon
+              Row(//
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -247,59 +111,14 @@ class _IllnessState extends State<Illness> {
                       width: 300, height: 400,),
                     //],
                   ),
-                  SizedBox(width: 15,),
-                  // Expanded(
-                  // child:
-                  Column(
-                    children: [
-                      SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF4F939C),
-                        ),
-                        child: Row( //Translated phrase/box
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('Coughing',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 60, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 5,),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('native',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 40, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  //),
-                ],),
+//SizedBox(width: 15,),
+                  Description(
+                      engText: 'Coughing',
+                      descriptionGetter: (localizations)=> localizations.symptomsOfIllnessFour),
+                ],
+              ),
 
-              Row(//strawberry
+              Row(//
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -315,61 +134,17 @@ class _IllnessState extends State<Illness> {
                       width: 300, height: 400,),
                     //],
                   ),
-                  SizedBox(width: 15,),
-                  // Expanded(
-                  // child:
-                  Column(
-                    children: [
-                      SizedBox(height: 30),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF4F939C),
-                        ),
-                        child: Row( //Translated phrase/box
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('Stomach Ache',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 20, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 5,),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text('native',
-                              style: TextStyle(fontSize: 20),), // <-- Text
-                            SizedBox(
-                                width: 20, height: 50
-                            ),
-                            Icon( // <-- Icon
-                              Icons.volume_up,
-                              size: 25.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  //),
-                ],),
-            ],),),
-      ),
-
-      bottomNavigationBar: NavBar2(),
+//SizedBox(width: 15,),
+                  Description(
+                      engText: 'Stomach Ache',
+                      descriptionGetter: (localizations)=> localizations.symptomsOfIllnessFive),
+                ],
+              ),
+            ], ),
+        ),
+        bottomNavigationBar: NavBar2()
     );
   }
 }
+
+
