@@ -1,3 +1,187 @@
 {
-  "@@locale": "it"
+  "@@locale": "it",
+
+
+  "guidePage": "Guide",
+  "about": "About STARTERS",
+  "aboutPara": "This application is for people who wants to learn english\nas soon as possible. Through research, we collect most commonly\nconversed topics in common and important scenarios.\nBy studying English back-to-back with native language\nand text-to-speech feature, we hope for the users to develop\nflexibility in conversing with English.",
+  "langSelect": "Language Selection",
+  "lang": "Select a language to practice English with.",
+  "topicSelect": "Topic Selection",
+  "topic": "Choose the type of environment you would like to imagine to be in.",
+  "subtopicSelect": "Subtopic Selection",
+  "subtopic": "Choose a scenario you want to practice speaking in.",
+  "buttons": "Buttons Explanation",
+  "buttonEx": "Back button: Goes back to previous page\nHome button: Goes back to welcome page\nHelp button: Goes to this(\\'Guide\\') page\nText-to-Speech: Application reads out the phrase beside it.\n",
+
+
+
+  "appName": "Ciao, principianti!",
+  "startButton": "Studiamo l'inglese",
+  "GuideButton": "Guida",
+  "resourcesButton": "Risorse",
+  "homeButton": "Casa",
+
+
+  "chooseLangTitle": "Scegliere la lingua",
+  "selectYourLang": "Seleziona la tua lingua:",
+  "japanese": "Giapponese",
+  "korean": "coreano",
+  "chinese": "Cinese",
+  "spanish": "Spagnolo",
+  "vietnamese": "Vietnamita",
+  "french": "francese",
+  "italian": "italiano",
+  "german": "tedesco",
+  "portuguese": "Portoghese",
+  "english": "inglese",
+  "burmese": "Birmano",
+
+
+
+  "selectTopicTitle": "Quale argomento ti interessa?",
+  "selectTopicText": "Selezionate la categoria che desiderate apprendere:",
+
+
+  "workTitle": "Lavoro",
+  "selectWorkTopic": "Seleziona un argomento legato al lavoro:",
+  "partTimeJobTitle": "Lavoro part-time",
+
+  "partTimeJobOne": "Questa sera ho un lavoro part-time.",
+  "partTimeJobTwo": "Lavoro in un bar.",
+  "partTimeJobThree": "Com'è la paga?",
+  "partTimeJobFour": "La paga è buona. Prendo 17 dollari all'ora",
+  "partTimeJobFive": "Ricevo lo stipendio settimanalmente.",
+
+  "talkingAboutYourJobTitle": "Parlando del suo lavoro",
+
+  "talkingAboutYourJobOne": "Qual è il suo ruolo nell'azienda?",
+  "talkingAboutYourJobTwo": "Sono il responsabile del design",
+  "talkingAboutYourJobThree": "Di cosa ti occupi",
+  "talkingAboutYourJobFour": "Gestisco artisti e grafici",
+  "talkingAboutYourJobFive": "Le piace il suo lavoro?",
+
+  "findingAJobTitle": "Trovare un lavoro",
+
+  "findingAJobOne": "Sto cercando un nuovo lavoro.",
+  "findingAJobTwo": "Voglio trovare un lavoro nel campo della tecnologia.",
+  "findingAJobThree": "Ha preparato un curriculum?",
+  "findingAJobFour": "Dove sta cercando lavoro?",
+  "findingAJobFive": "Ho inviato candidature a una dozzina di aziende",
+
+  "jobInterviewTitle": "Colloquio di lavoro",
+
+  "jobInterviewOne": "Mi parli un po' della posizione.",
+  "jobInterviewTwo": "Si tratta di un lavoro di livello base.",
+  "jobInterviewThree": "Che tipo di qualifiche sono richieste?",
+  "jobInterviewFour": "È richiesta una laurea almeno quadriennale.",
+  "jobInterviewFive": "Cosa cerca in un lavoro?",
+
+
+
+  "medicalTitle": "Medico",
+  "selectMedicalTopic": "Selezionare un argomento di tipo medico:",
+  "nineOneOneEmergencyTitle": "Emergenza 911",
+
+  "nineOneOneEmergencyOne": "Salve, qual è la sua emergenza?",
+  "nineOneOneEmergencyTwo": "Esempio: Sto avendo un attacco di cuore",
+  "nineOneOneEmergencyThree": "Come si chiama?",
+  "nineOneOneEmergencyFour": "Il mio nome è:",
+  "nineOneOneEmergencyFive": "Qual è il suo indirizzo?",
+  "nineOneOneEmergencySix": "Il mio indirizzo è:",
+  "nineOneOneEmergencySeven": "Ok, i soccorsi stanno arrivando!",
+
+  "symptomsOfIllnessTitle": "Sintomi della malattia",
+
+  "symptomsOfIllnessOne": "Mal di testa",
+  "symptomsOfIllnessTwo": "febbre",
+  "symptomsOfIllnessThree": "Mal di gola",
+  "symptomsOfIllnessFour": "Tosse",
+  "symptomsOfIllnessFive": "Mal di stomaco",
+
+  "makeAnAppointmentTitle": "Fissare un appuntamento",
+
+  "makeAnAppointmentOne": "Desidero fissare un appuntamento",
+  "makeAnAppointmentTwo": "Sono un nuovo paziente",
+  "makeAnAppointmentThree": "Il mio nome e la data di nascita sono:",
+  "makeAnAppointmentFour": "Sono disponibile/indisponibile il giorno:",
+  "makeAnAppointmentFive": "Vorrei riprogrammare il mio appuntamento",
+
+  "commonDiseaseNamesTitle": "Nomi di malattie comuni",
+
+  "commonDiseaseNamesOne": "Attacco di cuore",
+  "commonDiseaseNamesTwo": "Ictus",
+  "commonDiseaseNamesThree": "Diabete",
+  "commonDiseaseNamesFour": "Allergia",
+  "commonDiseaseNamesFive": "Vertigini",
+
+
+
+  "conversationalTitle": "Conversazione",
+  "selectConverTopic": "Selezionare un argomento di conversazione:",
+  "greetingTitle": "Saluto",
+
+  "greetingOne": "Ciao!",
+  "greetingTwo": "Piacere di conoscerti.",
+  "greetingThree": "Buongiorno/ Buonasera",
+  "greetingFour": "Come stai?",
+  "greetingFive": "Ci vediamo più tardi.",
+
+  "introductionTitle": "Introduzione",
+
+  "introductionOne": "Mi chiamo [nome].",
+  "introductionTwo": "Il suo nome è [nome].",
+  "introductionThree": "Qual è il suo nome?",
+  "introductionFour": "Non conosco lei/lui/loro.",
+  "introductionFive": "Queste persone sono i miei familiari/ amici/ compagni di classe/ colleghi di lavoro.",
+
+  "likesAndDislikesTitle": "Mi piace e non mi piace",
+
+  "likesAndDislikesOne": "Mi piacciono le mele.",
+  "likesAndDislikesTwo": "Non mi piace correre.",
+  "likesAndDislikesThree": "Il surf è divertente.",
+  "likesAndDislikesFour": "Preferisco il cibo di quel ristorante.",
+  "likesAndDislikesFive": "Cosa ti piace di più?",
+
+  "topicsTitle": "Argomenti",
+
+  "topicsOne": "Qual è la tua musica preferita?",
+  "topicsTwo": "Preferisci andare in autobus o guidare l'auto?",
+  "topicsThree": "Dove lavora?",
+  "topicsFour": "Da quanto tempo vive qui?",
+  "topicsFive": "Cosa fa nel tempo libero?",
+
+
+
+  "groceriesTitle": "Drogheria",
+  "selectGroceryTopic": "Selezionare un argomento relativo agli alimentari:",
+  "talkingToACashierTitle": "Parlare con il cassiere",
+
+  "vegetablesTitle": "Verdura",
+
+  "vegetablesOne": "pomodoro",
+  "vegetablesTwo": "cipolla",
+  "vegetablesThree": "carota",
+  "vegetablesFour": "broccoli",
+  "vegetablesFive": "patata",
+
+  "fruitsTitle": "Frutti",
+  "fruitsOne": "mela",
+  "fruitsTwo": "banana",
+  "fruitsThree": "arancia",
+  "fruitsFour": "limone",
+  "fruitsFive": "fragola",
+
+  "bakeryAndDairyTitle": "Panetteria e latticini",
+  "bakeryAndDairyOne": "Latte",
+  "bakeryAndDairyTwo": "Il burro",
+  "bakeryAndDairyThree": "Pane",
+  "bakeryAndDairyFour": "Gelato",
+
+  "eggsAndMeatTitle": "Uova e carne",
+  "eggsAndMeatOne": "Uova",
+  "eggsAndMeatTwo": "Manzo",
+  "eggsAndMeatThree": "Pesce",
+  "eggsAndMeatFour": "Gamberi"
+
 }
