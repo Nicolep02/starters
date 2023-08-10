@@ -3,7 +3,6 @@ import '../widgets/guide_panel.dart';
 import 'package:starters/styles/colors.dart';
 import '../widgets/bottom_nav_2.dart';
 import '../styles/spacing.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class Help extends StatelessWidget {
   const Help({Key? key}) : super(key: key);
 
@@ -16,7 +15,7 @@ class Help extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: appbar_height,
           centerTitle: true,
-          backgroundColor: dropDown,
+          backgroundColor: home,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
