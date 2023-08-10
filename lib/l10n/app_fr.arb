@@ -153,14 +153,14 @@
     "vegetablesFour": "Brocoli",
     "vegetablesFive": "Pomme de terre",
 
-    "bakeryTitle": "Boulangerie et produits laitiers",
+    "bakeryAndDairyTitle": "Boulangerie et produits laitiers",
 
     "bakeryOne": "lait",
     "bakeryTwo": "beurre",
     "bakeryThree": "pain",
     "bakeryFour": "Glace",
 
-    "eggsTitle": "Oeufs & Viande",
+    "eggsAndMeatTitle": "Oeufs & Viande",
 
     "eggsOne": "Œuf",
     "eggsTwo": "Bœuf",
@@ -168,3 +168,5 @@
     "eggsFour": "crevette"
 
 }
+
+
