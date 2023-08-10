@@ -1,57 +1,51 @@
 import 'package:flutter/material.dart';
+import '../widgets/resource.dart';
+import '../styles/colors.dart';
+import '../widgets/bottom_nav_2.dart';
+import '../styles/spacing.dart';
 
 class Resources extends StatelessWidget {
   const Resources({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromRGBO(21, 33, 61, 1.0),
-      body: Align(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.fromLTRB(20, 80, 320, 20),
-              child: IconButton(
-                icon: Image.asset('assets/backArrow.png'),
-                iconSize: 15,
-                onPressed: ()=>Navigator.of(context).pop(),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.fromLTRB(30, 30, 0, 20),
-              child: Text('Google Translate',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(252, 163, 17, 1.0),
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.fromLTRB(30, 50, 0, 20),
-              child: Text('2 link and explanation',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(252, 163, 17, 1.0),
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.fromLTRB(30, 50, 0, 20),
-              child: Text('3 link and explanation',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(252, 163, 17, 1.0),
-                ),
-              ),
-            ),
+    double app_limit = MediaQuery.of(context).size.width*0.9;
+    double app_height = MediaQuery.of(context).size.height*1;
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          toolbarHeight: appbar_height,
+          centerTitle: true,
+          backgroundColor: home,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+          title: Container(
+            padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+            width: app_limit,
+            child: Column(
+              //dont' forget to add these to translations
+              children: [
+                Text('Resources (Free)',
+                  style: TextStyle(
+                    fontFamily: 'Inter',
+                    fontSize: 27,
+                    fontWeight: FontWeight.bold,
+                  ),),
               ],
             ),
-            ),
+          ),
+        ),
+        body:Container(
+          width: app_height,
+          height: app_height,
+          child: Resource(),
+        ),
+        bottomNavigationBar: NavBar2(),
+      ),
     );
   }
 }
